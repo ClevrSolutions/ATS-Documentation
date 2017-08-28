@@ -56,7 +56,7 @@ The parent element is not an `input` element. Find a child element that ATS can 
 
 ![](attachments/create-unsupported-widget/cab-05-reference-selector/ref-selector-childelement-select.png)
 
-When you create a custom action for an unsupported widget action, you must use the _[Find Widget Child Node](/refguide-ats-1/find-widget-child-node)_ action. This action is a combination of the _[Find/Assert Widget](/refguide-ats-1/findassert-widget)_ and _[Find Element by Sizzle](/refguide-ats-1/find-element-by-sizzle)_ actions, combining the best of both. It’s an official Mendix action. It has all the internal processes and it uses a CSS/jQuery selector to find the child making it flexible. The selector for finding the select element is `select`. You use this selector in the _Find Widget Child Node_ action to find a select element inside the reference selector widget.
+When you create a custom action for an unsupported widget action, you must use the _[Find Widget Child Node](../refguide-ats-1/find-widget-child-node)_ action. This action is a combination of the _[Find/Assert Widget](../refguide-ats-1/findassert-widget)_ and _[Find Element by Sizzle](../refguide-ats-1/find-element-by-sizzle)_ actions, combining the best of both. It’s an official Mendix action. It has all the internal processes and it uses a CSS/jQuery selector to find the child making it flexible. The selector for finding the select element is `select`. You use this selector in the _Find Widget Child Node_ action to find a select element inside the reference selector widget.
 
 Before you start creating the action you need to know if ATS can find the select element within the reference selector widget. You use the debugger to simulate what ATS does. Since the _Find Widget Child Node_ action uses the `mx-name` to find the parent, you also must use the `mx-name` in your code.
 You use jQuery to find out if ATS can find the element. Enter the following code in the console of the debugger: `$( ‘.mx-name-referenceSelector1 select’ )`:
@@ -74,7 +74,7 @@ ATS has core actions for selecting an option from a select element. We use the _
 
 ![](attachments/create-unsupported-widget/cab-05-reference-selector/ref-selector-selectoptionbytext-action.png)
 
-The _Select Option by Text_ action is a core action which triggers an event. Finish your custom action with a [_Mendix Wait_](refguide-ats-1/mendix-wait) action:
+The _Select Option by Text_ action is a core action which triggers an event. Finish your custom action with a [_Mendix Wait_](../refguide-ats-1/mendix-wait) action:
 
 ![](attachments/create-unsupported-widget/cab-05-reference-selector/ref-selector-mendixwait-action.png)
 
@@ -86,7 +86,7 @@ Next, you add the action input parameters.
 * Search Context
 
 {{% alert type="info" %}}
-Keep the [guidelines for creating a custom action](bestpractices/guidelines-custom-action) in mind while creating action parameters. 
+Keep the [guidelines for creating a custom action](../bestpractices/guidelines-custom-action) in mind while creating action parameters. 
 {{% /alert %}}
 
 The Widget Name input parameter:

@@ -66,7 +66,7 @@ _Input element_
 
 ![](attachments/create-unsupported-widget/cab-07-radiobuttons/radiobuttons-childelement-input-outlined.png)
 
-When you create a custom action for an unsupported widget action, you must use the _[Find Widget Child Node](/refguide-ats-1/find-widget-child-node)_ action. This action is a combination of the _[Find/Assert Widget](/refguide-ats-1/findassert-widget)_ and _[Find Element by Sizzle](/refguide-ats-1/find-element-by-sizzle)_ actions, combining the best of both. It’s an official Mendix action. It has all the internal processes and it uses a CSS/jQuery selector to find the child making it flexible.
+When you create a custom action for an unsupported widget action, you must use the _[Find Widget Child Node](../refguide-ats-1/find-widget-child-node)_ action. This action is a combination of the _[Find/Assert Widget](../refguide-ats-1/findassert-widget)_ and _[Find Element by Sizzle](../refguide-ats-1/find-element-by-sizzle)_ actions, combining the best of both. It’s an official Mendix action. It has all the internal processes and it uses a CSS/jQuery selector to find the child making it flexible.
 
 Each radio button is inside a `div` element with the classname `.radio`. Inside this element, there is a `label` element that contains a text value. Finally, there is an `input` element inside the `label` element. The selector looks like this: `.radio label:contains() input` 
 Using the entire path makes your selector more accurate in the case there are other radio buttons widgets.
@@ -82,7 +82,7 @@ You use jQuery to find out if ATS can find the element. Enter the following code
 It can happen that the debugger does not return an element. Check if jQuery is available and if you constructed the code in the correct manner.
 When you enter a selector in ATS you don’t use the `$( ‘….’ )` or `jQuery( ‘…..’ )`.
 
-The action user must enter the text he wants ATS to click. You need a variable selector to achieve this. You create a variable selector by using the [_Concatenate String_](refguide-ats-1/concatenate-string) action. The _Concatenate String_ action combines the different input strings into one string. The _Concatenate String_ action does not add spaces. You need to add spaces yourself.
+The action user must enter the text he wants ATS to click. You need a variable selector to achieve this. You create a variable selector by using the [_Concatenate String_](../refguide-ats-1/concatenate-string) action. The _Concatenate String_ action combines the different input strings into one string. The _Concatenate String_ action does not add spaces. You need to add spaces yourself.
 
 Next, you add the _Concatenate String_ action. 
 Leave the **String 2** input parameter empty! You connect an action input parameter here later.
@@ -95,7 +95,7 @@ Next, you add the _Find Widget Child Node_ action to your action. Connect the ou
 
 ![](attachments/create-unsupported-widget/cab-07-radiobuttons/radiobuttons-findwidgetchildnode-action.png)
 
-ATS must click the found radio button. You add the [_Click/Doubleclick_](/refguide-ats-1/clickdoubleclick) action. Connect the radio button from step 2 and give a description of the test step:
+ATS must click the found radio button. You add the [_Click/Doubleclick_](../refguide-ats-1/clickdoubleclick) action. Connect the radio button from step 2 and give a description of the test step:
 
 ![](attachments/create-unsupported-widget/cab-07-radiobuttons/radiobuttons-clickdoubleclick-action.png)
 
@@ -107,7 +107,7 @@ Next, you add the action input parameters.
 * Search Context
 
 {{% alert type="info" %}}
-Keep the [guidelines for creating a custom action](bestpractices/guidelines-custom-action) in mind while creating action parameters. 
+Keep the [guidelines for creating a custom action](../bestpractices/guidelines-custom-action) in mind while creating action parameters. 
 {{% /alert %}}
 
 The Widget Name input parameter:

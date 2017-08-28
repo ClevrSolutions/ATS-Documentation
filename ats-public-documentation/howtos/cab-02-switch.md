@@ -58,9 +58,9 @@ The debugger creates the border around the selected element in the app:
 
 ![](attachments/create-unsupported-widget/cab-02-switch/highlighted-switch-mxname.png)
 
-When selecting which element to find keep in mind that ATS clicks in the middle of an element. In this case, ATS does not click on the actual switch. This means you must use the _[Find Widget Child Node](/refguide-ats-1/find-widget-child-node)_ action. This action is a combination of the _[Find/Assert Widget](/refguide-ats-1/findassert-widget)_ and _[Find Element by Sizzle](/refguide-ats-1/find-element-by-sizzle)_ actions, combining the best of both. It’s an official Mendix action. It has all the internal processes and it uses a CSS/jQuery selector to find the child making it flexible.
+When selecting which element to find keep in mind that ATS clicks in the middle of an element. In this case, ATS does not click on the actual switch. This means you must use the _[Find Widget Child Node](../refguide-ats-1/find-widget-child-node)_ action. This action is a combination of the _[Find/Assert Widget](../refguide-ats-1/findassert-widget)_ and _[Find Element by Sizzle](../refguide-ats-1/find-element-by-sizzle)_ actions, combining the best of both. It’s an official Mendix action. It has all the internal processes and it uses a CSS/jQuery selector to find the child making it flexible.
 
-Now you check the different child nodes to find the one you need. While doing this keep [the guidelines for creating a custom action](/bestpractices/guidelines-custom-action) in mind! It must be generic, pick an element or element class that’s always present because you “hard-code” it into your action. Also, make sure the element is visible for the end-user so that ATS can click on it.
+Now you check the different child nodes to find the one you need. While doing this keep [the guidelines for creating a custom action](../bestpractices/guidelines-custom-action) in mind! It must be generic, pick an element or element class that’s always present because you “hard-code” it into your action. Also, make sure the element is visible for the end-user so that ATS can click on it.
 
 After looking through the child nodes you find a child element that covers the switch and also looks generic.
  
@@ -114,7 +114,7 @@ You also clarify the test step by filling in the description and possible output
 
 ![](attachments/create-unsupported-widget/cab-02-switch/mendix-switch-findwidgetchild-description-output.png)
 
-Next, you click the Mendix switch to change its state. You add the _[Click/Doubleclick](/refguide-ats-1/clickdoubleclick)_ action because this action is a Mendix action:
+Next, you click the Mendix switch to change its state. You add the _[Click/Doubleclick](../refguide-ats-1/clickdoubleclick)_ action because this action is a Mendix action:
 
 ![](attachments/create-unsupported-widget/cab-02-switch/mendix-switch-click-doubleclick-add.png)
 
@@ -180,7 +180,7 @@ Give a clear description so that the action user knows what information is requi
 The logic you use is as follows: 
 **Only click the switch if the value of the switch is NOT the same as the value entered by the user.**
 
-A precondition on the _Click/Doubleclick_ action performs the logic. You use the _[Assert not equals](/refguide-ats-1/assert-not-equals)_ action as precondition.
+A precondition on the _Click/Doubleclick_ action performs the logic. You use the _[Assert not equals](../refguide-ats-1/assert-not-equals)_ action as precondition.
 
 Example, If I want to set the switch to unchecked I enter the value False. If the switch is already false then the values are equal and the precondition fails, resulting in ATS NOT executing the _Click/Doubleclick_ action and vice versa. 
 

@@ -57,7 +57,7 @@ The parent element is not an `input` element. Find a child element that ATS can 
 
 ![](attachments/create-unsupported-widget/cab-03-textbox/text-box-childelement-input-debugger.png)
 
-When you create a custom action for an unsupported widget action, you must use the _[Find Widget Child Node](/refguide-ats-1/find-widget-child-node)_ action. This action is a combination of the _[Find/Assert Widget](/refguide-ats-1/findassert-widget)_ and _[Find Element by Sizzle](/refguide-ats-1/find-element-by-sizzle)_ actions, combining the best of both. It’s an official Mendix action. It has all the internal processes and it uses a CSS/jQuery selector to find the child making it flexible. The selector for finding the input element is input. You use this selector in the “Find Widget Child Node” action to find an input element inside the text box widget.
+When you create a custom action for an unsupported widget action, you must use the _[Find Widget Child Node](../refguide-ats-1/find-widget-child-node)_ action. This action is a combination of the _[Find/Assert Widget](../refguide-ats-1/findassert-widget)_ and _[Find Element by Sizzle](../refguide-ats-1/find-element-by-sizzle)_ actions, combining the best of both. It’s an official Mendix action. It has all the internal processes and it uses a CSS/jQuery selector to find the child making it flexible. The selector for finding the input element is input. You use this selector in the “Find Widget Child Node” action to find an input element inside the text box widget.
 
 Before you start creating the action you must know if ATS can find the `input` element within the text box widget. You use the debugger to simulate what ATS does. Since the _Find Widget Child Node_ action uses the `mx-name` to find the parent, you also must use the `mx-name` in your code.
 
@@ -80,7 +80,7 @@ Test step 1 provides the `input` element that you need for the other steps. Next
 
 ![](attachments/create-unsupported-widget/cab-03-textbox/text-box-focusclearelementvalue-add.png)
 
-After focusing the `input` element, you enter the text. When entering text in an `input` element, you use the [_Send Keys_](/refguide-ats-1/send-keys) action. Add the action, connect the input element from step 1 and give a proper description:
+After focusing the `input` element, you enter the text. When entering text in an `input` element, you use the [_Send Keys_](../refguide-ats-1/send-keys) action. Add the action, connect the input element from step 1 and give a proper description:
 
 ![](attachments/create-unsupported-widget/cab-03-textbox/text-box-sendkeys-add.png)
 
@@ -88,7 +88,7 @@ Now that you have entered the text, you can unfocus the `input` element. Add the
 
 ![](attachments/create-unsupported-widget/cab-03-textbox/text-box-unfocuswebelement-add.png)
 
-The last action you add is the [_Mendix Wait_](/refguide-ats-1/mendix-wait). You trigger a possible event in the widget by entering text, so you need to ensure ATS waits for all background processes to finish:
+The last action you add is the [_Mendix Wait_](../refguide-ats-1/mendix-wait). You trigger a possible event in the widget by entering text, so you need to ensure ATS waits for all background processes to finish:
 
 ![](attachments/create-unsupported-widget/cab-03-textbox/text-box-mendix-wait.png)
 
@@ -100,7 +100,7 @@ Next, you add the action input parameters.
 * Search Context
 
 {{% alert type="info" %}}
-Keep the [guidelines for creating a custom action](bestpractices/guidelines-custom-action) in mind while creating action parameters. 
+Keep the [guidelines for creating a custom action](../bestpractices/guidelines-custom-action) in mind while creating action parameters. 
 {{% /alert %}}
 
 The Widget Name input parameter:
