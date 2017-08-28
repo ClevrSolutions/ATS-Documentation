@@ -99,6 +99,10 @@ Next, you add the action input parameters.
 * Value
 * Search Context
 
+{{% alert type="info" %}}
+Keep the [guidelines for creating a custom action](bestpractices/guidelines-custom-action) in mind while creating action parameters. 
+{{% /alert %}}
+
 The Widget Name input parameter:
 
 ![](attachments/create-unsupported-widget/cab-03-textbox/text-box-widgetname-parameter.png)
