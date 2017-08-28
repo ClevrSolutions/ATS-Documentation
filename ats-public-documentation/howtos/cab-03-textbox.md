@@ -69,6 +69,9 @@ When you enter this in the console it looks like this:
 
 ![](attachments/create-unsupported-widget/cab-03-textbox/text-box-childelement-selector.png)
 
+It can happen that the debugger does not return an element. Check if jQuery is available and if you constructed the code in the correct manner.
+When you enter a selector in ATS you don’t use the `$( ‘….’ )` or `jQuery( ‘…..’ )`.
+
 Next, you add the _Find Widget Child Node_ action to your action. Enter the child node selector: `input`, enter the test step description and output description:
 
 ![](attachments/create-unsupported-widget/cab-03-textbox/text-box-findwidgetchildnode-add.png)
