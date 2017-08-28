@@ -127,7 +127,7 @@ The last parameter to connect is the Value parameter. You connect this input par
 
 There is no need to add ‘Logic’ to this custom action. Its only entering text in a widget.
 
-## 6 Last Check
+## 6 Final Check
 
 Now check the following items:
 
