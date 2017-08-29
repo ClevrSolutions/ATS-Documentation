@@ -1,6 +1,6 @@
 ---
 title: "CAB.03 - Textbox"
-parent: "create-unsupported-widget-action"
+parent: "create-unsupported-widget-actions"
 description: "This how-to explains step by step how to create an Unsupported Widget action for the Mendix Textbox widget."
 tags: ["ATS", "testing"]
 ---

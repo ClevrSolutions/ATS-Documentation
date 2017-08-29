@@ -1,6 +1,6 @@
 ---
 title: "CAB.02 - Switch"
-parent: "create-unsupported-widget-action"
+parent: "create-unsupported-widget-actions"
 description: "This how-to explains step by step how to create an Unsupported Widget action for the Mendix switch widget."
 tags: ["ATS", "testing"]
 ---
