@@ -14,6 +14,8 @@ This document explains the best way for finding the action you need in ATS. This
  
 Select the chapter that covers your situation. If you are not sure what covers your situation, use the widget name to search for an action inside ATS and take a look at what pops up.
 
+o straight to chapter 7 for a quick summary and action plan.
+
 {{% alert type="info" %}}
 
 When the ATS recorder does not record any steps, you can use this best practice to find the right action.
