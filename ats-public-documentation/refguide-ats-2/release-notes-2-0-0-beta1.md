@@ -1,25 +1,6 @@
 Date: January 06, 2017
 
-## Changes
-
-* All changes from 1.8 releases
-* new reference guide
-* updated security \(better performance\)
-* Scheduled cleanup of logs
-* Items of the same name in one folder are no longer possible
-* Dashboard calculations have changed
-* Test suite execution type to deal with test case dependencies
-* CI/CD API
-  * templates
-  * WS interface
-* new test runner
-  * improved performance
-  * automatic determination of possible concurrency
-  * live progress update with drill-down up to test case level
-  * improved log output \(better readable\)
-  * reliable job cancelling
-
-### Platform Integration
+## Platform Integration
 
 No one wants to spend time on setting up and configuring an application before using it.
 
@@ -34,14 +15,17 @@ No one wants to spend time on setting up and configuring an application before u
 
 * domain: testing.mendix.com
 
-### Cross-Platform Testing
+## Test Runner
+
+* 
+## Cross-Platform Testing
 
 * OS and browser are now shown in the logs
 * support for selecting the OS when running a test
 
 * responsive testing \(select screen size when running test
 
-### Terminology
+## Terminology
 
 * Package --&gt; Folder
 * Datatypes
@@ -52,8 +36,9 @@ No one wants to spend time on setting up and configuring an application before u
   * Undefined --&gt; Any
   * Boolean --&gt; Boolean
 * project --&gt; app
+* job
 
-### Usability
+## Usability
 
 * new UI
 * autocomplete function to search for actions, test cases or values
@@ -84,6 +69,26 @@ No one wants to spend time on setting up and configuring an application before u
 * log depth settings removed, we now log every step down to core actions
 * enable screenshot \(both on job config and test step config\)
 * quick-run
+
+## More Changes
+
+* All changes from 1.8 releases
+* new reference guide
+* updated security \(better performance\)
+* Scheduled cleanup of logs
+* Items of the same name in one folder are no longer possible
+* Dashboard calculations have changed
+* Test suite execution type to deal with test case dependencies
+* CI/CD API
+  * templates
+  * WS interface
+* new test runner
+  * improved performance
+  * automatic determination of possible concurrency
+  * live progress update with drill-down up to test case level
+  * improved log output \(better readable\)
+  * reliable job cancelling
+  * new statuses and results
 
 ## Minors
 
