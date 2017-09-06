@@ -31,38 +31,33 @@ The Selenium hub ATS uses to execute the test case.
 
 **Browser**
 
-The browser ATS uses to execute the test case in. 
+The browser ATS uses to execute the test case in. The browser version is set automatically by ATS. For supported selenium hub providers, ATS will set following browser versions:
 
-**Operating System**
+* Firefox: Version 45
+* Chrome: Version 53 (Windows XP: Version 49) 
 
-If you have selected a selenium hub from a supported selenium hub provider, you will get access to the operating system selection. ATS uses this selection to execute your test case on that operating system.
-
-<div class="alert alert-info``">
-
-This option is only available for supported Selenium hubs.
-
-</div>
-
-If you want to read more about the different supported operating system, read the [Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
-**Resolution**
-
-This option is only available, if you have selected a selenium hub from a supported selenium hub provider and a valid operating system. With this option, you can set the screen resolution of the operating system you have selected earlier. The available screen resolutions are the supported resolutions for the operating system given by the selenium hub provider.
-
+**Platform Settings**
 <div class="alert alert-info">
 
-This option is only available for supported Selenium hubs.
+These options are only available for supported Selenium hubs.
 
 </div>
+
+**Platform**
+
+If you have selected a selenium hub from a supported selenium hub provider, you will get access to the platform selection. ATS uses this selection to execute your test case on that platform.
+
+
+If you want to read more about the different supported platforms, read the [Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
+
+**Resolution**
+
+This option is only available, if you have selected a selenium hub from a supported selenium hub provider and a valid platform. With this option, you can set the screen resolution of the platform you have selected earlier. The available screen resolutions are the supported resolutions for the platform given by the selenium hub provider.
 
 If you want to read more about the different supported screen resolutions, read the [Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
 
-**Enable Screenshots**
-
-Enable the taking of screenshots during the test run.
-
-**Action Log Depth**
-
-Set the depth of the error logging.
+## Mobile tests on Testobject
+If you have selected Testobject as selenium hub, ATS will automatically set the capabilities needed for running your test on a mobile device. For more informations on testing on mobile devices, read the [mobile section](mobile.md).
 
 After you set the run configuration, you can execute the test case by clicking _Run_ or you can schedule the test case by clicking _Schedule_. 
 If you want to know more about scheduling test cases in ATS, visit the [Scheduling section](scheduling).
