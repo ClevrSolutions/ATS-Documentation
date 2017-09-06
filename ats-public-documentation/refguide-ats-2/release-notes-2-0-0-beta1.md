@@ -1,6 +1,6 @@
 Date: September 18, 2017
 
-## Platform Integration
+## More Platform Integration
 
 No one wants to spend time on setting up and configuring an application before using it.
 
@@ -8,12 +8,23 @@ No one wants to spend time on setting up and configuring an application before u
 * projects are automatically synced from sprintr
 * project administration permission is set for user if he is administrator of the sprintr project
 * deeplink to open project directly \(triggers SSO automatically\)
-
-* improved performance via optimize security rules
-
-* new link to open sprintr project directly from within ATS project
-
 * domain: testing.mendix.com
+
+### A Mendix UI and Rebuild Pages
+
+- new UI
+- autocomplete function to search for actions, test cases or values
+- complete rebuild: repository, results, logs details and test case/action edit page
+- simplified navigation structure
+- centralized settings page per app
+- Unique icons with tooltips
+- Description texts on many pages
+- Drop-downs can now be configured directly within your parameter
+  - drop-down entries are checked to be unique
+- Dashboard
+  - improved performance by precalculating all data
+  - updated after every job
+  - Dashboard calculations have changed​
 
 ## Test Runner
 
@@ -28,59 +39,46 @@ You can't see it, but you'll feel it.
   - improved log output \(better readable\)
   - reliable job cancelling
   - new statuses and results
-## Cross-Platform Testing
+* Test suite execution type to deal with test case dependencies
+### Cross-Platform Testing
 
 * OS and browser are now shown in the logs
 * support for selecting the OS when running a test
 
 * responsive testing \(select screen size when running test
 
-## Terminology
+## Continuous Delivery
 
-* Package --&gt; Folder
-* Datatypes
-  * Integer --&gt; Number
-  * String --&gt; Text
-  * Enumeration --&gt; Drop-Down
-  * Web Element --&gt; Page Element
-  * Undefined --&gt; Any
-  * Boolean --&gt; Boolean
-* project --&gt; app
-* job
-
-## Usability
-
-* new UI
-* autocomplete function to search for actions, test cases or values
-* complete rebuild: repository, results, logs details and test case/action edit page
-* simplified navigation structure
-* centralized settings page per app
-* Unique icons with tooltips
-* Description texts
-* Drop-downs can now be configured directly within your parameter
-  * drop-down entries are checked to be unique
-* Dashboard
-  * improved performance by precalculating all data
-  * updated after every job
-
-
-* ​
+* CI/CD API
+  - templates
+  - WS interface
 
 ## More Changes
 
 * All changes from 1.8 releases
 * new reference guide
-* updated security \(better performance\)
 * Scheduled cleanup of logs
 * Items of the same name in one folder are no longer possible
-* Dashboard calculations have changed
-* Test suite execution type to deal with test case dependencies
-* CI/CD API
-  * templates
-  * WS interface
+* improved performance via optimize security rules
 
-## Removals
+### Terminology
 
+- Package --&gt; Folder
+- project --&gt; app
+- Datatypes
+  - Integer --&gt; Number
+  - String --&gt; Text
+  - Enumeration --&gt; Drop-Down
+  - Web Element --&gt; Page Element
+  - Undefined --&gt; Any
+  - Boolean --&gt; Boolean
+- job
+
+### Removals
+
+Best code is no code. And the best functionality is the one that you don't need.
+
+- Datatypes: DateTime, Float and Currency
 - tenant config
 - TenantAdministrator role
 - libraries/projects/accounts can no longer be created in ATS
@@ -96,7 +94,7 @@ You can't see it, but you'll feel it.
 - enable screenshot \(both on job config and test step config\)
 - quick-run
 
-## Minors
+### Minors
 
 Many bugfixes and small changes, including everything from the 1.8 branch.
 
