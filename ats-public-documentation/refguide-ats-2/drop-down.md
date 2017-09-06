@@ -5,13 +5,14 @@ category: "Reference Guide 2.0"
 ---
 
 ## Drop-Down
-A **Drop-Down** defines a list of options. An input parameter can have the datatype Drop-down which means that you can only choose from the provided options. For example, the status of an order can be _Open_, _Closed_, _In progress_. 
+A **Drop-Down** defines a list of options for an action as input parameter. This means that you can only choose from the provided options. For example, the status of an order can be _Open_, _Closed_, _In progress_. 
 
-The Drop-Down options are always interpreted as text.
-You can create a Drop-Down by clicking **Actions** in the repository and selecting **New Drop-Down**.
-In the opened dialog you can give the Drop-Down a **Name** and an optional **Description**.
+Under the settings tab of your action, you can edit the input and output parameters. 
 
-After clicking **Create** the Drop-Down page will open. There you can edit existing entries and create new ones.
+![](attachments/drop-down/action_add_dropdown.png)
 
-To add entries, click the **New** button and enter a value, this value. There you can edit existing entries and create new ones. 
-You can also change the order of the entries or delete them by clicking the respective buttons.  
+After clicking **New** under *Input Parameters* the *Edit Input Parameter* dialogs will open. There you can set the datatype of the input parameter to Drop-down and add new options to the drop-down by clicking **New**. Note that drop-down values have to be unique, you cannot add two values with the same name.  
+
+![](attachments/drop-down/action_add_dropdown_edit.png)
+
+If you now add the action to a test case, you can chose from the list of drop-down values you have specified, as input for the action. The Drop-Down options are always interpreted as text.
