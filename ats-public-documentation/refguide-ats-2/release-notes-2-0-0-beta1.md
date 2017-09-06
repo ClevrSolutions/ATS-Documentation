@@ -1,4 +1,4 @@
-Date: January 06, 2017
+Date: September 18, 2017
 
 ## Platform Integration
 
@@ -17,7 +17,17 @@ No one wants to spend time on setting up and configuring an application before u
 
 ## Test Runner
 
-* 
+A new hope... äh test runner.
+
+You can't see it, but you'll feel it.
+
+* new test runner
+  - improved performance
+  - automatic determination of possible concurrency
+  - live progress update with drill-down up to test case level
+  - improved log output \(better readable\)
+  - reliable job cancelling
+  - new statuses and results
 ## Cross-Platform Testing
 
 * OS and browser are now shown in the logs
@@ -53,22 +63,8 @@ No one wants to spend time on setting up and configuring an application before u
   * improved performance by precalculating all data
   * updated after every job
 
-## Removals
 
-* tenant config
-* TenantAdministrator role
-* libraries/projects/accounts can no longer be created in ATS
-  * projects and accounts are synced from sprintr
-  * libraries have been removed
-* Folder visibility
-* custom error message removed
-* action type attribute no longer visible
-* parameter type attribute no longer visible
-* proxy settings
-* concurrency limit on selenium endpoint \(no longer required\)
-* log depth settings removed, we now log every step down to core actions
-* enable screenshot \(both on job config and test step config\)
-* quick-run
+* ​
 
 ## More Changes
 
@@ -82,13 +78,23 @@ No one wants to spend time on setting up and configuring an application before u
 * CI/CD API
   * templates
   * WS interface
-* new test runner
-  * improved performance
-  * automatic determination of possible concurrency
-  * live progress update with drill-down up to test case level
-  * improved log output \(better readable\)
-  * reliable job cancelling
-  * new statuses and results
+
+## Removals
+
+- tenant config
+- TenantAdministrator role
+- libraries/projects/accounts can no longer be created in ATS
+  - projects and accounts are synced from sprintr
+  - libraries have been removed
+- Folder visibility
+- custom error message removed
+- action type attribute no longer visible
+- parameter type attribute no longer visible
+- proxy settings
+- concurrency limit on selenium endpoint \(no longer required\)
+- log depth settings removed, we now log every step down to core actions
+- enable screenshot \(both on job config and test step config\)
+- quick-run
 
 ## Minors
 
