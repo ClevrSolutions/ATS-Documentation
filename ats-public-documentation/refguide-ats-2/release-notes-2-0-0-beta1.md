@@ -26,7 +26,7 @@ As soon as you open testing.mendix.com you will be automatically signed in with 
 
 After login the ATS dashboard shows all your licensed apps. From here you will select one of your apps and start testing.
 
-### A Mendix UI and Rebuild Pages
+### New Style and Improved Usability
 
 When you open the new ATS it will look very familiar.
 
@@ -34,40 +34,41 @@ Earlier this year Mendix has released a restyled version of their cloud portal. 
 
 But there's more than only a new styling. We've simplified the navigation structure and reduced the number of screens. Finally the most important screens have been completely rebuild:
 
-Dashboard:
+#### Dashboard
 
-The first screen you see when you open your app in ATS. It shows you all test results and statistics on one page (exportable into a pdf).
+This is the first screen you see when you open your app in ATS. It shows you all test results and statistics on one page (exportable into a pdf).
 
 We have improved the load time of the dashboard by precalculating all required data. It updates as soon as a job has finished.
 
-Repository data browser (navigatable via "Test Cases")
+#### Repository
 
-Test case editing
+Via the repository you can browser all your data: folders, actions, test cases and test suites. We've introduced a new layout on this page that is very much like file system explorers. You can perform actions on a single or many items at once. The powerful search-on-type function will search within subfolders.
 
-Results and logs
+#### Test case editing
 
-- new UI
+Editing test cases is one of the main tasks in ATS. We've listened to your feedback to improve this page. Test cases can become very large, so we use the same list-like view as in the repository to show all test steps. When you click a step it will expand and expose all details for you to edit. Click again to collapse. Reordering of steps has been a pain and is now a joy. We give you drag and drop!
+
+#### Results and logs
+
+Browsing jobs results and logs is another common task. Again we're making use of the same list-view as in repository. Not only to be consistent, but to provider similar functions. Also all jobs are now updated in real-time down to the test case level. Run a big test suite and drill down into the job to see the live status and results of all contained items.
+
+- improved log output (better readable)
 - autocomplete function to search for actions, test cases or values
 - complete rebuild: repository, results, logs details and test case/action edit page
 - centralized settings page per app
-- drag and drop
 - Unique icons with tooltips
 - Description texts on many pages
 
-## Test Runner
+## Faster Test Execution
 
-A new hope... äh test runner.
+- A new hope... err test runner. The core component of ATS is the test runner. It interprets your test cases, test suites and actions, executes them and returns a result. We've rebuilt it from scratch with a single purpose in mind: performance.
 
-You can't see it, but you'll feel it.
+  We achieved to reduce the execution of test cases by 50% and more. This enables you to do more testing in less time.
 
-* new test runner
-  - improved performance
-  - automatic determination of possible concurrency
-  - live progress update with drill-down up to test case level
-  - improved log output \(better readable\)
-  - reliable job cancelling
-  - new statuses and results
-* Test suite execution type to deal with test case dependencies
+  Running test cases in parallel is another way to speed up execution time. While this was already possible before we've optimized it. The runner can now retrieve the supported concurrency level from your Selenium provider. It's no longer up to the user to configure this.
+
+### Test suite execution type to deal with test case dependencies
+
 ### Cross-Platform Testing
 
 * OS and browser are now shown in the logs
@@ -90,6 +91,7 @@ We've extended ATS with a new simple API. Via this API you can start your automa
 * improved performance via optimize security rules
 * Drop-downs can now be configured directly within your parameter
 * drop-down entries are checked to be unique
+* reliable job cancelling
 
 ### Terminology
 
@@ -103,6 +105,7 @@ We've extended ATS with a new simple API. Via this API you can start your automa
   - Undefined --&gt; Any
   - Boolean --&gt; Boolean
 - job
+- new statuses and results
 
 ### Removals
 
