@@ -52,6 +52,8 @@ Editing test cases is one of the main tasks in ATS. We've listened to your feedb
 
 Browsing jobs results and logs is another common task. Again we're making use of the same list-view as in repository. Not only to be consistent, but to provider similar functions. Also all jobs are now updated in real-time down to the test case level. Run a big test suite and drill down into the job to see the live status and results of all contained items.
 
+#### More
+
 - improved log output (better readable)
 - autocomplete function to search for actions, test cases or values
 - complete rebuild: repository, results, logs details and test case/action edit page
@@ -61,11 +63,11 @@ Browsing jobs results and logs is another common task. Again we're making use of
 
 ## Faster Test Execution
 
-- A new hope... err test runner. The core component of ATS is the test runner. It interprets your test cases, test suites and actions, executes them and returns a result. We've rebuilt it from scratch with a single purpose in mind: performance.
+A new hope... err test runner. The core component of ATS is the test runner. It interprets your test cases, test suites and actions, executes them and returns a result. We've rebuilt it from scratch with a single purpose in mind: performance.
 
-  We achieved to reduce the execution of test cases by 50% and more. This enables you to do more testing in less time.
+We achieved to reduce the execution of test cases by 50% and more. This enables you to do more testing in less time.
 
-  Running test cases in parallel is another way to speed up execution time. While this was already possible before we've optimized it. The runner can now retrieve the supported concurrency level from your Selenium provider. It's no longer up to the user to configure this.
+Running test cases in parallel is another way to speed up execution time. While this was already possible before we've optimized it. The runner can now retrieve the supported concurrency level from your Selenium provider. It's no longer up to the user to configure this.
 
 ### Test suite execution type to deal with test case dependencies
 
