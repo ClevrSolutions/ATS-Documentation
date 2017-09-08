@@ -54,46 +54,59 @@ Browsing jobs results and logs is another common task. Again we're making use of
 
 #### More
 
+TODO: either remove completely, include in text here or move to collection of changes at the end of the document
+
 - improved log output (better readable)
 - autocomplete function to search for actions, test cases or values
-- complete rebuild: repository, results, logs details and test case/action edit page
 - centralized settings page per app
-- Unique icons with tooltips
+- Application wide type icons with tooltips
 - Description texts on many pages
 
 ## Faster Test Execution
 
 A new hope... err test runner. The core component of ATS is the test runner. It interprets your test cases, test suites and actions, executes them and returns a result. We've rebuilt it from scratch with a single purpose in mind: performance.
 
-We achieved to reduce the execution of test cases by 50% and more. This enables you to do more testing in less time.
+We achieved to increase the speed of test execution by 100% and more. This enables you to do more testing in less time.
 
 Running test cases in parallel is another way to speed up execution time. While this was already possible before we've optimized it. The runner can now retrieve the supported concurrency level from your Selenium provider. It's no longer up to the user to configure this.
 
-### Test suite execution type to deal with test case dependencies
+### Get a Grip On Test Case Dependencies
+
+While not preferred it is sometimes not avoidable to have dependencies between test cases. If there's a dependency between two test cases you need to run them in order. There's no way around that. But this should not affect other test cases without this dependency.
+
+So far, your only option was to scale down your concurrency and run everything sequentially. Effectively you had to give up the time win of concurrency. This is no longer necessary.
+
+We've introduced a new setting for test suites. With this setting you can control whether the content of your test suite is executed in parallel or sequentially.
+
+The best part of this new setting is that you can combine test suites with different settings and create any structure that you need. Sequentialize where necessary, parallelize where possible and get your test results in the shortest possible time.
 
 ### Cross-Platform Testing
 
-* OS and browser are now shown in the logs
-* support for selecting the OS when running a test
+Mendix apps are cross-platform and responsive. Your users can access your app from different browsers, operating systems and screen resolutions. To ensure quality across all platforms you'll need to cover more than just one configuration.
 
-* responsive testing \(select screen size when running test
+It was already possible to switch between Chrome and Firefox browser. On top of that it is now possible to select between different operating systems and screen sizes.
+
+Since the number of possible options is very high, we've made a pre-selection that gives you a good real-world coverage. You can select between two browsers, 8 operating systems and 5 screen resolutions.
+
+Browsers: Chrome and Firefox (Internet Explorer 11 & Edge are planned)
+
+Operating systems: Windows 10/8/7/XP & Mac OS 10.9 - 10.12
+
+Screen resolutions: FullHD (1920x1080), UXGA (1600x1200), SXGA (1280x1024), UVGA (1280x960), XGA (1024x768)
 
 ## Introducing an API for Continuous Delivery & Deployment
 
 Do you plan or already do practice DevOps in your team? Then you'll want to put in place continous delivery or even continuous deployment. To do so you'll need to automate as much as possible. Also the testing. Not only by automating the tests itself, but by automating the whole process. From triggering the test run to checking the results. With ATS this is now possible.
 
-We've extended ATS with a new simple API. Via this API you can start your automated tests in ATS from any external tool. A good option for such a tool is Jenkins. We've documented how to setup Jenkins with ATS in a how to.
+We've extended ATS with a new simple API. Via this API you can run your automated tests from any external tool. A good option for such a tool is Jenkins. We've documented how to setup Jenkins with ATS in a how to.
 
-## More Changes
+## More Changes & Fixes
 
-* All changes from 1.8 releases
-* new reference guide
-* Scheduled cleanup of logs
-* Items of the same name in one folder are no longer possible
-* improved performance via optimize security rules
-* Drop-downs can now be configured directly within your parameter
-* drop-down entries are checked to be unique
-* reliable job cancelling
+* There's a completely new reference guide for 2.0
+* We've introduced a new setting per app to schedule the cleanup of your exeucution logs. The default retention time for your logs is 90 days. The last log of a test case is always kept.
+* We've improved overall performance by optimizing security rules.
+* Drop-downs are now configured as part of a parameter where they're used. They are no longer considered independent but only an option for parameters.
+* The cancelling of jobs was sometimes not reliable. We've fixed this.
 
 ### Terminology
 
@@ -106,30 +119,27 @@ We've extended ATS with a new simple API. Via this API you can start your automa
   - Web Element --&gt; Page Element
   - Undefined --&gt; Any
   - Boolean --&gt; Boolean
-- job
-- new statuses and results
+- job as a new term for test run
+- new statuses and results in the test runner
+  - Status: Queued, Running, Done
+  - Result: Passed, Failed, Cancelled, Skipped
 
 ### Removals
 
-Best code is no code. And the best functionality is the one that you don't need.
-
 Some of above described changes made existing functionality obsolete so we could remove it.
 
-- Datatypes: DateTime, Float and Currency
-- tenant config removed
-- TenantAdministrator role
-- libraries/projects/accounts can no longer be created in ATS
-  - projects and accounts are synced from sprintr
-  - libraries have been removed
-- Folder visibility
-- custom error message removed
-- action type attribute no longer visible
-- parameter type attribute no longer visible
-- proxy settings
-- concurrency limit on selenium endpoint \(no longer required\)
-- log depth settings removed, we now log every step down to core actions
-- enable screenshot \(both on job config and test step config\)
-- quick-run
+- The whole setup and administration of tenants, apps, permissions, accounts and roles has become obsolete and is no longer available.
+- The option to set the concurrency limit for a selenium endpoint has been removed. The limit is determined by the test runner.
+- The log depth settings has been removed. We now log every step down in your test cases and custom actions down to the core actions.
+
+The following features have been removed as a result of design decisions:
+
+* Datatypes: DateTime, Float and Currency (deprecated now and will be removed soon)
+* Folder visibility
+* custom error message removed
+* proxy settings
+* enable screenshot \(both on job config and test step config\)
+* quick-run
 
 ### Minors
 
