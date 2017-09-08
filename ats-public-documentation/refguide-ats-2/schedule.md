@@ -25,29 +25,26 @@ The following schedule settings are available:
 | Environment         | Set the environment on which the test should run |
 | Selenium Hub       | Set the Selenium hub on which the test is executed |
 | Browser            | Set the browser in which the test is run (Chrome or Firefox) |
-| Enable Screenshots | Enable screenshots during the test run   |
-| Action Log Depth   | Set depth of the error logging           |
 
-**Operating System**
-
-If you have selected a selenium hub from a supported selenium hub provider (TestingBot, SauceLabs or Browserstack), you will get access to the operating system selection. Here you can set the operating system, on which the test case will be run on.
-
+**Platform**
 <div class="alert alert-info">
 
 This option is only available for supported Selenium hubs.
 
 </div>
+
+If you have selected a selenium hub from a supported selenium hub provider (TestingBot, SauceLabs or Browserstack), you will get access to the platform settings. Here you can set the operating system, on which the test case will be run on.
 
 If you want to read more about the different supported operating system, read the [Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
 
 **Resolution**
-
-This option is only available if you have selected a selenium hub from a supported selenium hub provider and a valid operating system. With this option, you can set the screen resolution of your test run. The available screen resolutions are the supported resolutions for the operating system given by the selenium hub provider.
-
 <div class="alert alert-info">
 
 This option is only available for supported Selenium hubs.
 
 </div>
 
-If you want to read more about the different supported screen resolutions, read the [Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
+With this option, you can specify the screen resolution for your test run. A list of all supported screen resolutions can be found in the 
+[Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
+
+
