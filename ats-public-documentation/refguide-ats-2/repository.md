@@ -6,13 +6,22 @@ category: "Reference Guide 2.0"
 
 ## Repository
 
-The Repository is the heart of ATS, since it allows to create and manage folders, test suites, test cases, Drop-Downs and actions. You can also create test data for data-driven testing. For more information on how to use data-driven testing in ATS, see [Test Data](test-data). The repository can be accessed by clicking **Test Cases** in the navigation menu.
+The Repository is the heart of ATS, since it allows to create and manage folders, test suites, test cases, Drop-Downs and actions. You can also create test data for data-driven testing. For more information on how to use data-driven testing in ATS, see [Test Data](test-data). You can access the repository by clicking Test Cases in the navigation menu. 
 
 ![Repository](attachments/repository/repository.png)
 
-You can search for a specific item, by using the search bar in the repository. ATS will search for the desired item in the current folder and all subfolders. This means that if you start searching from a folder, other than the root folder, ATS will only look inside that folder and his subfolders.
+You can search for a specific item, by using the search bar in the repository. ATS will search for the desired item in the current folder and all subfolders. So if you start searching ATS will only search inside your current folder and its subfolders.
 
 The breadcrumbs in the repository allow quick navigation between folders. Click the name of the folder to go back to that parent folder.  
+
+With the type icons on the left side of the item name, you can identify at a glance the type of an item. Following table describes all type icons, used in the repository: 
+
+| Icon | Meaning |
+| --- | --- |
+| ![Folder](attachments/repository/folder-icon.png) | Folder | 
+| ![Test case](attachments/repository/test-case-icon.png)| Test case |
+| ![Test suite](attachments/repository/test-suite-icon.png)| Test suite |
+| ![Action](attachments/repository/action-icon.png)| Action |
 
 If you want to cut, copy or delete an item in the repository, you can do so by marking it with the checkbox. After that, the actions become available.
 
@@ -42,10 +51,10 @@ You can export the following data:
 
 There are two ways of using the import: _create data_ and _update data_.
  
-_Create data_ means that you will be importing new data for the first time into your target project. 
-_Update data_ means that you will be importing data that will overwrite existing data, thus updating actions, test cases, test suites or folders.
+_Create data_ means that you will be importing new data for the first time into your target project.
+_Update data_ means that you will overwrite existing data. This includes actions, test cases, test suites or folders.
 
-When importing data, ATS will solve all data conflicts by overwriting the existing properties by the imported ones.
+When importing, ATS will solve all conflicts by overwriting existing data with the imported ones.
 
 To import data in ATS do the following:
 
