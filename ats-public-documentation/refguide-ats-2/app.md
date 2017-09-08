@@ -9,37 +9,42 @@ category: "Reference Guide 2.0"
 
 ## Dashboard
 
-The dashboard is the point of ATS, where you can find all informations about the results of your tests. It is split into three parts: **Status**, **Details** and **History**
+The dashboard is the point of ATS, where you can find all informations about the results of your tests. It is split into two parts: **Current Status and 7-Day History** infographics and the **Recent Tests** result tree. 
 
-### Status
+![Dashboard](attachments/project/dashboard.png)
 
-Status is the first thing you will see, if you log in to ATS. The chart will show you the current state of your tests.
-It includes the results of all your test cases. For data driven tests, only the aggregated result out of the execution with the records of the dataset is counted, similar like it is done for a testsuite.
+### Infographics
 
-| Result type  | Meaning                                  |
-| ------------ | ---------------------------------------- |
-| Passed       | Number of tests which ran successfull.   |
-| Failed       | Number of failed tests.                  |
-| Canceled     | Number of tests canceled by the user manually |
-| Not executed | Number of tests which haven't been executed yet |
-| Unknown      | Number of tests where the status is unknown. |
+The infographics are the first thing you will see, if you open your app in ATS. These charts will show you the current status and the states of the past seven days of your tests. It includes the results of all your test cases. Datadriven tests are counted as a single test case. 
 
-You can export the current results of your test cases by pressing **Download Report **. This will generate a detailed test report for your project as pdf document. 
+For the 7-days history, everyday at 23:59 UTC, a snapshot of the current test states is taken.
 
-### Details
-Under **Details** you can find detailed informations for all of your test cases and test suites. You can see the passed time since the latest execution, its result and the success rate. For test suites, the success rate is calculated using the results of all containing test cases. For data driven tests, the success rate is calculated on basis of the execution results of all records from the data set, they were executed with. The data set is displayed under **test data**.
+You can generate a report of the status of your tests by pressing **Download Report**. After the generation is finished, your browser will download the report as a PDF document. 
 
-You can open the latest execution log of a test case by pressing **Show Log**. Clicking the **name of a test case/test suite** will open the edit form. 
+### Recent Tests
+Under **Recent Tests** you can find detailed informations about the status of all your test cases and test suites. You can see the passed time since the latest run, its result and for test suites the success rate. The success rate is calculated using the results of all containing test cases. For data driven tests, the data set is displayed in the column **test data**.
 
-There are two icons for distinguishing between test cases and test suites.
+The results of your tests are displayed as icons. The following table explaines the meanings of those icons:
+
+| Icon | Meaning |
+| ---- | ------- |
+|![Passed](attachments/project/passed-icon.png)| Passed. The test was run successfully |
+|![Failed](attachments/project/failed-icon.png)| Failed. The test has failed |
+|![Canceled](attachments/project/canceled-icon.png)| Canceled. The test was canceled by a user before finishing |
+|![Skipped](attachments/project/skipped-icon.png)| Skipped. The execution of this test was skipped or it hasen't been run yet |
+
+There are three icons for distinguishing between test cases, test suites and datadriven test cases.
 
 | Icon                                     | Meaning    |
 | ---------------------------------------- | ---------- |
 | ![Test Case](attachments/project/test-case-icon.png) | Test Case  |
 | ![Test Suite](attachments/project/test-suite-icon.png) | Test Suite |
+| ![Datadriven Test Case](attachments/project/ddt-icon.png)| Datadriven Test Case|
 
-### History
-The history shows the results of the past seven days in a line-chart. 
+
+You can open the latest execution log of a test case by pressing **Show Log**. Clicking the **name of a test case/test suite** will open the edit page. 
+
+
 
 ## Permissions
 We have two roles in ATS, which are assigned to the user by the system itself. The role tester is assigned to a user, when he has at least one teamserver project licensed in ATS. He is going to be app admin, if he has the app settings permission of the teamserver project in Sprintr. The app settings permission is by default part of the SCRUM Master role in Sprintr.
@@ -54,18 +59,14 @@ Settings is the central point to configure ATS. Here you can set the Mendix API 
 
 Only project administrators can edit the settings. All other users can only view the available deployments and selenium hubs.
 
-![Settings](attachments/project/settings.JPG)
+![Settings](attachments/project/settings.png)
 
 {% endmarkdown %}</div>
 
-### Mendix API Key
-The Mendix API Key is used to synchronize stories between sprintr and ATS.
-You will have to set this key, otherwise you cannot use the project stories in ATS.
-Visit [Authentication](../apidocs/authentication), for more informations about where to find the API Keys of your Mendix project.
 
-### Deployments
+### Environments
 
-Under **Deployments**, you can see a list of deployment locations, that are configured for the current project. Those will be selectable, to use as target test applications.
+Under **Environments**, you can see a list of deployment locations, that are configured for the current project. Those will be selectable, to use as target test applications.
 
 You can edit, create, and delete applications by pressing the buttons in the top bar:
 
@@ -90,11 +91,21 @@ In the "Edit Selenium Hub" dialog, you can set the following parameters:
 | ------------------- | ---------------------------------------- |
 | Name                | The name of the Selenium hub.            |
 | URL                 | The URL of the Selenium server.          |
-| Parallel Sessions   | The number of tests that can run in parallel on the Selenium hub. |
-| Use proxy           | Tells ATS to use the proxy. Usually there is no need to use a proxy server. |
-| Proxy URL           | The URL of an optional proxy server. This is only visible, if "Use proxy" is checked |
 | Custom Capabilities | Set the Selenium DesiredCapabilities (for more information, see the Selenium documentation). |
+
+ATS automatically retrieves the parallel test session limit from the selenium hub. This limit is updated every 15 minutes. If ATS is not able to get the limit from the selenium hub, it is set to one single test execution at a time.  
 
 ### Execution log cleanup
 
-ATS automatically delete execution logs that are older than 90 days. You can change here, for how many days ATS will keep the execution logs. ATS will keep the execution logs at least for one day.
+ATS automatically deletes execution logs that are older than 90 days. You can change here, for how many days ATS will keep the execution logs. ATS will keep the execution logs at least for one day.
+
+### Mendix API Key
+The Mendix API Key is used to synchronize stories between sprintr and ATS.
+You will have to set this key, otherwise you cannot use the project stories in ATS. Be aware, that after you have set the Mendix API Key, you won't be able to see it again. You can only set a new API key.
+
+Visit [Authentication](../apidocs/authentication), for more informations about where to find the API Keys of your Mendix project.
+
+### CI/CD API key
+The CI/CD API key is used to allow other systems or applications access to the ATS CI/CD API. Generating a new API key will revoke access for any systems using the old API key. These systems will not be able to access the ATS CI/CD API until they are updated with the new API key. Make sure to save the displayed API key in a secure place, as you cannot view it again in ATS. 
+
+For more informations about the CI/CD API visit the [CI/CD API section](cicd-api.md) of this documentation. 

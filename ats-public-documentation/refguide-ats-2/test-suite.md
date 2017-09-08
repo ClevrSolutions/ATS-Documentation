@@ -15,7 +15,9 @@ A dialog will open where you can give your test suite a name and an optional des
 
 On the top left of the **Test Suite Details** page, you will find the name and the description of the test case.  To change them, click them and edit the text. ATS will save the changes automatically. 
 
-On the top right of the page, you will find the **Export** and **Run** dropdowns:
+With the **parallel/sequential switch**, you can change the run behaviour of the test suite. If it is set to _parallel_, ATS will try to run all containing tests of your test suite in parallel. This is limited through the concurrency limit of your selenium hub. With the switch set to _sequential_, the tests will run in succession.
+
+On the top right of the page, you will find the **Export** and **Run** buttons:
 
 #### Export
 
@@ -27,8 +29,7 @@ On the top right of the page, you will find the **Export** and **Run** dropdowns
 
 | Name                   | Description                              |
 | ---------------------- | ---------------------------------------- |
-| Run                    | If you executed the test suite before, it will run with the configuration of the previous run. Otherwise the [run configuration page](test-run) will open.  |
-| Edit Run Configuration | Opens the [run configuration](test-run) for the test suite. |
+| Run                    | The [run configuration page](test-run) will open, where you can edit the run configuration. If the test suite was run before, the prior configuration will be copied.  |
 
 ### Test Steps
 

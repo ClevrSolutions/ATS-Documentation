@@ -44,11 +44,6 @@ Regular test steps are the flesh and bone of your test case. They cover the main
 
 Teardown test steps are automatically moved to the end of a test. They should be used to undo the changes your test case made in the application. Failing teardown test steps do not affect the result of a test case. 
 
-
-## Screenshot
-By checking the screenshot checkbox, ATS will take a screenshot of the corresponding test step during the run.
-Note that screenshots will only be taken, if screenshots are enabled in the [Run Configuration](test-run).
-
 ## Action Parameter
 Action parameters are the input parameters of the selected test step action. ATS marks required input parameter with an asterisk and writes them in bold.
 

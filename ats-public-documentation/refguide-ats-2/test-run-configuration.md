@@ -44,20 +44,25 @@ These options are only available for supported Selenium hubs.
 </div>
 
 **Platform**
+<div class="alert alert-info">
 
-If you have selected a selenium hub from a supported selenium hub provider, you will get access to the platform selection. ATS uses this selection to execute your test case on that platform.
+This option is only available for supported Selenium hubs.
 
+</div>
 
-If you want to read more about the different supported platforms, read the [Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
+If you have selected a selenium hub from a supported selenium hub provider (TestingBot, SauceLabs or Browserstack), you will get access to the platform settings. Here you can set the operating system, on which the test case will be run on.
+
+If you want to read more about the different supported operating system, read the [Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
 
 **Resolution**
+<div class="alert alert-info">
 
-This option is only available, if you have selected a selenium hub from a supported selenium hub provider and a valid platform. With this option, you can set the screen resolution of the platform you have selected earlier. The available screen resolutions are the supported resolutions for the platform given by the selenium hub provider.
+This option is only available for supported Selenium hubs.
 
-If you want to read more about the different supported screen resolutions, read the [Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
+</div>
 
-## Mobile tests on Testobject
-If you have selected Testobject as selenium hub, ATS will automatically set the capabilities needed for running your test on a mobile device. For more informations on testing on mobile devices, read the [mobile section](mobile.md).
+With this option, you can specify the screen resolution for your test run. A list of all supported screen resolutions can be found in the 
+[Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
 
 After you set the run configuration, you can execute the test case by clicking _Run_ or you can schedule the test case by clicking _Schedule_. 
 If you want to know more about scheduling test cases in ATS, visit the [Scheduling section](scheduling).
