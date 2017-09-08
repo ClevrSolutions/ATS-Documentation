@@ -6,8 +6,6 @@ Getting started with ATS has never been easier. We've invested to make the onboa
 
 We did so by providing a single, multi-tenant SaaS instance of ATS in the Mendix cloud. This instance comes with the same styling and usability as the Mendix cloud portals.
 
-No one wants to spend time on setting up and configuring an application before using it.
-
 ### Application Test Suite as a Service
 
 ATS is now offered as a service. There's a single, multi-tenant instance in the Mendix cloud to serve all customers: 
