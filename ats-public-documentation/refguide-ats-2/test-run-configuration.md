@@ -1,9 +1,9 @@
 ---
-title: "Test Run Configuration"
+title: "Job Configuration"
 space: "ATS Add-On"
 parent: "Test Run"
 ---
-## Test Run Configuration
+## Job Configuration
 
 To run an existing test, you have to open the test case or test suite by clicking its name in the repository.
 
@@ -11,7 +11,7 @@ The test case (or test suite) details page will open. On this page, you can see 
 
 ![Test case details run](attachments/test-run/test-case-details-run.png)
 
-The _Select Run Configuration_ page will open. On this page, you can set the run configuration for the test case (or test suite) you want to execute.
+The _Job Configuration_ page will open. On this page, you can set the job configuration for the test case (or test suite) you want to execute. For every test run, a new job will be created.
 
 ![Test Run Configuration](attachments/test-run/runconfig.png)
 
