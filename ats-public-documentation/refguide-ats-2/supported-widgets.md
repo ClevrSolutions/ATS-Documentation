@@ -8,6 +8,9 @@ category: Reference Guide 2.0
 
 
 DataGrid
+
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Click DataGrid Row               | Click a DataGrid Row by Column Value     |
 | Find/Assert DataGrid Row         | Find/Assert a DataGrid Row by a certain Column Value |
 | Find Item/Row                    | Find a Row/Item in a DataGrid, TemplateGrid or ListView by Index |
