@@ -7,7 +7,7 @@ category: Reference Guide 2.0
 ## Supported Widgets
 
 
-DataGrid
+### DataGrid
 
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
@@ -23,7 +23,9 @@ DataGrid
 | Set Row Cell Value               | Sets the Cell Value in a DataGrid row    |
 | Sort DataGrid                    | Sorts DataGrid by given Column           |
 
-TemplateGrid
+### TemplateGrid
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Find Item/Row                    | Find a Row/Item in a DataGrid, TemplateGrid or ListView by Index |
 | Find Item/Row (by child element) | Finds Item or Row of a TemplateGrid, DataGrid or ListView containing a specified element |
 | Find Selected Item/Row           | Returns first selected Item/Row object   |
@@ -31,7 +33,9 @@ TemplateGrid
 | Get Total Item/Row Count         | Gets the total grid count from the paging status |
 | Get Visible Item/Row Count       | Returns number of currently visible Items/Rows in a TemplateGrid, DataGrid or ListView |
 
-ListView
+### ListView
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Find Item/Row                    | Find a Row/Item in a DataGrid, TemplateGrid or ListView by Index |
 | Find Item/Row (by child element) | Finds Item or Row of a TemplateGrid, DataGrid or ListView containing a specified element |
 | Find Selected Item/Row           | Returns first selected Item/Row object   |
@@ -41,28 +45,38 @@ ListView
 | Set ListView Search              | Sets the ListView Search Text            |
 | Click Widget Button       	   | Refresh Button / Loadmore / ClearSearchField (ListView) Goto, / Add (ReferenceSelector) |
 
-File Manager
+### File Manager
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Set File Manager | Set a file manager to the given file path to upload a file |
 
-GroupBox
+### GroupBox
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Close GroupBox        | Close a groupbox                         |
 | GroupBox is Collapsed | Get GroupBox Collapsed state: true if collapsed, otherwise false |
 | Open GroupBox         | Open a groupbox                          |
 
-ConfirmationDialog
+### ConfirmationDialog
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Cancel Dialog           | Click Cancel on a Confirmation Dialog    |
 | Close Dialog            | Click X Button on a Confirmation, Error, Warning or Info Dialog |
 | Confirm Dialog          | Click Proceed/Ok Button on a Confirmation, Error, Warning or Info Dialog |
 | Find/Assert Dialog      | Find/Assert a Dialog by Title or Type    |
 | Get Dialog Message Text | Get the text from message and confirmation dialogs |
 
-Window
+### Window
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Close Dialog            | Click X Button on a Confirmation, Error, Warning or Info Dialog |
 | Find/Assert Dialog      | Find/Assert a Dialog by Title or Type    |
 
 A _Window_ is rendered when a page is opened as a popup.
 
-DialogMessage
+### DialogMessage
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Close Dialog            | Click X Button on a Confirmation, Error, Warning or Info Dialog |
 | Confirm Dialog          | Click Proceed/Ok Button on a Confirmation, Error, Warning or Info Dialog |
 | Find/Assert Dialog      | Find/Assert a Dialog by Title or Type    |
@@ -70,7 +84,9 @@ DialogMessage
 
 Show message actions in microflows result in _DialogMessage_ widgets.
 
-ReferenceSelector
+### ReferenceSelector
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Click Widget Button   | Refresh Button / Loadmore / ClearSearchField (ListView) Goto, / Add (ReferenceSelector) |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Dropdown has Option   | Returns true if value is available in dropdown |
@@ -79,28 +95,38 @@ ReferenceSelector
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 | Set Value (by index)  | Set the value of a dropdown by index, e.g. EnumSelect or ReferenceSelector |
 
-CheckBox
+### CheckBox
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Checkbox Value | Assert the value of a Checkbox           |
 | Get Checkbox Value    | Returns true if the Checkbox is checked  |
 | Set Checkbox Value    | Sets the value of a Checkbox             |
 | Toggle Checkbox Value | Click on a Checkbox to toggle its value  |
 
-TextBox
+### TextBox
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Get Value             | Get the text value from a Textbox, Textarea, Dateinput, RadioButton, Dropdowns |
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
-TextArea
+### TextArea
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Get Value             | Get the text value from a Textbox, Textarea, Dateinput, RadioButton, Dropdowns |
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
-DatePicker
+### DatePicker
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Get Value             | Get the text value from a Textbox, Textarea, Dateinput, RadioButton, Dropdowns |
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
-DropDown
+### DropDown
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Dropdown has Option   | Returns true if value is available in dropdown |
 | Get Index             | Get index of selected value in a dropdown, e.g. an EnumSelect or ReferenceSelector |
@@ -108,17 +134,23 @@ DropDown
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 | Set Value (by index)  | Set the value of a dropdown by index, e.g. EnumSelect or ReferenceSelector |
 
-RadioButton
+### RadioButton
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Get Value             | Get the text value from a Textbox, Textarea, Dateinput, RadioButton, Dropdowns |
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
-SearchInput Text
+### SearchInput Text
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Get Value             | Get the text value from a Textbox, Textarea, Dateinput, RadioButton, Dropdowns |
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
-SearchInput DropDown
+### SearchInput DropDown
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Dropdown has Option   | Returns true if value is available in dropdown |
 | Get Index             | Get index of selected value in a dropdown, e.g. an EnumSelect or ReferenceSelector |
@@ -126,43 +158,61 @@ SearchInput DropDown
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 | Set Value (by index)  | Set the value of a dropdown by index, e.g. EnumSelect or ReferenceSelector |
 
-Label
+### Label
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Get Value             | Get the text value from a Textbox, Textarea, Dateinput, RadioButton, Dropdowns |
 
-OnChange Inputbox
+### OnChange Inputbox
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Get Value             | Get the text value from a Textbox, Textarea, Dateinput, RadioButton, Dropdowns |
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
-NavigationTree
+### NavigationTree
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Click Menu Item       | Click on a Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 | Find/Assert Menu Item | Find/Assert a visible Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 
-MenuBar
+### MenuBar
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Click Menu Item       |  Click on a Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 | Find/Assert Menu Item | Find/Assert a visible Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 
-SimpleMenuBar
+### SimpleMenuBar
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Click Menu Item       | Click on a Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 | Find/Assert Menu Item | Find/Assert a visible Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 
-TabContainer
+### TabContainer
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Active Tab Caption | Assert a certain value for the caption of the active tab page |
 | Get Active Tab Caption    | Returns the caption of the active tab page |
 
-Boolean Slider
+### Boolean Slider
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert BooleanSlider Value | Asserts the value of the BooleanSlider Appstore Widget (String) |
 | Get BooleanSlider Value 	 | Returns the current active text value from the BooleanSlider Appstore Widget |
 | Set BooleanSlider Value 	 | Sets the given text as active value for the BooleanSlider appstore widget |
 | Toggle BooleanSlider Value | Clicks the BooleanSlider widget to toggle its value. This will invert the current value of the BooleanSlider |
 
-BootstrapRTE
+### BootstrapRTE
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert BootstrapRTE Value  | Asserts that the BootstrapRTE value is equal to the given value |
 | Get BootstrapRTE Value 	 | Returns the current BootstrapRTE value as an HTML string |
 | Set BootstrapRTE Value 	 | Sets the given value as current value for the BootstrapRTE value. Strings can be formatted via HTML code |
 
-Checkbox Set Selector
+### Checkbox Set Selector
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Checkbox Set Selector Value | Finds the check box by the column caption and its cell value and asserts that the check box is set to the given value |
 | Find Checkbox Set Selector | Finds the select all check box |
 | Find Checkbox Set Selector (All) | Finds a check box by given cell value and column caption. Returns the first match |
@@ -173,16 +223,22 @@ Checkbox Set Selector
 | Toggle Checkbox Set Selector Value | Finds the check box via the column caption and cell value. Inverts the value |
 | Toggle Checkbox Set Selector Value (All) | Finds check box by given entity attribute and inverts the value |
 
-CK Editor
+### CK Editor
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert CKEditor Value | Compares the CKEditor value with the given value |
 | Get CKEditor Value | Returns the CKEditor value as HTML code |
 | Set CKEditor Value | Sets the given value as current value for the CKEditor value. The value can be formatted via HTML code |
 
-Dropdown Div Converter
+### Dropdown Div Converter
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Click Drop-Down div Converter Drop-Down Button | Clicks the dropdown button of the drop-down div converter to expand the drop-down menu |
 | Click Drop-Down div Converter Split Button | Clicks the split button of the drop-down div converter |
 
-Grid Selector
+### Grid Selector
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Grid Selector Value | Asserts the value of the check box and the radio button inside the Grid Selector Widget |
 | Find Grid Selector Box | Find check box and radio button by column and row caption |
 | Get Grid Selector Box Value | Returns the current check box and radio button value |
@@ -190,12 +246,16 @@ Grid Selector
 | Set Grid Selector RadioButton Value | Finds the radio button by column and row caption. Sets it to be checked |
 | Toggle Grid Selector Checkbox Value | Inverses the check box found by the given column and row caption |
 
-Input Reference Selector
+### Input Reference Selector
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert InputReferenceSelector Value | Asserts that the InputReferenceSelector has the given value |
 | Get InputReferenceSelector Value | Returns the current value of the InputReferenceSelector |
 | Set InputReferenceSelector Value | Set the InputReferenceSelector to the given value |
 
-Simple Checkbox Set Selector
+### Simple Checkbox Set Selector
+| Action                           | Description                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Simple Checkbox Set Selector Value | Asserts that the check box found by the given value is checked or cleared |
 | Find Simple Checkbox Set Selector | Finds the check box by the given value |
 | Get Simple Checkbox Set Selector Value | Returns the current value of the found check box |
