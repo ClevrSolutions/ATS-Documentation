@@ -17,6 +17,7 @@ These are the main documents in this category:
 * [Results](results)
 * [Schedule](schedule)
 * [Action reference](action-reference)
+* [Supported Widgets](supported-widgets)
 * [Recorder](recorder)
 * [ATS Helper](ats-helper)
 * [Selectors](selectors)
