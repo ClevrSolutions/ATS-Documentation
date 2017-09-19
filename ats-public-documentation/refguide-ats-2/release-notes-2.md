@@ -12,7 +12,7 @@ ATS is now offered as a service. There's a single, multi-tenant instance in the 
 
 <http://testing.mendix.com>
 
-This instance is operated and maintained by Mansystems and Mendix. As a customer you enjoy the typical SaaS benefits.  Mansystems and Mendix deliver maintenance, updates, and fixes faster than ever. You can access new features as soon as we publish a new release.
+This instance is operated and maintained by Mansystems and Mendix. As a customer you can enjoy the typical SaaS benefits. Mansystems and Mendix deliver maintenance, updates, and fixes faster than ever. You can access new features as soon as we publish a new release.
 
 All customers can use this instance without affecting each others work. Data is strictly separated per app. Every user can only access data from his apps.
 
@@ -20,9 +20,9 @@ All customers can use this instance without affecting each others work. Data is 
 
 You don't want to spend time on setting up and configuring an application before using it the first time? We agree!
 
-As soon as you open testing.mendix.com you will be automatically signed in with your Mendix account. 
+As soon as you open <http://testing.mendix.com> you will be automatically signed in with your Mendix account. 
 
-After login the ATS dashboard shows all your licensed apps. From here you will select one of your apps and start testing.
+After login the ATS dashboard shows all your licensed apps. From here you can select one of your apps and start testing.
 
 ### New Style and Improved Usability
 
@@ -40,7 +40,7 @@ We have improved the load time of the dashboard by precalculating all required d
 
 #### Repository
 
-Via the repository you can browser all your data: folders, actions, test cases and test suites. We've introduced a new layout on this page that is very much like file system explorers. You can perform actions on a single or many items at once. The powerful search-on-type function will search within subfolders.
+Via the repository you can browse all your data: folders, actions, test cases and test suites. We've introduced a new layout on this page similar to file system explorers. You can perform actions on a single item or many items at once. The powerful search-on-type function will search within subfolders.
 
 #### Test case editing
 
@@ -48,17 +48,7 @@ Editing test cases is one of the main tasks in ATS. We've listened to your feedb
 
 #### Results and logs
 
-Browsing jobs results and logs is another common task. Again we're making use of the same list-view as in repository. Not only to be consistent, but to provider similar functions. Also all jobs are now updated in real-time down to the test case level. Run a big test suite and drill down into the job to see the live status and results of all contained items.
-
-#### More
-
-TODO: either remove completely, include in text here or move to collection of changes at the end of the document
-
-- improved log output (better readable)
-- autocomplete function to search for actions, test cases or values
-- centralized settings page per app
-- Application wide type icons with tooltips
-- Description texts on many pages
+Browsing jobs results and logs is another common task. Again we're making use of the same list-view as in repository. Not only to be consistent, but to provide similar functions. Also all jobs are now updated in real-time down to the test case level. Run a big test suite and drill down into the job to see the live status and results of all contained items.
 
 ## Faster Test Execution
 
@@ -96,20 +86,25 @@ Screen resolutions: FullHD (1920x1080), UXGA (1600x1200), SXGA (1280x1024), UVGA
 
 Do you plan or already do practice DevOps in your team? Then you'll want to put in place continous delivery or even continuous deployment. To do so you'll need to automate as much as possible. Also the testing. Not only by automating the tests itself, but by automating the whole process. From triggering the test run to checking the results. With ATS this is now possible.
 
-We've extended ATS with a new simple API. Via this API you can run your automated tests from any external tool. A good option for such a tool is Jenkins. We've documented how to setup Jenkins with ATS in a how to.
+We've extended ATS with a new simple API. Via this API you can run your automated tests from any external tool. A good option for such a tool is Jenkins. We've documented how to setup Jenkins with ATS in a How to (You can find all How to's on <https://docs.mendix.com/ats/>).
 
 ## More Changes & Fixes
 
 * There's a completely new reference guide for 2.0
-* We've introduced a new setting per app to schedule the cleanup of your exeucution logs. The default retention time for your logs is 90 days. The last log of a test case is always kept.
+* We've introduced a new setting per app to schedule the cleanup of your execution logs. The default retention time for your logs is 90 days. The last log of a test case is always kept.
 * We've improved overall performance by optimizing security rules.
 * Drop-downs are now configured as part of a parameter where they're used. They are no longer considered independent but only an option for parameters.
 * The cancelling of jobs was sometimes not reliable. We've fixed this.
+* Improved log output (better readable)
+* Autocomplete function to search for actions, test cases or values
+* Centralized settings page per app
+* Application wide type icons with tooltips
+* Description texts on many pages
 
 ### Terminology
 
 - Package --&gt; Folder
-- project --&gt; app
+- Project --&gt; app
 - Datatypes
   - Integer --&gt; Number
   - String --&gt; Text
@@ -117,8 +112,8 @@ We've extended ATS with a new simple API. Via this API you can run your automate
   - Web Element --&gt; Page Element
   - Undefined --&gt; Any
   - Boolean --&gt; Boolean
-- job as a new term for test run
-- new statuses and results in the test runner
+- Job as a new term for test run
+- New statuses and results in the test runner
   - Status: Queued, Running, Done
   - Result: Passed, Failed, Cancelled, Skipped
 
@@ -134,11 +129,11 @@ The following features have been removed as a result of design decisions:
 
 * Datatypes: DateTime, Float and Currency (deprecated now and will be removed soon)
 * Folder visibility
-* custom error message removed
-* proxy settings
-* enable screenshot \(both on job config and test step config\)
-* quick-run
+* Custom error message removed
+* Proxy settings
+* Enable screenshot \(both on job config and test step config\)
+* Quick-run
 
 ### Minors
 
-Many bugfixes and small changes, including everything from the 1.8 branch. Please check the release notes from 1.8 for these changes.
+Many bugfixes and small changes, including everything from the 1.8 branch. Please check the release notes from 1.8 for an overview of these changes.
