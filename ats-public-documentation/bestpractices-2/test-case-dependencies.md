@@ -1,6 +1,6 @@
 ---
 title: "Test Case Dependencies"
-category: "Best Practices"
+category: "Best Practices 2.0"
 ---
 
 This document explains the best way of handling test case dependencies within ATS. It also describes what a test case dependency is.
