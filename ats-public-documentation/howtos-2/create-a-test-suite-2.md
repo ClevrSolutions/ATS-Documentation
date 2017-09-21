@@ -27,66 +27,44 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 To create a test suite, follow these steps:
 
-1.  Open your project in ATS and go to the **Repository**.
-2.  Click **Add Test** inside the **Tests** tab:
+1.  Open your project in ATS and go to **Test Cases**.
+2.  Click **Action** dropdown and select **New Test Suite**.
     
-    ![](attachments/create-a-test-suite/repository-add-test.png)
+    ![](attachments/create-a-test-suite-2/Repository-add-test-suite.png)
 
-    You can also click **Add Item** inside the **All Objects** tab:
+    Clicking the **New Test Suite** button opens the **Create new** dialog box:
     
-    ![](attachments/create-a-test-suite/repository-add-item.png)
+    ![](attachments/create-a-test-suite-2/repository-create-new.png)
 
-    Clicking either button opens the **Create new** dialog box:
-    
-    ![](attachments/create-a-test-suite/repository-create-new.png)
-
-3.  Select **Test Suite** in the drop-down menu.
-4.  Enter a name in the **Name** field. It is advisable to use a predefined naming structure.
-5.  Enter a description in the **Description** field. It is advisable to give each test suite a description of what it does.
+3.  Enter a name in the **Name** field (for example, *TS - 001. Create New Expense (Manually/Recorder)*) It is advisable to use a predefined naming structure.
+4.  Enter a description in the **Description** field (for example, *This test suite executes the test cases that create a new expense in the company expenses app.*) It is advisable to give each test suite a description of what it does.
 6.  Click **Create**.
     
-    ![](attachments/create-a-test-suite/repository-create-new-test-suite.png)
+    ![](attachments/create-a-test-suite-2/repository-create-new-test-suite-e.png)
 
-The **Test Suite** page opens after you click **Create**. ATS displays the **Name** and **Description** in the upper-left corner of the Test Suite page.
-
-The **Test Suite** page looks like the **Test Case** page, but with fewer options:
+The **Test Suite** page opens after you click **Create**. ATS displays the **Name** and **Description** on the Test Suite page. The **Test Suite** page looks like the **Test Case** page, but with fewer tabs:
     
-![](attachments/create-a-test-suite/repository-test-suite-page.png)
+![](attachments/create-a-test-suite-2/test-suite-page.png)
     
-## 4 Add Existing Test Cases and Test Suites to a Test Suite
+## 4 Add Test Cases and Test Suites to a Test Suite
 
 To add a test case or another test suite to a test suite, follow these steps:
 
-1.  Click **Add** on the **Test Suite** page.
+1.  Click **Add step** on the **Test Suite** page. This opens a dropdown with an input area.
     
-    ![](attachments/create-a-test-suite/repository-test-suite-page-add.png)
+    ![](attachments/create-a-test-suite-2/repository-test-suite-page-add.png)
 
-2.  The **Select Test** pop-up dialog opens:
+2.  In the input area enter the name or a part of the name of a test suite or test case you want to add. ATS will search for you in the database for test suites and test cases with that name. Note that the test case or test suite you want to add already need to exist.
+
+  ![](attachments/create-a-test-suite-2/repository-test-suite-page-add-name.png)
+
+3. Click the test case/test suite you want to add and ATS will add it to the test suite. 
     
-    ![](attachments/create-a-test-suite/repository-select-test.png)
-
-You can add an existing test case or test suite to the test suite, or you can create a new test case and add this to the test suite.
-  
-To add an existing test case or test suite, follow these steps:
-
-1.  Enter a description of the test step in the **Describe Test Step** field.
-2.  Use the **Search Test** field to search for the test case or test suite you want to add to your test suite.
-3.  Select the test from the **Select a Test** data grid. 
-4.  Click **Save**:
-    
-    ![](attachments/create-a-test-suite/test-suite-page-select-test.png)
+    ![](attachments/create-a-test-suite-2/repository-test-suite-page-selected-test.png)
 
 Repeat this process for the Recorder test case to complete your test suite.
 
-![](attachments/create-a-test-suite/test-suite-page-complete.png)
-
-You have now completed the test suite. In the next section, you will add a new test case.
-
-## 5 Adding New Test Cases or Test Suites to a Test Suite
-
-To create a new test case, click **Create a new Test Case**, and complete [How to Create a Test Case](create-a-test-case).
-    
-![](attachments/create-a-test-suite/test-suite-page-select-test-new.png)
+![](attachments/create-a-test-suite-2/test-suite-page-complete.png)
 
 {{% alert type="info" %}}
 You can add as many test cases and test suites as you want. 
