@@ -31,21 +31,21 @@ To create a test case, follow these steps:
 1. Open your project in ATS and go to **Test Cases**.
 2.  Click **Action** dropdown and click **New Test Case**:
 
-    ![](attachments/create-a-test-case/repository-add-test-case.png)
+    ![](attachments/create-a-test-case-2/repository-add-test-case.png)
   
     Clicking **New Test Case** opens the **Create new** dialog box:
 
-    ![](attachments/create-a-test-case/repository-create-new-case.png)
+    ![](attachments/create-a-test-case-2/repository-create-new.png)
   
 3. Enter a name in the **Name** field (for example, *TC - 001.01 - Create new Expense (Manually)*). Using a predefined naming structure is advised.    
-5. Enter a description in the **Description** field (for example, *This test case creates a new expense in the company expenses app*). Giving each test case a description of what it does is advised.
+5. Enter a description in the **Description** field (for example, *This test case creates a new expense in the company expenses app.*). Giving each test case a description of what it does is advised.
 6.  Click **Create**:
 
-    ![](attachments/create-a-test-case/repository-create-new-test-case.png)
+    ![](attachments/create-a-test-case-2/repository-create-new-test-case-e.png)
 
     This opens the **Test Case** page. ATS displays the **Name** and **Description** on this page.
 
-    ![](attachments/create-a-test-case/test-case-page.png)
+    ![](attachments/create-a-test-case-2/test-case-page.png)
 
 ## 4 Adding Test Steps Manually
 
@@ -53,43 +53,48 @@ The following steps describe how to add test steps manually to your test case. Y
 
 1.  Click **Add step** on the **Test Case** page. This opens a dropdown with an input area:
 
-    ![](attachments/create-a-test-case/test-case-page-add.png)
+    ![](attachments/create-a-test-case-2/test-case-page-add.png)
 
     
 The first step is opening the Company Expenses app, which you do by entering a URL in the browser. ATS does the same by using the [open application](../refguide-ats-1/open-application) action.
 
-2. Enter **Open Application** in the input area of the dropdown. You have the core action and Mendix actions. Mendix actions are preferred over core actions, so select the mendix action to open the application. ATS now created a test step with the open application action. 
+2. Enter **Open Application** in the input area of the dropdown. You have the core action and Mendix actions. Mendix actions are preferred over core actions, so select the mendix action to open the application. 
+
+    {{% alert type="info" %}} Enter terms like *Find*, *Click*, *Set*, *Assert*, and *Get* to find the right action. {{% /alert %}}
+
+    ![](attachments/create-a-test-case-2/test-case-page-open-application.png)
+
+    ATS now created a test step with the open application action. 
+
+    ![](attachments/create-a-test-case-2/test-case-page-open-application-added.png)
+
 3. Enter a description of the test step in the **Describe Test Step** text box (for example, *Open the company expenses app*).
-4.  Search for the **Open Application** action in the **Search Action** text box. Enter terms like *Find*, *Click*, *Set*, *Assert*, and *Get* to find the right action.
-5. Select the **Open Application** action from the **Select an Action** data grid. Choose the one for Mendix applications.
-6.  Click **Save**:
 
-    ![](attachments/create-a-test-case/add-open-application.png)
+    ![](attachments/create-a-test-case-2/test-case-page-add-description.png)
 
-    Now ATS adds the action to your test step.
-7.  Double-click the **Application URL** input parameter:
+4. Add the URL of the application you want to test by clicking the **magnifying glass**.
 
-    ![](attachments/create-a-test-case/open-application-input-parameter.png)
+    ![](attachments/create-a-test-case-2/test-case-page-add-application-URL.png)
   
     This will open the **Edit Input Value** dialog box.
-9. Select **Global Constant**.
-10. Select **Application URL**.
-11. Click **Save**:
+5. Select **Global Constant**.
+6. Select **Application URL**.
+7. Click **Save**:
 
-    ![](attachments/create-a-test-case/open-app-input-value.png)
+    ![](attachments/create-a-test-case-2/open-app-input-value-e.png)
 
     ATS now uses the application URL you selected in the **Run Configuration** application.
     
-12.  After opening the application, you must log in. ATS has a standard login action for logging in to a Mendix application that you must use, which is the [login](../refguide-ats-1/login) action. The login page of the company expenses app looks like this:
+8.  After opening the application, you must log in. ATS has a standard login action for logging in to a Mendix application that you must use, which is the [login](../refguide-ats-1/login) action. The login page of the company expenses app looks like this:
 
-    ![](attachments/create-a-test-case/comp-app-login-page.png)
+    ![](attachments/create-a-test-case-2/comp-app-login-page.1.png)
 
-13. Inside your test case, click **Add** again and add the **Login** action:
+9. Inside your test case, click **Add step** again and add the **Login** action:
 
-    ![](attachments/create-a-test-case/add-login.png)
+    ![](attachments/create-a-test-case-2/add_login.png)
 
-14. Double-click the **Username** input parameter and add the username. 
-15. Double-click the **Password** input parameter and add the password:
+10. Click the **Username** input parameter dropdown and add the username. 
+11. Click the **Password** input parameter dropdown and add the password:
 
     ![](attachments/create-a-test-case/login-input-parameters.png)
 
