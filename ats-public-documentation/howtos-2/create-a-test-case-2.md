@@ -93,95 +93,103 @@ The first step is opening the Company Expenses app, which you do by entering a U
 
     ![](attachments/create-a-test-case-2/add_login.png)
 
-10. Click the **Username** input parameter dropdown and add the username. 
+10. Add a description in **Describe your test step here**
+11. Click the **Username** input parameter dropdown and add the username. 
 11. Click the **Password** input parameter dropdown and add the password:
 
-    ![](attachments/create-a-test-case/login-input-parameters.png)
+    ![](attachments/create-a-test-case-2/login-input-parameters-e.png)
 
-16. After you log in to the Company Expenses app, you will see the home page. To create a new expense, you must click the **New Expense** button in the app. This means that ATS must click the button. To get the information you need, open the ATS Helper and hover over the **New Expense** button while holding <kbd>Ctrl</kbd>. 
+12. After you log in to the Company Expenses app, you will see the home page. To create a new expense, you must click the **New Expense** button in the app. This means that ATS must click the button. To get the information you need, open the ATS Helper and hover over the **New Expense** button while holding <kbd>Ctrl</kbd>. 
 
-    ![](attachments/create-a-test-case/helper-new-expense-button.png)
+    ![](attachments/create-a-test-case-2/helper-new-expense-button.png)
 
-17. ATS has an action that clicks a widget, which is the [Click Widget](../refguide-ats-1/click-widget) action. Inside your test case, click **Add** again and add the **Click Widget** action.
+13. ATS has an action that clicks a widget, which is the [Click Widget](../refguide-ats-1/click-widget) action. Inside your test case, click **Add step** again and add the **Click Widget** action.
 
-    ![](attachments/create-a-test-case/click-widget-new-expense.png)
+    ![](attachments/create-a-test-case-2/click-widget-new-expense.png)
 
-18. Double-click the **Widget Name** input parameter and add the widget name displayed in the ATS Helper:
+14. Add a description in **Describe your test step here**
+15. Click the **magnifying glass** of the **Widget Name** input parameter.
 
-    ![](attachments/create-a-test-case/new-expense-input-parameter.png)
+![](attachments/create-a-test-case-2/click-widget-action-magnifyinglass.png)
+
+16. Click **constant** (1) and add the widget name displayed in the ATS Helper (2)
+16. Click **Save** (3):
+
+    ![](attachments/create-a-test-case-2/new-expense-input-parameter-e.png)
 
 19. After clicking **New Expense** in the Company Expenses app, a dialog box opens called **New Expense**:
 
-    ![](attachments/create-a-test-case/new-expense-dialog.png)
+    ![](attachments/create-a-test-case-2/new-expense-dialog.png)
 
-20. A user visually confirms that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](../refguide-ats-1/findassert-dialog) action. Inside your test case, click **Add** again and add the **Find/Assert Dialog** action.
+20. A user visually confirms that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](../refguide-ats-1/findassert-dialog) action. Inside your test case, click **Add step** again and add the **Find/Assert Dialog** action.
 
-    ![](attachments/create-a-test-case/new-expense-dialog-action.png)
+    ![](attachments/create-a-test-case-2/new-expense-dialog-action.png)
 
-21. Double-click the **Dialog Title** input parameter and add the title of the dialog box:
+21. Add a description in **Describe your test step here**
+22. Click the **Dialog Title** input parameter and add the title of the dialog box:
 
-    ![](attachments/create-a-test-case/new-expense-dialog-action-input-parameters.png)
+    ![](attachments/create-a-test-case-2/new-expense-dialog-action-filled.png)
 
 22. To complete an expense, you must enter an **Amount**, **Type**, and **Description**, and then **Save & Submit** the expense:
 
-    ![](attachments/create-a-test-case/new-expense-dialog-fields.png)
+    ![](attachments/create-a-test-case-2/new-expense-dialog-fields.png)
 
-23. The **Amount** field is a text box widget, the **Type** field is a reference selector widget, and the **Description** field is a text area widget. ATS can interact with all these widgets using the [Set Value](../refguide-ats-1/set-value) action. Inside your test case, click **Add** and add the **Set Value** action. Then, select the test step with the **Set Value** action, click **Copy**, and click **Paste** two times. Now you have a test step for each field.
+23. The **Amount** field is a text box widget, the **Type** field is a reference selector widget, and the **Description** field is a text area widget. ATS can interact with all these widgets using the [Set Value](../refguide-ats-1/set-value) action. Inside your test case, click **Add test** and add the **Set Value** action. Then, select the test step with the **Set Value** action, click **Copy**, and click **Paste**.
+24. Repeat the copy and paste step of the test step with the **Set value** action. Now you have a test step for each field.
 
-    ![](attachments/create-a-test-case/three-set-value-actions.png)
+    ![](attachments/create-a-test-case-2/three-set-value-actions.png)
 
-24. Use the ATS Helper on the **Amount** field in the Company Expenses app. Select test step 5 in your test case, fill in a test step description, enter the **Widget Name**, and enter the **Value**.
+24. Use the ATS Helper on the **Amount** field in the Company Expenses app. Open test step 5 in your test case by clicking the test step, fill in a test step description, enter the **Widget Name**, and enter the **Value**.
 
-    ![](attachments/create-a-test-case/set-value-amount-field.png)
+    ![](attachments/create-a-test-case-2/set-value-amount-field.png)
 
-25. Use the ATS Helper on the **Type** field in the Company Expenses app. Select test step 6 in your test case, fill in a test step description, enter the **Widget Name**, and enter the **Value**.
+25. Use the ATS Helper on the **Type** field in the Company Expenses app. Open test step 6 in your test case, fill in a test step description, enter the **Widget Name**, and enter the **Value**.
 
-    ![](attachments/create-a-test-case/set-value-type-field.png)
+    ![](attachments/create-a-test-case-2/set-value-type-field.png)
 
-26. Use the ATS Helper on the **Description** field in the Company Expenses app. Select test step 7 in your test case, fill in a test step description, enter the **Widget Name**, and enter the **Value**.
+26. Use the ATS Helper on the **Description** field in the Company Expenses app. Open test step 7 in your test case, fill in a test step description, enter the **Widget Name**, and enter the **Value**.
 
-    ![](attachments/create-a-test-case/set-value-description-field.png)
+    ![](attachments/create-a-test-case-2/set-value-description-field.png)
 
 27. To submit the new expense, you must click the **Save & Submit** button:
 
-    ![](attachments/create-a-test-case/new-expense-save-submit.png)
+    ![](attachments/create-a-test-case-2/new-expense-save-submit.png)
 
-28. Inside your test case, click **Add**, add the **Click Widget** action, fill in a test step description, and enter the **Widget Name**:
+28. Inside your test case, click **Add step**, add the **Click Widget** action, fill in a test step description, and enter the **Widget Name**:
 
-    ![](attachments/create-a-test-case/click-widget-save-submit-parameter.png)
+    ![](attachments/create-a-test-case-2/click-widget-save-submit.png)
 
-29.  You must confirm that the expense is successfully submitted. In the Company Expenses app, a submitted expense appears in the [Find/Assert DataGrid Row](../refguide-ats-1/findassert-datagrid-row) action. Inside your test case, click **Add** and add the **Find/Assert Datagrid Row** action.
-
-    ![](attachments/create-a-test-case/add-findassert-datagrid-row-new-expense.png)
+29.  You must confirm that the expense is successfully submitted. In the Company Expenses app, a submitted expense appears in the datagrid. ATS can assert the new expense with the [Find/Assert DataGrid Row](../refguide-ats-1/findassert-datagrid-row) action. Inside your test case, click **Add step** and add the **Find/Assert Datagrid Row** action.
+    ![](attachments/create-a-test-case-2/add-findassert-datagrid-row-new-expense.png)
 
 30. Now use the ATS Helper to find the **Widget Name** of the data grid in the Company Expenses app:
 
-    ![](attachments/create-a-test-case/widget-name-datagrid-new-expense.png)
+    ![](attachments/create-a-test-case-2/widget-name-datagrid-new-expense.png)
 
 31. Also use the ATS Helper to find the **Column Name** of the **Description** column:
 
-    ![](attachments/create-a-test-case/column-name-datagrid-new-expense.png)
+    ![](attachments/create-a-test-case-2/column-name-datagrid-new-expense.png)
 
-32. Now double-click the parameters and add the correct information:
+32. Now add a description of the **Find/Assert DataGrid Row** action and click the parameters and add the correct information:
 
     * The **Widget Name** parameter and add the widget name
     * The **Column 1 Name** parameter and enter the column name
     * The **Column 1 Value** parameter and enter the description
   
-    ![](attachments/create-a-test-case/findassert-datagrid-row-new-expense-parameters.png)
+    ![](attachments/create-a-test-case-2/findassert-datagrid-row-new-expense-parameters.png)
 
 33. The last step of your test case is to end your user session by logging out. ATS has two ways for logging out of your application:
 
     * ATS clicks the **Logout** button
     * ATS uses the [Logout](../refguide-ats-1/logout) action 
     
-    The **Logout** action is a hard logout, meaning that no matter where ATS is inside your application, it always logs out. Inside your test case, click **Add** and add the **Logout** action.
+    The **Logout** action is a hard logout, meaning that no matter where ATS is inside your application, it always logs out. Inside your test case, click **Add step** and add the **Logout** action.
    
-    ![](attachments/create-a-test-case/add-logout-new-expense.png)
+    ![](attachments/create-a-test-case-2/add-logout-new-expense.png)
 
     You have added all the test steps for your test case:
   
-    ![](attachments/create-a-test-case/all-test-steps-new-expense.png)
+    ![](attachments/create-a-test-case-2/all-test-steps-new-expense.png)
   
 34. The last thing to do is to clarify to ATS what you are testing. This is done by setting the **Call Type** of your test steps to one of the following:
 
@@ -191,7 +199,7 @@ The first step is opening the Company Expenses app, which you do by entering a U
   
     Test step 1 and test step 2 must have the **Call Type:** **Setup**. Test step 3-9 must have the **Call Type:** **Regular**. Test step 10 must have the **Call Type:** **Teardown**.
   
-    ![](attachments/create-a-test-case/call-type-new-expense.png)
+    ![](attachments/create-a-test-case-2/call-type-new-expense.png)
 
     You have now manually created your test case.
 
