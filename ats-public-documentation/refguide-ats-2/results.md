@@ -13,12 +13,12 @@ The first column shows the status or the result of a test. The following table e
 
 | Icon | Meaning |
 | --- | --- |
-|![](attachments/icons/queued.png) | Queued. The test is waiting for a free running slot on the selenium hub  |
-| ![](attachments/icons/running.gif)| Running. The test is currently running |
+|![](attachments/icons/queued.png) | Queued. The test is waiting for a free running slot on the selenium hub. |
+| ![](attachments/icons/running.gif)| Running. The test is currently running. |
 | ![](attachments/icons/passed-icon.png)| Passed. The test has passed. |
 | ![](attachments/icons/failed-icon.png)| Failed. The test has failed. |
-| ![](attachments/icons/canceled-icon.png)| Canceled. The test was canceled by an user |
-| ![](attachments/icons/skipped-icon.png)| Skipped. The test was skipped. This happens, if a test step has not met the set precondition |
+| ![](attachments/icons/canceled-icon.png)| Canceled. The test was canceled by an user. |
+| ![](attachments/icons/skipped-icon.png)| Skipped. The test was skipped. This happens, if a test step has not met the set precondition. |
 
 The second column shows the type of the test.
 
@@ -26,7 +26,7 @@ The second column shows the type of the test.
 | ---------------------------------------- | ---------- |
 | ![Test Case](attachments/project/test-case-icon.png) | Test Case  |
 | ![Test Suite](attachments/project/test-suite-icon.png) | Test Suite |
-| ![Datadriven Test Case](attachments/project/ddt-icon.png)| Datadriven Test Case|
+| ![Datadriven Test Case](attachments/project/ddt-icon.png)| Datadriven Test Case |
 
 The duration column is formatted as followed:
 
