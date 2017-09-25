@@ -21,4 +21,3 @@ These are the main documents in this category:
 * [Recorder](recorder)
 * [ATS Helper](ats-helper)
 * [Selectors](selectors)
-* [Mobile](mobile)
