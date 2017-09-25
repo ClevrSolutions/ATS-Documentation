@@ -3,11 +3,11 @@ title: "CI/CD API"
 space: "ATS Add-On"
 category: "Reference Guide 2.0"
 ---
-## CI/CD API
+## 1 CI/CD API
 
 With the CI/CD API you easily integrate ATS into your automated deployment workflow. You run a test according to predefined templates or you could retrieve the status of already finished tests. To use the CI/CD API you need a special webservice user, which ATS uses for authentication. For more information on how to integrate ATS into your CI/CD workflow read the [How-To ATS CI/CD](/link-to-howto).
 
-## CI/CD Templates
+## 2 CI/CD Templates
 
 CI/CD Templates are predefined configurations for a remote job run. The remote job run is triggered via the run job webservice. Every CI/CD Template consists of the job configuration, an associated Testcase or Testsuite and a generated unique ID. This ID identifies the CI/CD template. An overview of all existing CI/CD Templates is found on the **CI/CD Templates tab** on the Test Runs page.
 
@@ -20,41 +20,47 @@ CI/CD Templates are predefined configurations for a remote job run. The remote j
 | Browser | Firefox, Chrome |
 | UID | The ID which identifies the CI/CD Template |
 
-New CI/CD Templates are added by clicking **Add Testcase** or **Add Testsuite**. A dialog opens, where you can select the Testcase or Testsuite for the CI/CD Template. After that, the **Edit CI/CD Template** dialog opens.
+You add new CI/CD Templates by clicking **Add Testcase** or **Add Testsuite**. A dialog opens, where you select the Testcase or Testsuite for the CI/CD Template. After that, the **New CI/CD Template** dialog opens.
 
-![](attachments/ci_cd/CICD_JobTemplateNewEdit.png)  
+![](attachments/ci_cd/CICD_JobTemplateNewEdit.png)
 
-Following options can be configured on the **Edit CI/CD Template** dialog:
+You configure the following options in the **New CI/CD Template** dialog:
 
- | Name | Description |
-|------|-------------| 
-| Name | Default: Name of the Testcase/Testsuite. Can be customized |
-| Environment | Environment which will be testet |
-| Selenium Hub | The selenium hub, where the test will run|
-| Browser | The browser, which will be used for the test. Chrome or Firefox|
+| Name | Description |
+|------|-------------|
+| Name | Default: Name of the Testcase/Testsuite. Customizable. |
+| Environment | Environment to test. |
+| Selenium Hub | The selenium hub, where the test is executed. |
+| Browser | The browser, which is used for the test. Chrome or Firefox|
 
-For supported selenium hubs, like Browserstack, further options are available. More informations on supported selenium hub provider is found [here](/refguide-ats-2/supported-selenium-hub-provider.md).
+For supported selenium hubs, like Browserstack, further options are available. More information on supported selenium hub provider is found [here](supported-selenium-hub-provider).
 
+## 3 API
 
-## API
-The ATS CI/CD API is based on the SOAP webservice protocol. Currently there are two services available, **Run Job** and **Get Job Status**. The following sections shows the structures of the request and response messages of these services.  
-### Run Job
+The ATS CI/CD API is based on the SOAP webservice protocol. Currently there are two services available, **Run Job** and **Get Job Status**. The following sections shows the structures of the request and response messages of these services.
+
+### 3.1 Run Job
+
 #### URL
+
 ```
 https://ats100.mendixcloud.com/ws/RunJob
 ```
+
 #### Request
-Following informations have to be included into the request.
+
+You must include the following information into the request.
 
 | Name | Description |
 | --- | --- |
-| username | Username of the webservice user|
+| username | Username of the webservice user |
 | password | Password of the webservice user |
-| AppAPIToken | Key for the CI/CD API. Can be generated on the **Test Settings** page |
+| AppAPIToken | Key for the CI/CD API. Is generated on the **Test Settings** page |
 | AppID | The ID of your Mendix APP |
 | JobTemplateID | The unique ID of the CI/CD Template |
 
 ##### Example
+
 ```
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
   <soap:Header>
@@ -74,16 +80,19 @@ Following informations have to be included into the request.
   </soap:Body>
 </soapenv:Envelope>
 ```
+
 #### Response
+
 The following table shows the data contained in the response of the **Run Job** service:
 
 | Name | Description |
 | --- | --- |
 | Started | True, if the test has already started. False otherwise.  |
 | ErrorMessage | Contains the error message, if test failed to start. Is empty, if the test started succesfully. |
-| JobID | The unique ID of the job. This ID can be used to retrieve the result of the test with the **Get Job Status** service |
+| JobID | The unique ID of the job. This ID is used to retrieve the result of the test with the **Get Job Status** service |
 
 ##### Example
+
 ```
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
   <soap:Body>
@@ -97,24 +106,29 @@ The following table shows the data contained in the response of the **Run Job** 
   </soap:Body>
 </soapenv:Envelope>
 ```
-### Get Job Status
+
+### 3.2 Get Job Status
+
 #### URL
+
 ```
 https://ats100-test.mendixcloud.com/ws/GetJobStatus
 ```
 
 #### Request
-Following informations have to be included into the request.
+
+You must include the following information into the request.
 
 | Name | Description |
 | --- | --- |
 | username | Username of the webservice user|
 | password | Password of the webservice user |
-| AppAPIToken | Key for the CI/CD API. Can be generated on the **Test Settings** page |
+| AppAPIToken | Key for the CI/CD API. Is generated on the **Test Settings** page |
 | JobID| The unique ID of the Job returned by the **Run Job** service |
 | AppID | The ID of your Mendix APP |
 
 ##### Example
+
 ```
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
   <soap:Header>
@@ -136,14 +150,16 @@ Following informations have to be included into the request.
 ```
 
 #### Response
+
 The following table shows the data contained in the response of the **Get Job Status** service:
 
 | Name | Description |
 | --- | --- |
 | ExecutionStatus| Status of the Execution: **Running** or **Queued**|
 | ExecutionResult| Contains the error message, if test failed to start. Is empty, if the test started succesfully. |
-| JobID | The unique ID of the job. This ID can be used to retrieve the result of the test with the **Get Job Status** service |
+| JobID | The unique ID of the job. This ID is used to retrieve the result of the test with the **Get Job Status** service |
 
+#### Example
 
 ```
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
