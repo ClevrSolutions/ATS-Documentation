@@ -1,6 +1,5 @@
 ---
 title: "Test Case"
-space: "ATS Add-On"
 category: "Reference Guide 2.0"
 ---
 
