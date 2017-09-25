@@ -8,4 +8,4 @@ category: "Reference Guide 2.0"
 
 Before you start testing, see [Compatability](general#compatability) and [Selenium Requirements](general#selenium-requirements), for setting up ATS.
 
-All of the reference guide content can be found under the topics listed on the left side of this page.
+All of the reference guide content is found under the topics listed on the left side of this page.
