@@ -20,11 +20,11 @@ CI/CD Templates are predefined configurations for a remote job run. The remote j
 | Browser | Firefox, Chrome |
 | UID | The ID which identifies the CI/CD Template |
 
-You add new CI/CD Templates by clicking **Add Testcase** or **Add Testsuite**. A dialog opens, where you select the Testcase or Testsuite for the CI/CD Template. After that, the **New CI/CD Template** dialog opens.
+You add new CI/CD Templates by clicking **Add Testcase** or **Add Testsuite**. A dialog box opens, where you select the Testcase or Testsuite for the CI/CD Template. After that, the **New CI/CD Template** dialog box opens.
 
 ![](attachments/ci_cd/CICD_JobTemplateNewEdit.png)
 
-You configure the following options in the **New CI/CD Template** dialog:
+You configure the following options in the **New CI/CD Template** dialog box:
 
 | Name | Description |
 |------|-------------|
