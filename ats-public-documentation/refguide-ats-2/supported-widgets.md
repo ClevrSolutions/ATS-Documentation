@@ -1,11 +1,9 @@
 ---
 title: Supported Widgets
-space: ATS Add-On
 category: Reference Guide 2.0
 ---
 
 ## Supported Widgets
-
 
 ### DataGrid
 
@@ -24,6 +22,7 @@ category: Reference Guide 2.0
 | Sort DataGrid                    | Sorts DataGrid by given Column           |
 
 ### TemplateGrid
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Find Item/Row                    | Find a Row/Item in a DataGrid, TemplateGrid or ListView by Index |
@@ -34,6 +33,7 @@ category: Reference Guide 2.0
 | Get Visible Item/Row Count       | Returns number of currently visible Items/Rows in a TemplateGrid, DataGrid or ListView |
 
 ### ListView
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Find Item/Row                    | Find a Row/Item in a DataGrid, TemplateGrid or ListView by Index |
@@ -46,11 +46,13 @@ category: Reference Guide 2.0
 | Click Widget Button       	   | Refresh Button / Loadmore / ClearSearchField (ListView) Goto, / Add (ReferenceSelector) |
 
 ### File Manager
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Set File Manager | Set a file manager to the given file path to upload a file |
 
 ### GroupBox
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Close GroupBox        | Close a groupbox                         |
@@ -58,6 +60,7 @@ category: Reference Guide 2.0
 | Open GroupBox         | Open a groupbox                          |
 
 ### ConfirmationDialog
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Cancel Dialog           | Click Cancel on a Confirmation Dialog    |
@@ -67,6 +70,7 @@ category: Reference Guide 2.0
 | Get Dialog Message Text | Get the text from message and confirmation dialogs |
 
 ### Window
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Close Dialog            | Click X Button on a Confirmation, Error, Warning or Info Dialog |
@@ -75,6 +79,7 @@ category: Reference Guide 2.0
 A _Window_ is rendered when a page is opened as a popup.
 
 ### DialogMessage
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Close Dialog            | Click X Button on a Confirmation, Error, Warning or Info Dialog |
@@ -85,6 +90,7 @@ A _Window_ is rendered when a page is opened as a popup.
 Show message actions in microflows result in _DialogMessage_ widgets.
 
 ### ReferenceSelector
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Click Widget Button   | Refresh Button / Loadmore / ClearSearchField (ListView) Goto, / Add (ReferenceSelector) |
@@ -96,6 +102,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set Value (by index)  | Set the value of a dropdown by index, e.g. EnumSelect or ReferenceSelector |
 
 ### CheckBox
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Checkbox Value | Assert the value of a Checkbox           |
@@ -104,6 +111,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Toggle Checkbox Value | Click on a Checkbox to toggle its value  |
 
 ### TextBox
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
@@ -111,6 +119,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
 ### TextArea
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
@@ -118,6 +127,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
 ### DatePicker
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
@@ -125,6 +135,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
 ### DropDown
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
@@ -135,6 +146,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set Value (by index)  | Set the value of a dropdown by index, e.g. EnumSelect or ReferenceSelector |
 
 ### RadioButton
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
@@ -142,6 +154,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
 ### SearchInput Text
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
@@ -149,6 +162,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
 ### SearchInput DropDown
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
@@ -159,12 +173,14 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set Value (by index)  | Set the value of a dropdown by index, e.g. EnumSelect or ReferenceSelector |
 
 ### Label
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
 | Get Value             | Get the text value from a Textbox, Textarea, Dateinput, RadioButton, Dropdowns |
 
 ### OnChange Inputbox
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Value          | Assert the text value from a Textbox, Textarea, Dateinput |
@@ -172,30 +188,35 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set Value             | Set the text value of a Textbox, Textarea, Dateinput, Reference Selector, Enum Selector |
 
 ### NavigationTree
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Click Menu Item       | Click on a Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 | Find/Assert Menu Item | Find/Assert a visible Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 
 ### MenuBar
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Click Menu Item       |  Click on a Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 | Find/Assert Menu Item | Find/Assert a visible Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 
 ### SimpleMenuBar
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Click Menu Item       | Click on a Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 | Find/Assert Menu Item | Find/Assert a visible Menu Item in a Navigation Tree, Menu Bar and Simple Menu Bar |
 
 ### TabContainer
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Active Tab Caption | Assert a certain value for the caption of the active tab page |
 | Get Active Tab Caption    | Returns the caption of the active tab page |
 
 ### Boolean Slider
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert BooleanSlider Value | Asserts the value of the BooleanSlider Appstore Widget (String) |
@@ -204,6 +225,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Toggle BooleanSlider Value | Clicks the BooleanSlider widget to toggle its value. This will invert the current value of the BooleanSlider |
 
 ### BootstrapRTE
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert BootstrapRTE Value  | Asserts that the BootstrapRTE value is equal to the given value |
@@ -211,6 +233,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set BootstrapRTE Value 	 | Sets the given value as current value for the BootstrapRTE value. Strings can be formatted via HTML code |
 
 ### Checkbox Set Selector
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Checkbox Set Selector Value | Finds the check box by the column caption and its cell value and asserts that the check box is set to the given value |
@@ -224,6 +247,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Toggle Checkbox Set Selector Value (All) | Finds check box by given entity attribute and inverts the value |
 
 ### CK Editor
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert CKEditor Value | Compares the CKEditor value with the given value |
@@ -231,12 +255,14 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set CKEditor Value | Sets the given value as current value for the CKEditor value. The value can be formatted via HTML code |
 
 ### Dropdown Div Converter
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Click Drop-Down div Converter Drop-Down Button | Clicks the dropdown button of the drop-down div converter to expand the drop-down menu |
 | Click Drop-Down div Converter Split Button | Clicks the split button of the drop-down div converter |
 
 ### Grid Selector
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Grid Selector Value | Asserts the value of the check box and the radio button inside the Grid Selector Widget |
@@ -247,6 +273,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Toggle Grid Selector Checkbox Value | Inverses the check box found by the given column and row caption |
 
 ### Input Reference Selector
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert InputReferenceSelector Value | Asserts that the InputReferenceSelector has the given value |
@@ -254,6 +281,7 @@ Show message actions in microflows result in _DialogMessage_ widgets.
 | Set InputReferenceSelector Value | Set the InputReferenceSelector to the given value |
 
 ### Simple Checkbox Set Selector
+
 | Action                           | Description                              |
 | -------------------------------- | ------------------------------------------------------------------------ |
 | Assert Simple Checkbox Set Selector Value | Asserts that the check box found by the given value is checked or cleared |
