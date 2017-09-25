@@ -1,6 +1,5 @@
 ---
 title: "Action Reference"
-space: "ATS Add-On"
 category: "Reference Guide 2.0"
 ---
 ## Action Reference

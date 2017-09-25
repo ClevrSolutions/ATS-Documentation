@@ -1,6 +1,5 @@
 ---
 title: "Reference Guide 2.0"
-Space: "ATS Add-On"
 ---
 
 These are the main documents in this category:

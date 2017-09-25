@@ -1,8 +1,8 @@
 ---
 title: "CI/CD API"
-space: "ATS Add-On"
 category: "Reference Guide 2.0"
 ---
+
 ## 1 CI/CD API
 
 With the CI/CD API you easily integrate ATS into your automated deployment workflow. You run a test according to predefined templates or you could retrieve the status of already finished tests. To use the CI/CD API you need a special webservice user, which ATS uses for authentication. For more information on how to integrate ATS into your CI/CD workflow read the [How-To ATS CI/CD](/link-to-howto).

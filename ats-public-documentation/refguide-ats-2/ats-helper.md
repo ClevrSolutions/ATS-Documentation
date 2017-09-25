@@ -1,6 +1,5 @@
 ---
 title: "ATS Helper"
-space: "ATS Add-On"
 category: "Reference Guide 2.0"
 ---
 

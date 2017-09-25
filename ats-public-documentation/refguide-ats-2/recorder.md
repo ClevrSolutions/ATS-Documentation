@@ -1,6 +1,5 @@
 ---
 title: "Recorder"
-space: "ATS Add-On"
 category: "Reference Guide 2.0"
 ---
 
