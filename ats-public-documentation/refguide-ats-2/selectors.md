@@ -1,15 +1,15 @@
 ---
 title: "Selectors"
-space: "ATS Add-On" 
 category: "Reference Guide 2.0"
 ---
 
-### Selectors
+## Selectors
 
- For the [Find Widget Child Node action](find-widget-child-node) or as part of a script for [Execute JavaScript Integer](execute-javascript-integer), [Execute JavaScript String](execute-javascript-string) and [Execute JavaScript WebElement](execute-javascript-webelement) actions, you will have to use selectors to get a node or WebElement. 
+For the [Find Widget Child Node action](find-widget-child-node) or as part of a script for [Execute JavaScript Integer](execute-javascript-integer), [Execute JavaScript String](execute-javascript-string) and [Execute JavaScript WebElement](execute-javascript-webelement) actions, you must use selectors to get a node or WebElement.
 ATS supports both, JQuery and CSS3 selectors. ATS also has its own selectors. The following summary will give you a short overview of the most used selectors in ATS. 
 
 ### ATS Selectors
+
 The custom ATS selectors work the same as CSS3 selectors in your custom actions.
 
 | Pattern                    | Name                           | Meaning                                  |
@@ -22,6 +22,7 @@ The custom ATS selectors work the same as CSS3 selectors in your custom actions.
 | :val(*text*)               | Value pseudo-class             | Selects a input, select or textarea whose value is equal to the given text |
 
 ### CSS Selectors
+
 You can use any CSS Selector defined in CSS3 and supported by your browser. The following table shows some of the commonly used CSS3 selectors in ATS.
 
 | Pattern       | Name                     | Meaning                                  |
@@ -38,13 +39,14 @@ You can use any CSS Selector defined in CSS3 and supported by your browser. The 
 For more informations visit the official [W3C CSS3 selectors reference](http://www.w3.org/TR/css3-selectors/).
 
 ### JQuery Selectors
+
 JQuery uses CSS3 selectors and extends the collection of selectors with its own ones. You can use all these selectors in your ATS actions.
 
 If you use JQuery selectors in the [Find Widget Child Node](find-widget-child-node) action, you **mustn't** use the *jQuery(...)* or *$(...)* function. Only use simple selectors, without quotation.
 
-In the [Execute JavaScript actions](execute-javascript-integer), you will have to use the *jQuery(...)* or *$(...)* function to select a WebElement or node.
+In the [Execute JavaScript actions](execute-javascript-integer), you must use the *jQuery(...)* or *$(...)* function to select a WebElement or node.
 
-The following table shows a few selectors from the JQuery set you can use in ATS.      
+The following table shows a few selectors from the JQuery set you can use in ATS.
 
 | Pattern          | Name              | Meaning                                  |
 | ---------------- | ----------------- | ---------------------------------------- |
@@ -55,4 +57,4 @@ The following table shows a few selectors from the JQuery set you can use in ATS
 | :parent          | Parent Selector   | Select all elements that have at least one child node (either an element or text). |
 | :text            | Text Selector     | Selects all input elements of type text. |
 
-For more informations visit the [official JQuery selectors reference](https://api.jquery.com/category/selectors/).
+For more information visit the [official JQuery selectors reference](https://api.jquery.com/category/selectors/).
