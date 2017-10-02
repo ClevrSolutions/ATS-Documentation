@@ -1,6 +1,6 @@
 ---
 title: "Finding the Action you Need"
-category: "Best Practices 2.0"
+category: "Best Practices ATS 2"
 ---
 
 This document explains the best way for finding the action you need in ATS. This is done by using six main categories for what you are trying to achieve. Each category explains the generic solution and the widget specific solutions using examples.
