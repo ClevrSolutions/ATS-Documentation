@@ -1,6 +1,6 @@
 ---
 title: "Guidelines for Creating a Custom Action"
-category: "Best Practices 1.8"
+category: "Best Practices 2.0"
 ---
 
 For a details on custom actions, please see [Custom Actions](../refguide-ats-1/custom-actions) in the ATS Reference Guide 1.
@@ -30,11 +30,11 @@ Always try to use a Mendix action first. This table explains why you should use 
 
 However, there are reasons not to use the Mendix actions. For example, sometimes a custom action can get too complex using a Mendix action, because of the input parameters that are required. For example, when using a Mendix action, you have six input parameters:
 
-![](../bestpractices-1/attachments/guidelines-custom-action/mendix-action-input-parameters.png)
+![](attachments/guidelines-custom-action/mendix-action-input-parameters.png)
 
 But when you use a Core action, you have four input parameters: 
 
-![](../bestpractices-1/attachments/guidelines-custom-action/core-action-input-parameters.png)
+![](attachments/guidelines-custom-action/core-action-input-parameters.png)
 
 The difference is because of the required **Widget Name** input parameter in a Mendix action. When you use a Core action, this is not always required. So if you don't need the widget name, a Core action is a better solution. This is a valid reason to use the Core actions; otherwise, the custom action is not user-friendly.
 
@@ -44,7 +44,7 @@ Only use items that are visually present on the page, like the text inside a cer
 
 This is a visual component:
 
-![](../bestpractices-1/attachments/guidelines-custom-action/visual-component-widget.png)
+![](attachments/guidelines-custom-action/visual-component-widget.png)
 
 {{% alert type="info" %}}
 
@@ -73,7 +73,7 @@ Try to find the generic aspect of the child node. In most cases, the `mx-name-` 
 
 This is the `mx-name` in the debugger:
 
-![](../bestpractices-1/attachments/guidelines-custom-action/mx-name-in-debugger.png)
+![](/attachments/guidelines-custom-action/mx-name-in-debugger.png)
 
 {{% alert type="info" %}}
 
@@ -87,7 +87,7 @@ When using core actions to trigger an event, always use a Mendix Wait action aft
 
 This is the Mendix Wait action:
 
-![](../bestpractices-1/attachments/guidelines-custom-action/mendix-wait-action.png)
+![](attachments/guidelines-custom-action/mendix-wait-action.png)
 
 For more information, please see [Mendix wait](../refguide-ats-1/mendix-wait).
 
@@ -119,9 +119,9 @@ These are some of the most used action parameters:
 
 These are the three most used action parameters:
 
-![](../bestpractices-1/attachments/guidelines-custom-action/standard-input-parameters.png)
+![](attachments/guidelines-custom-action/standard-input-parameters.png)
 
-![](../bestpractices-1/attachments/guidelines-custom-action/standard-input-parameters-2.png)
+![](attachments/guidelines-custom-action/standard-input-parameters-2.png)
 
 Last but not least, give a description to the action parameters especially, when it requires specific information. You can also give a generic example of what the user should enter, making it more user-friendly.
 
@@ -139,7 +139,7 @@ In addition, describe the output of each test step to make it easier to understa
 
 This is an example:
 
-![](../bestpractices-1/attachments/guidelines-custom-action/describe-teststeps-define-output.png)
+![](attachments/guidelines-custom-action/describe-teststeps-define-output.png)
 
 ## 8 Data Type Awareness
 
@@ -151,17 +151,17 @@ These are the different data types in ATS:
 
 | Data Type | Description | Examples |
 | :--- | :--- | :--- |
-| String | A piece of text that can contain letters, numbers, spaces and other characters. | "ATS123", "Helloworld!" |
-| Integer | A whole number. | 123, 4423 |
+| Text | A piece of text that can contain letters, numbers, spaces and other characters. | "ATS123", "Helloworld!" |
+| Number | A whole number. | 123, 4423 |
 | Boolean | A truth value. | true, false |
-| Date/Time | A point in time consisting of a date and a time component accurate up to the millisecond. | Tuesday 13 June 2017, 16:17:44 |
-| Web Element | Represents a DOM element. | (*See the image below this table.*)|
-| Undefined | Lets the user choose the data type. | Choose _String_ for "Helloworld!" |
-| Enumeration | One of the values of the given enumeration. | Red, Green, Blue; Todo, Running, Done |
+| Date/Time | **The Date/Time type is deprecated and should not be used.** | N/A |
+| Page Element | Represents a DOM element. | (*See the image below this table.*)|
+| Any | Lets the user choose the data type. | Choose _String_ for "Helloworld!" |
+| Drop-Down | One of the values of the given Drop-Down. | Red, Green, Blue; Todo, Running, Done |
 | Float | **The Float type is deprecated and should not be used.** | N/A |
 | Currency | **The Currency type is deprecated and should not be used** | N/A |
 
-![](../bestpractices-1/attachments/guidelines-custom-action/datatype-web-element.png)
+![](attachments/guidelines-custom-action/datatype-web-element.png)
 
 The JavaScript actions have three different versions, based on the data types:
 
@@ -171,5 +171,5 @@ The JavaScript actions have three different versions, based on the data types:
 
 They all produce outputs based on their data type. This means that you cannot return a string inside the Execute Javascript web element action.
 
-Good luck building custom actions! Please post any questions about customer actions on the [Mendix Forum](https://forum.mendixcloud.com/index4.html) under the category **Testing**.
+Good luck building custom actions! Please post any questions about custom actions on the [Mendix Forum](https://forum.mendixcloud.com/index4.html) under the category **Testing**.
 
