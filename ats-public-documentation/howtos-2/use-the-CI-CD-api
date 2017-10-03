@@ -15,4 +15,4 @@ You can now easily include your ATS testing in your CI/CD pipeline, like for exa
 If you are running Jenkins (on Linux), you can add a build step of type Execute shell and use the following simple shell script (notice that you need curl and xmllint installed on your Linux server). 
 This is only an example and can be written in the language of your choice like for example Powershell or Groovy. 
 
-![](attachments/create-datadriven-test-case/dataset-fields-company-expenses-app.png)
+![](attachments/use-cicd-api/script-cicd-jenkins.jpg)
