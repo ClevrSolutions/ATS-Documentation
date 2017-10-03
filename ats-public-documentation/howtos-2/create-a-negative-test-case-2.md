@@ -1,6 +1,6 @@
 ---
 title: "Create a Negative Test Case"
-category: "How-To's"
+category: "How-To's ATS 2"
 description: "Describes the steps for performing negative tests with ATS."
 tags: ["ATS", "testing"]
 ---
@@ -33,7 +33,7 @@ _Navigation Menu administrator_
 
 Before starting with this how-to, make sure you have the following prerequisites in place:
 
-* Complete [How to Create a Test Case](create-a-test-case)
+* Complete [How to Create a Test Case](create-a-test-case-2)
 
 ## 3 Create a Negative Test Case
 
