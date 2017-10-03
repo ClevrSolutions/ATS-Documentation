@@ -1,6 +1,6 @@
 ---
 title: "Install the ATS Helper and the ATS Recorder"
-category: "How-To's 2.0"
+category: "How-To's ATS 2"
 description: "Describes how to install the ATS helper and the ATS Recorder tool."
 tags: ["ATS", "testing"]
 ---
@@ -56,7 +56,7 @@ To use the ATS Helper, select the bookmark, press <kbd>Ctrl</kbd>, and hover ove
 The ATS Helper only works on standalone widgets.
 {{% /alert %}}
 
-See [How to Create a Test Case](create-a-test-case) for more information on how to use the ATS Helper.
+See [How to Create a Test Case](create-a-test-case-2) for more information on how to use the ATS Helper.
 
 ## 4 Installing the ATS Recorder
 
@@ -75,4 +75,4 @@ To install the ATS Recorder, follow these steps:
 
     ![](attachments/install-ats-helper-recorder/add-ats-recorder.png)
 
-See [How to Create a Test Case](create-a-test-case) for more information on how to use the ATS Helper.
+See [How to Create a Test Case](create-a-test-case-2) for more information on how to use the ATS Helper.

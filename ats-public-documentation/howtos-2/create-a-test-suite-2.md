@@ -1,6 +1,6 @@
 ---
 title: "Create a Test Suite"
-category: "How-To's 2.0"
+category: "How-To's ATS 2"
 description: "Describes how to create a test suite and add test cases and test suites to your test suite."
 tags: ["ATS", "testing"]
 ---
@@ -9,7 +9,7 @@ tags: ["ATS", "testing"]
 
 A test suite enables the user to execute test cases and test suites in a specific order. You can add test steps to your test suite and link a test case or another test suite to that test step. ATS executes the test steps in the same way as a test case.
 
-This how-to uses the Company Expenses app as an example. You will create a test suite and add the test cases you created in [How to Create a Test Case](create-a-test-case). If you don't have them anymore, create two new test cases without any test steps to walk through this how-to. 
+This how-to uses the Company Expenses app as an example. You will create a test suite and add the test cases you created in [How to Create a Test Case](create-a-test-case-2). If you don't have them anymore, create two new test cases without any test steps to walk through this how-to. 
 
 **This how-to will teach you how to do the following:**
 
@@ -20,8 +20,8 @@ This how-to uses the Company Expenses app as an example. You will create a test 
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Complete [How to Get Started](getting-started)
-* Complete [How to Create a Test Case](create-a-test-case)
+* Complete [How to Get Started](getting-started-2)
+* Complete [How to Create a Test Case](create-a-test-case-2)
 
 ## 3 Create a Test Suite
 

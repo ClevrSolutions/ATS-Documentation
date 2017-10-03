@@ -1,6 +1,6 @@
 ---
 title: "Create a Test Case"
-category: "How-To's 2.0"
+category: "How-To's ATS 2"
 description: "Describes how to create a test case and add test steps."
 tags: ["ATS", "testing"]
 ---
@@ -21,7 +21,7 @@ This how-to uses the Mendix Company Expenses app as an example, and you will cre
 
 Before starting with this how-to, make sure you have the following prerequisites in place:
 
-*  Complete [How to Get Started](getting-started)
+*  Complete [How to Get Started](getting-started-2)
 *  Complete [How to Install the ATS Helper and ATS Recorder](install-ats-helper-recorder-2)
 
 ## 3 Creating a Test Case<a name="3"></a>

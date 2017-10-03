@@ -1,6 +1,6 @@
 ---
 title: "Create a Data-Driven Test Case"
-category: "How-To's"
+category: "How-To's ATS 2"
 description: "Describes how to create data and connect this to a test case."
 tags: ["ATS", "testing"]
 ---
@@ -31,7 +31,7 @@ An example test case is used to illustrate how to connect the data set to a test
 
 Before starting with this how-to, make sure you have the following prerequisites in place:
 
-* [How to Create a Test Case](create-a-test-case)
+* [How to Create a Test Case](create-a-test-case-2)
 
 ## 3 Create a Master Data Set within ATS
 
@@ -198,7 +198,7 @@ You now updated the master data set using an excel file.
 
 ## 7 Connect the Master Data Set to your Test Case
 
-The following steps explain how to connect the master data set to your test case. An example test case is used in this chapter. See [How to Create a Test Case](create-a-test-case) for more information.
+The following steps explain how to connect the master data set to your test case. An example test case is used in this chapter. See [How to Create a Test Case](create-a-test-case-2) for more information.
 
 1. Open your test case and click the **Test Data** tab.
 2. Click the arrow icon.
