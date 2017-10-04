@@ -4,6 +4,10 @@ space: "ATS Add-On"
 category: "General"
 ---
 
+## Minimum Screen Resolution
+
+ATS is optimized for desktop resolutions with a minimum width of 1200 pixels or higher. 
+
 ## Mendix Platform Compatibility
 
 | ATS version | Supported Mendix Versions | Tested |
