@@ -7,13 +7,24 @@ tags: ["ATS", "testing", "CI/CD"]
 
 ## 1 Introduction
 
-This how-to explains the ATS CI/CD API. This API allows you to start and run configured ATS Test cases from third-party tools.
+ATS 2.0 introduces an API for your CI/CD integration, so you can run your test scripts from your CI/CD tool of choice. 
+In this How-to we show you an example of how you could add a step for ATS in your Jenkins project.
 
-## 2 Setup CI/CD API in Jenkins
+## 2 Prerequisites
 
-You can now easily include your ATS tests in your CI/CD pipeline, like for example in Jenkins. 
-If you are running Jenkins (on Linux), you can add a build step of type Execute shell and use the following simple shell script (notice that you need curl and xmllint installed on your Linux server). 
-This is only an example and can be written in the language of your choice like for example Powershell or Groovy. 
+* Have some Jenkins experience
+* Know how to configure CI/CD in ATS [see CI/CD API reference guide](https://mansystems.gitbooks.io/ats-public-documentation/content/refguide-ats-2/cicd-api.html/)
+  * Configure a CI/CD Template in ATS
+  * Configure a Webservice user in ATS
+  * Create the CI/CD API key in ATS
+  * Find your AppID in Mendix Sprintr
+
+## 3 Adding an extra Step in Jenkins
+
+This is only an example for Jenkins on Linux in shell scripting and can be written in another scripting language of your choice like for example Powershell (for Windows) or Groovy.
+
+* Make sure that curl and xmllint are installed on your Linux server.
+* In your Jenkins project, add a build step of type Execute shell and use the following shell script. 
 
 ![](attachments/use-cicd-api/script-cicd-jenkins.jpg)
 
@@ -54,3 +65,4 @@ RESULT=$(curl -s -H 'Content-Type: text/xml' -d "<soapenv:Envelope xmlns:soapenv
 # Write Result to file that you can inject as variable for your email
 echo EMAILTEXT="Test Run Status is ${RESULT}" >> email.txt
 ```
+The last API call results in a "Passed" or "Failed", you can email this result or for example use the outcome in a conditional step for continuing deploying on different environments or failing this build. 
