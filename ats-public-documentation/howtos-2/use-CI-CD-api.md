@@ -13,7 +13,7 @@ In this How-to we show you an example of how you could add a step for ATS in you
 ## 2 Prerequisites
 
 * Have some Jenkins experience
-* Know how to configure CI/CD in ATS [see CI/CD API reference guide](https://mansystems.gitbooks.io/ats-public-documentation/content/refguide-ats-2/cicd-api.html/)
+* Know how to configure CI/CD in ATS ([see CI/CD API reference guide](https://mansystems.gitbooks.io/ats-public-documentation/content/refguide-ats-2/cicd-api.html/)):
   * Configure a CI/CD Template in ATS
   * Configure a Webservice user in ATS
   * Create the CI/CD API key in ATS
