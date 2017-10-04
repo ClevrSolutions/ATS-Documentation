@@ -210,16 +210,13 @@ The following steps describe how to add test steps to your test case using the [
 To add test steps using the ATS Recorder, follow these steps:
 
 1.   Click **Record** on the **Test Case** page:
-
-    ![](attachments/create-a-test-case/record-test-case-page.png)
-
+    ![](attachments/create-a-test-case-2/record-test-case-page.png)
     This opens the **Recording Session** page:
-  
-    ![](attachments/create-a-test-case/recording-session-page.png)
+      ![](attachments/create-a-test-case-2/recording-session-page.png)
 
 2.  Now open a new page in your browser and enter the URL of your Mendix app. When you go back to ATS you see that ATS recorded the URL and the **Open Application** action:
 
-    ![](attachments/create-a-test-case/open-application-comp-app-recorded.png)
+    ![](attachments/create-a-test-case-2/open-application-comp-app-recorded.png)
 
 3.  Next go back to the Company Expenses app and enter your login credentials. 
 4.  Click the **New Expense** button.
@@ -229,29 +226,28 @@ To add test steps using the ATS Recorder, follow these steps:
 8.  Click the **Save & Submit** button.
 9.  Inside the data grid, click the description in the **Description** column of your expense to simulate an assert:
 
-    ![](attachments/create-a-test-case/expense-description-datagrid-column.png)
+    ![](attachments/create-a-test-case-2/expense-description-datagrid-column.png)
 
 10.  Click the **Sign Out** button. On the **Recording Session** page, you see that all the steps are recorded by ATS:
-
-    ![](attachments/create-a-test-case/recording-session-new-expense.png)
+    ![](attachments/create-a-test-case-2/recording-session-new-expense.png)
   
 11.  Click **Save** to save the test steps into your test case:
+    ![](attachments/create-a-test-case-2/save-button-recording-session.png)
 
-    ![](attachments/create-a-test-case/save-button-recording-session.png)
+12.  You must set the input parameter **Application URL** of the **Open Application** action to the **Global Constant**, **Application URL**.
+    ![](attachments/create-a-test-case-2/global-constant-open-application.png)
 
-12.  You must set the input parameter **Application URL** of the **Open Application** action to the **Global Constant**, **Application URL**:
+13.  You must manually add the **New Expense** dialog box (you cannot record this). You must add the action between test step 3 and test step 4. A user will visually confirm that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](../refguide-ats-1/findassert-dialog) action. Inside your test case hover over step 3 and click **Add Below**:
+![](attachments/create-a-test-case-2/add-test-step.png)
 
-    ![](attachments/create-a-test-case/global-constant-open-application.png)
+14. Click **Add step** in the added step and add the **Find/Assert Dialog** action.
 
-13.  You must manually add the **New Expense** dialog box (you cannot record this). You must add the action between test step 3 and test step 4. A user will visually confirm that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](../refguide-ats-1/findassert-dialog) action. Inside your test case, click **Add** again and add the **Find/Assert Dialog** action.
-
-    ![](attachments/create-a-test-case/new-expense-dialog-action.png)
+    ![](attachments/create-a-test-case-2/new-expense-dialog-action1.png)
 
     Note that you can also add actions manually between recording sessions. 
 
-14.  Double-click the **Dialog Title** input parameter and add the title of the dialog box:
-
-    ![](attachments/create-a-test-case/new-expense-dialog-action-input-parameters-recorder.png)
+14.  Click the **Dialog Title** input parameter and add the title of the dialog box:
+    ![](attachments/create-a-test-case-2/new-expense-dialog-action-input-parameters-recorder.png)
 
 15.  For the logout, you can choose to keep the recorded click on the **Sign Out** button or replace it with the **Logout** action.
 16.  The last thing to do is to clarify to ATS what you are testing. This is done by setting the **Call Type** of your test steps to one of the following:
@@ -261,8 +257,7 @@ To add test steps using the ATS Recorder, follow these steps:
     * **Teardown** for all steps that are necessary to clean up
   
     Test step 1 and test step 2 must have the **Call Type:** **Setup**. Test step 3-9 must have the **Call Type:** **Regular**. Test step 10 must have the **Call Type:** **Teardown**.
-  
-    ![](attachments/create-a-test-case/call-type-new-expense-recorder.png)
+   ![](attachments/create-a-test-case-2/call-type-new-expense-recorder.png)
 
 You have now created your test case using the ATS Recorder. 
 
