@@ -33,6 +33,7 @@ We support all widgets, which are included in the Mendix Modeler.
 
 ### Appstore Widgets
 Besides the default widgets, we support the most common used widgets from the appstore.
+
 | Name | Supported in Execution | Supported in Recording |
 | ---- | :--------------------: | :--------------------: |
 | BooleanSlider |  ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes|
