@@ -84,7 +84,7 @@ When testing using the Browserstack. ATS executes the test against a new VM sess
 
 Those files are always present so you don't have to change the filepath everytime.
 
-You can find the Browserstack test files [here](https://raw.githubusercontent.com/mendix/docs/content/howtos/selenium-files/browserstack-test-files.md).
+You can find the Browserstack test files [here](https://raw.githubusercontent.com/mendix/docs/content/howtos/version-1/selenium-files/browserstack-test-files.md).
 
 {{% alert type="info" %}}
 
