@@ -1,6 +1,6 @@
 ---
 title: "Create a Test Suite"
-category: "How-To's"
+Parent: "version-1"
 description: "Describes how to create a test suite and add test cases and test suites to your test suite."
 tags: ["ATS", "testing"]
 ---

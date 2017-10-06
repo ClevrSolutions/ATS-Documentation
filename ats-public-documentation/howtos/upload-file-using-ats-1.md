@@ -1,6 +1,6 @@
 ---
 title: "Upload a file in your app using ATS"
-category: "How-To's"
+Parent: "version-1"
 description: "Describes how to upload a file in your app using ATS and the restrictions it has."
 tags: ["ATS", "testing"]
 ---

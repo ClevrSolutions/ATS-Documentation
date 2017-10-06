@@ -1,6 +1,6 @@
 ---
 title: "Create a Test Case"
-category: "How-To's"
+Parent: "version-1"
 description: "Describes how to create a test case and add test steps."
 tags: ["ATS", "testing"]
 ---

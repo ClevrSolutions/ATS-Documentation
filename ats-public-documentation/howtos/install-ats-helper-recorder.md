@@ -1,6 +1,6 @@
 ---
 title: "Install the ATS Helper and the ATS Recorder"
-category: "How-To's"
+Parent: "version-1"
 description: "Describes how to install the ATS helper and the ATS Recorder tool."
 tags: ["ATS", "testing"]
 ---

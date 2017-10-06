@@ -1,6 +1,6 @@
 ---
 title: "Get Started"
-category: "How-To's"
+Parent: "version-1"
 description: "Describes the initial steps for automatically testing your apps using ATS."
 tags: ["ATS", "testing"]
 ---
