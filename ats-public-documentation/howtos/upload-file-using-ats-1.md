@@ -15,10 +15,10 @@ Quick summary:
 
 | Selenium Set Up | Uploading your own file | Uploading a file | Uploading possible? |
 | :-------------- | :---------------------- | :--------------- | :------------------ |
-| Local Selenium Server (Docker) | ![](attachments/upload-file-using-ats-1/grey.png) Limited<sup>1</sup> | ![](attachments/upload-file-using-ats-1/green.png) Yes | ![](attachments/upload-file-using-ats-1/green.png) Yes |
-| BrowserStack (SaaS) | ![](attachments/upload-file-using-ats-1/red.png) No | ![](attachments/upload-file-using-ats-1/green.png) Yes | ![](attachments/upload-file-using-ats-1/green.png) Yes |
-| SauceLabs (SaaS) | ![](attachments/upload-file-using-ats-1/red.png) No | ![](attachments/upload-file-using-ats-1/red.png) No | ![](attachments/upload-file-using-ats-1/red.png) No |
-| Selenium SaaS Agent | ![](attachments/upload-file-using-ats-1/grey.png) Limited<sup>2</sup> | ![](attachments/upload-file-using-ats-1/green.png) Yes | ![](attachments/upload-file-using-ats-1/red.png) No |
+| Local Selenium Server (Docker) | ![](version-1/attachments/upload-file-using-ats-1/grey.png) Limited<sup>1</sup> | ![](version-1/attachments/upload-file-using-ats-1/green.png) Yes | ![](version-1/attachments/upload-file-using-ats-1/green.png) Yes |
+| BrowserStack (SaaS) | ![](version-1/attachments/upload-file-using-ats-1/red.png) No | ![](version-1/attachments/upload-file-using-ats-1/green.png) Yes | ![](version-1/attachments/upload-file-using-ats-1/green.png) Yes |
+| SauceLabs (SaaS) | ![](version-1/attachments/upload-file-using-ats-1/red.png) No | ![](version-1/attachments/upload-file-using-ats-1/red.png) No | ![](version-1/attachments/upload-file-using-ats-1/red.png) No |
+| Selenium SaaS Agent | ![](version-1/attachments/upload-file-using-ats-1/grey.png) Limited<sup>2</sup> | ![](version-1/attachments/upload-file-using-ats-1/green.png) Yes | ![](version-1/attachments/upload-file-using-ats-1/red.png) No |
 
 <sup>1</sup> This only possible when you prepare your own files on that server. <br>
 <sup>2</sup> This depends on where the agent is installed.
@@ -54,7 +54,7 @@ ATS has a standard action for uploading files into your Mendix app.  The  [Set F
 
 _The Set File Manager action_
 
-![](attachments/upload-file-using-ats-1/set-file-manager-action.png)
+![](version-1/attachments/upload-file-using-ats-1/set-file-manager-action.png)
 
 A possible filepath is:
 
@@ -62,7 +62,7 @@ C:\users\ats\documents\receipt-1.png
 
 _File Uploader widget in the app_
 
-![](attachments/upload-file-using-ats-1/file-uploader-widget-app.png)
+![](version-1/attachments/upload-file-using-ats-1/file-uploader-widget-app.png)
 
 ### 3.3 Advice
 

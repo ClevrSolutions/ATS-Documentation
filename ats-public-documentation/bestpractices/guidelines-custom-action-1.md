@@ -18,6 +18,7 @@ These are guidelines, not rules. It is possible that you will encounter situatio
 
 ## 1 Using Mendix Actions
 
+
 Always try to use a Mendix action first. This table explains why you should use a Mendix action:
 
 | Reason | Description |
