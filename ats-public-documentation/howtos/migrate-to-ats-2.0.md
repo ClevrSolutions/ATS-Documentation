@@ -19,8 +19,8 @@ Before starting with the update, please take notice of the following:
 
 * It is **not** possible to migrate the test results of ATS 1.8 to ATS 2.0
 * You must export all your test data and repository items and import them into ATS 2.0
-* Each project/app in Mendix Sprintr resembles an app in ATS 2.0
-* User accounts, apps and app permissions are automatically synced from Mendix Sprintr
+* Each project/app in Sprintr resembles an app in ATS 2.0
+* User accounts, apps and app permissions are automatically synced from Sprintr
 
 ## 2 System Administration
 
@@ -29,7 +29,7 @@ Before starting with the update, please take notice of the following:
 1. Open the app you want to test in Sprintr.
 2. Go to **Settings** and click **General**.
 3. Copy the **App ID**.
-4. Go to [ATS 2.0](https://ats100.mendixcloud.com) in the cloud. Log in with your Mendix account if needed.
+4. Go to [ATS 2.0](https://ats.mendixcloud.com) in the cloud. Log in with your Mendix account if needed.
 5. Open the profile menu and click **Show System Administration**.
 
 ![](version-2/attachments/migrate-to-ats-2.0/system-admin-menu.png)
