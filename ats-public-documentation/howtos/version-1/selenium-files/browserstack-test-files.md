@@ -1,5 +1,5 @@
 ---
-Title: "Browserstack Files"
+title: "BrowserStack Files"
 ---
 
 Win XP:
