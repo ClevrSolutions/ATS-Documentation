@@ -1,12 +1,7 @@
 ---
 title: "Compatibility"
-space: "ATS Add-On"
 category: "General"
 ---
-
-## Minimum Screen Resolution
-
-ATS is optimized for desktop resolutions with a minimum width of 1200 pixels or higher. 
 
 ## Mendix Platform Compatibility
 
@@ -45,8 +40,4 @@ At the same time, we are planning to support Internet Explorer's successor, Edge
 
 ### Other Browsers
 
-No other browsers are supported at the moment.
-
-## Selenium Requirements
-
-ATS does only support Selenium version 2.53.0. If you want to use ATS with a custom selenium server, make sure it is running on the supported version. 
+No other browser is supported at the moment.

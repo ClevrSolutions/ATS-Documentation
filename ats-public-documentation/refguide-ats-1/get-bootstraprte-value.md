@@ -1,8 +1,8 @@
 ---
 title: "Get BootstrapRTE Value"
-space: "ATS Add-On" 
 parent: "bootstraprte"
 ---
+
 ## Description
 Returns the current BootstrapRTE value as an HTML string.
 

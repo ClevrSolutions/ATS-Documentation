@@ -1,6 +1,5 @@
 ---
 title: "Selenium Actions"
-space: "ATS Add-On" 
 parent: "standard-actions-reference"
 ---
 
@@ -13,4 +12,3 @@ parent: "standard-actions-reference"
 * [Get](get)
 * [Send Keys](send-keys)
 * [Click Coordinates](click-coordinates)
-* [Hover](hover)
