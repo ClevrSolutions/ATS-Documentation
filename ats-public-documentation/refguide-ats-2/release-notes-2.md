@@ -2,7 +2,7 @@ Date: September 18, 2017
 
 ## More Platform Integration
 
-Getting started with ATS has never been easier. We've invested to make the onboarding for new users a smooth experience. Existing users can enjoy zero maintenance and a well-known user interface.
+Getting started with ATS has never been easier. We’ve put a lot of effort into ensuring that the onboarding of new users is as smooth as possible. Existing users can enjoy zero maintenance and a well-known user interface.
 
 We did so by providing a single, multi-tenant SaaS instance of ATS in the Mendix cloud. This instance comes with the same styling and usability as the Mendix cloud portals.
 
@@ -10,7 +10,7 @@ We did so by providing a single, multi-tenant SaaS instance of ATS in the Mendix
 
 ATS is now offered as a service. There's a single, multi-tenant instance in the Mendix cloud to serve all customers: 
 
-<http://testing.mendix.com>
+<http://ats.mendix.com>
 
 This instance is operated and maintained by Mansystems and Mendix. As a customer you can enjoy the typical SaaS benefits. Mansystems and Mendix deliver maintenance, updates, and fixes faster than ever. You can access new features as soon as we publish a new release.
 
@@ -30,7 +30,7 @@ When you open the new ATS it will look very familiar.
 
 Earlier this year Mendix has released a restyled version of their cloud portal. We liked it so much that we decided to adopt it for ATS.
 
-But there's more than only a new styling. We've simplified the navigation structure and reduced the number of screens. Finally the most important screens have been completely rebuild:
+But there's more than only a new styling. We've simplified the navigation structure and reduced the number of screens. Finally the most important screens have been completely rebuilt:
 
 #### Dashboard
 
@@ -40,7 +40,7 @@ We have improved the load time of the dashboard by precalculating all required d
 
 #### Repository
 
-Via the repository you can browse all your data: folders, actions, test cases and test suites. We've introduced a new layout on this page similar to file system explorers. You can perform actions on a single item or many items at once. The powerful search-on-type function will search within subfolders.
+Via the repository you are able to browse all your folders, actions, test cases and test suites. We've introduced a new layout on this page similar to file system explorers. You can perform actions on a single item or many items at once. The powerful search-on-type function will search within subfolders.
 
 #### Test case editing
 
@@ -84,7 +84,7 @@ Screen resolutions: FullHD (1920x1080), UXGA (1600x1200), SXGA (1280x1024), UVGA
 
 ## Introducing an API for Continuous Delivery & Deployment
 
-Do you plan or already do practice DevOps in your team? Then you'll want to put in place continous delivery or even continuous deployment. To do so you'll need to automate as much as possible. Also the testing. Not only by automating the tests itself, but by automating the whole process. From triggering the test run to checking the results. With ATS this is now possible.
+Do you plan or already do practice DevOps in your team? Then you'll want to put in place continuous delivery or even continuous deployment. To do so you'll need to automate as much as possible, including testing. Not only by automating the tests, but by automating the whole process. From triggering the test run to checking the results. With ATS this is now possible.
 
 We've extended ATS with a new simple API. Via this API you can run your automated tests from any external tool. A good option for such a tool is Jenkins. We've documented how to setup Jenkins with ATS in a How to (You can find all How to's on <https://docs.mendix.com/ats/>).
 
@@ -103,6 +103,8 @@ We've extended ATS with a new simple API. Via this API you can run your automate
 
 ### Terminology
 
+The following terminology has changed.
+
 - Package --&gt; Folder
 - Project --&gt; app
 - Datatypes
@@ -119,7 +121,7 @@ We've extended ATS with a new simple API. Via this API you can run your automate
 
 ### Removals
 
-Some of above described changes made existing functionality obsolete so we could remove it.
+Some of changed described above made existing functionality obsolete so we could remove it.
 
 - The whole setup and administration of tenants, apps, permissions, accounts and roles has become obsolete and is no longer available.
 - The option to set the concurrency limit for a selenium endpoint has been removed. The limit is determined by the test runner.
