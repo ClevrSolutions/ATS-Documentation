@@ -44,7 +44,7 @@ To upload a file in your app, ATS must have access to that file. Selenium simula
 
 1. You use selenium on a local server. This means selenium has no access to your local files. But you can add these files to the server or create a set of generic test files for that server.
 
-1. You use Selenium SaaS. This means selenium has no access to your local files unless you use an agent. When you use the agent, situation 1 applies. If you do not use an agent the selenium SaaS creates a VM session for each test case you run. This means there are no constant values like on your local selenium server. Some Selenium SaaS providers upload a generic set of test files into each VM session that you can use in your test case. In the quick summary in the [Introduction](#1Introduction) chapter you see which selenium SaaS provides these files.
+1. You use Selenium SaaS. This means selenium has no access to your local files unless you use an agent. When you use the agent, situation 1 applies. If you do not use an agent the selenium SaaS creates a VM session for each test case you run. This means there are no constant values like on your local selenium server. Some Selenium SaaS providers upload a generic set of test files into each VM session that you can use in your test case. In the quick summary in the [Introduction](##1Introduction) chapter you see which selenium SaaS provides these files.
 
 1. You use a Selenium SaaS agent. ATS executes the test on the machine you installed the agent. In most cases this is a server inside your network. ATS can find all the files on this machine.
 
