@@ -56,7 +56,7 @@ The following steps describe how to add test steps manually to your test case. Y
     ![](attachments/create-a-test-case-2/test-case-page-add.png)
 
     
-The first step is opening the Company Expenses app, which you do by entering a URL in the browser. ATS does the same by using the [open application](../refguide-ats-1/open-application) action.
+The first step is opening the Company Expenses app, which you do by entering a URL in the browser. ATS does the same by using the [open application](/ats/refguide/rg-version-1/open-application) action.
 
 2. Enter **Open Application** in the input area of the dropdown. You have the core action and Mendix actions. Mendix actions are preferred over core actions, so select the mendix action to open the application. 
 
@@ -85,7 +85,7 @@ The first step is opening the Company Expenses app, which you do by entering a U
 
     ATS now uses the application URL you selected in the **Run Configuration** application.
     
-8.  After opening the application, you must log in. ATS has a standard login action for logging in to a Mendix application that you must use, which is the [login](../refguide-ats-1/login) action. The login page of the company expenses app looks like this:
+8.  After opening the application, you must log in. ATS has a standard login action for logging in to a Mendix application that you must use, which is the [login](/ats/refguide/rg-version-1/login) action. The login page of the company expenses app looks like this:
 
     ![](attachments/create-a-test-case-2/comp-app-login-page.1.png)
 
@@ -103,7 +103,7 @@ The first step is opening the Company Expenses app, which you do by entering a U
 
     ![](attachments/create-a-test-case-2/helper-new-expense-button.png)
 
-13. ATS has an action that clicks a widget, which is the [Click Widget](../refguide-ats-1/click-widget) action. Inside your test case, click **Add step** again and add the **Click Widget** action.
+13. ATS has an action that clicks a widget, which is the [Click Widget](/ats/refguide/rg-version-1/click-widget) action. Inside your test case, click **Add step** again and add the **Click Widget** action.
 
     ![](attachments/create-a-test-case-2/click-widget-new-expense.png)
 
@@ -121,7 +121,7 @@ The first step is opening the Company Expenses app, which you do by entering a U
 
     ![](attachments/create-a-test-case-2/new-expense-dialog.png)
 
-20. A user visually confirms that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](../refguide-ats-1/findassert-dialog) action. Inside your test case, click **Add step** again and add the **Find/Assert Dialog** action.
+20. A user visually confirms that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](/ats/refguide/rg-version-1/findassert-dialog) action. Inside your test case, click **Add step** again and add the **Find/Assert Dialog** action.
 
     ![](attachments/create-a-test-case-2/new-expense-dialog-action.png)
 
@@ -134,7 +134,7 @@ The first step is opening the Company Expenses app, which you do by entering a U
 
     ![](attachments/create-a-test-case-2/new-expense-dialog-fields.png)
 
-23. The **Amount** field is a text box widget, the **Type** field is a reference selector widget, and the **Description** field is a text area widget. ATS can interact with all these widgets using the [Set Value](../refguide-ats-1/set-value) action. Inside your test case, click **Add test** and add the **Set Value** action. Then, select the test step with the **Set Value** action, click **Copy**, and click **Paste**.
+23. The **Amount** field is a text box widget, the **Type** field is a reference selector widget, and the **Description** field is a text area widget. ATS can interact with all these widgets using the [Set Value](/ats/refguide/rg-version-1/set-value) action. Inside your test case, click **Add test** and add the **Set Value** action. Then, select the test step with the **Set Value** action, click **Copy**, and click **Paste**.
 24. Repeat the copy and paste step of the test step with the **Set value** action. Now you have a test step for each field.
 
     ![](attachments/create-a-test-case-2/three-set-value-actions.png)
@@ -159,7 +159,7 @@ The first step is opening the Company Expenses app, which you do by entering a U
 
     ![](attachments/create-a-test-case-2/click-widget-save-submit.png)
 
-29.  You must confirm that the expense is successfully submitted. In the Company Expenses app, a submitted expense appears in the datagrid. ATS can assert the new expense with the [Find/Assert DataGrid Row](../refguide-ats-1/findassert-datagrid-row) action. Inside your test case, click **Add step** and add the **Find/Assert Datagrid Row** action.
+29.  You must confirm that the expense is successfully submitted. In the Company Expenses app, a submitted expense appears in the datagrid. ATS can assert the new expense with the [Find/Assert DataGrid Row](/ats/refguide/rg-version-1/findassert-datagrid-row) action. Inside your test case, click **Add step** and add the **Find/Assert Datagrid Row** action.
     ![](attachments/create-a-test-case-2/add-findassert-datagrid-row-new-expense.png)
 
 30. Now use the ATS Helper to find the **Widget Name** of the data grid in the Company Expenses app:
@@ -181,7 +181,7 @@ The first step is opening the Company Expenses app, which you do by entering a U
 33. The last step of your test case is to end your user session by logging out. ATS has two ways for logging out of your application:
 
     * ATS clicks the **Logout** button
-    * ATS uses the [Logout](../refguide-ats-1/logout) action 
+    * ATS uses the [Logout](/ats/refguide/rg-version-1/logout) action 
     
     The **Logout** action is a hard logout, meaning that no matter where ATS is inside your application, it always logs out. Inside your test case, click **Add step** and add the **Logout** action.
    
@@ -205,7 +205,7 @@ The first step is opening the Company Expenses app, which you do by entering a U
 
 ## 5 Adding Test Steps Using the ATS Recorder
 
-The following steps describe how to add test steps to your test case using the [ATS Recorder](../refguide-ats-1/recorder). You add the steps necessary for creating a new expense in the Company Expenses app. Create a new test case by completing [3 Creating a Test Case](#3) before starting with this section.
+The following steps describe how to add test steps to your test case using the [ATS Recorder](/ats/refguide/rg-version-1/recorder). You add the steps necessary for creating a new expense in the Company Expenses app. Create a new test case by completing [3 Creating a Test Case](#3) before starting with this section.
 
 To add test steps using the ATS Recorder, follow these steps:
 
@@ -237,7 +237,7 @@ To add test steps using the ATS Recorder, follow these steps:
 12.  You must set the input parameter **Application URL** of the **Open Application** action to the **Global Constant**, **Application URL**.
     ![](attachments/create-a-test-case-2/global-constant-open-application.png)
 
-13.  You must manually add the **New Expense** dialog box (you cannot record this). You must add the action between test step 3 and test step 4. A user will visually confirm that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](../refguide-ats-1/findassert-dialog) action. Inside your test case hover over step 3 and click **Add Below**:
+13.  You must manually add the **New Expense** dialog box (you cannot record this). You must add the action between test step 3 and test step 4. A user will visually confirm that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](/ats/refguide/rg-version-1/findassert-dialog) action. Inside your test case hover over step 3 and click **Add Below**:
 ![](attachments/create-a-test-case-2/add-test-step.png)
 
 14. Click **Add step** in the added step and add the **Find/Assert Dialog** action.

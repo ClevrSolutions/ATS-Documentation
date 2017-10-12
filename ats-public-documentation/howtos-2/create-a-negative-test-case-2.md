@@ -61,7 +61,7 @@ _The test case_
 
 ![](attachments/create-a-negative-test-case/assert-value-parameter.png)
 
-6. Next, you add the action needed to search for the menu item as **Precondition**. Check the precondition box and add the [_Find/Assert Menu Item_](../refguide-ats-1/findassert-menu-item) action.
+6. Next, you add the action needed to search for the menu item as **Precondition**. Check the precondition box and add the [_Find/Assert Menu Item_](/ats/refguide/rg-version-1/findassert-menu-item) action.
 
 ![](attachments/create-a-negative-test-case/add-findassert-menu-item-as-precondition.png)
 
