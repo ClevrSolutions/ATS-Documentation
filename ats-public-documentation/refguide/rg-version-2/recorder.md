@@ -1,6 +1,6 @@
 ---
 title: "Recorder"
-category: "Reference Guide 2.0"
+parent: "rg-version-2"
 ---
 
 ## Recorder

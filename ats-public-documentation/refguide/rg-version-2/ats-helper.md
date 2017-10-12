@@ -1,6 +1,6 @@
 ---
 title: "ATS Helper"
-category: "Reference Guide 2.0"
+parent: "rg-version-2"
 ---
 
 ## 1 Introduction

@@ -1,6 +1,6 @@
 ---
 title: "Test Suite"
-category: "Reference Guide 2.0"
+parent: "rg-version-2"
 ---
 
 ## Test Suite
