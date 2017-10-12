@@ -19,11 +19,11 @@ To test this, you log in as an employee and assert that you do not see the admin
 
 _Navigation Menu employee_
 
-![](attachments/create-a-negative-test-case/navigation-menu-employee-company-expenses-app.png)
+![](attachments/create-a-negative-test-case-2/navigation-menu-employee-company-expenses-app.png)
 
 _Navigation Menu administrator_ 
 
-![](attachments/create-a-negative-test-case/navigation-menu-administrator-company-expenses-app.png)
+![](attachments/create-a-negative-test-case-2/navigation-menu-administrator-company-expenses-app.png)
 
 **This how-to will teach you how to do the following**
 
@@ -41,33 +41,33 @@ The test case used in this how-to is already created. It asserts that the naviga
 
 _The navigation menu_
 
-![](attachments/create-a-negative-test-case/navigation-menu-employee-company-expenses-app.png)
+![](attachments/create-a-negative-test-case-2/navigation-menu-employee-company-expenses-app.png)
 
 _The test case_
 
-![](attachments/create-a-negative-test-case/negative-test-case.png)
+![](attachments/create-a-negative-test-case-2/negative-test-case.png)
 
 1. Open your app in ATS and go to the **Test Cases** menu item.
 2. Click the **Repository** tab.
 
-![](attachments/create-a-negative-test-case/go-to-repository.png)
+![](attachments/create-a-negative-test-case-2/go-to-repository.png)
 
 3. Select the test case to add the negative test step.
 4. Add the _Assert False_ action where you want to place the negative test step.
 
-![](attachments/create-a-negative-test-case/add-the-assert-false.png)
+![](attachments/create-a-negative-test-case-2/add-the-assert-false.png)
 
 5. Set the **Assert Value** parameter of the _Assert False_ action to **True**.
 
-![](attachments/create-a-negative-test-case/assert-value-parameter.png)
+![](attachments/create-a-negative-test-case-2/assert-value-parameter.png)
 
 6. Next, you add the action needed to search for the menu item as **Precondition**. Check the precondition box and add the [_Find/Assert Menu Item_](/ats/refguide/rg-version-1/findassert-menu-item) action.
 
-![](attachments/create-a-negative-test-case/add-findassert-menu-item-as-precondition.png)
+![](attachments/create-a-negative-test-case-2/add-findassert-menu-item-as-precondition.png)
 
 7. Now enter the information needed to find the **Admin Menu** as an administrator to verify it is not visible as an employee. Also, enter a proper description.
 
-![](attachments/create-a-negative-test-case/negative-test-step-finished.png)
+![](attachments/create-a-negative-test-case-2/negative-test-step-finished.png)
 
 Inner workings;
 
@@ -80,6 +80,6 @@ You can use this method for a lot of different things.
 
 _The finished test case_
 
-![](attachments/create-a-negative-test-case/the-finished-test-case.png)
+![](attachments/create-a-negative-test-case-2/the-finished-test-case.png)
 
 You now know how to create a negative test case.
