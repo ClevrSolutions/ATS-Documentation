@@ -1,6 +1,6 @@
 ---
 title: "Create a Data-Driven Test Case"
-category: "How-To's ATS 2"
+parent: "ht-version-2"
 description: "Describes how to create data and connect this to a test case."
 tags: ["ATS", "testing"]
 ---

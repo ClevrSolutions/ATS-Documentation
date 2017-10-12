@@ -1,6 +1,6 @@
 ---
 title: "Use the CI/CD API"
-category: "How-To's ATS 2"
+parent: "ht-version-2"
 description: "Describes how to configure Jenkins to use the ATS 2.0 CI/CD API."
 tags: ["ATS", "testing", "CI/CD"]
 ---
