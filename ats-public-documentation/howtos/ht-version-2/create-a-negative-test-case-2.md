@@ -37,7 +37,7 @@ Before starting with this how-to, make sure you have the following prerequisites
 
 ## 3 Create a Negative Test Case
 
-The test case used in this how-to is already created. It asserts that the navigation menu displays the correct items. Now we add a step to check if does not display the **Admin Menu** item.
+The test case used in this how-to is already created. It asserts that the navigation menu displays the correct items. Now we add a step to check if it does not display the **Admin Menu** item.
 
 _The navigation menu_
 
