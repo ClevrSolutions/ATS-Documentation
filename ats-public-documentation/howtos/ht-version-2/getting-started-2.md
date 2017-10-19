@@ -99,7 +99,7 @@ To add a new Selenium hub, follow these steps:
 
 The **Test Cases** menu is where you access the repositoy, test data and user stories.
 
-![](attachments/getting-started-2/
+![](attachments/getting-started-2/test-cases-menu.png)
 
 The **Test Cases** menu has three tabs: 
 
@@ -120,14 +120,14 @@ To create a test case, follow these steps:
 3. Enter a clear description for your test case. In case others may need to know what your test case does, use a template to make sure all aspects of the case are described clearly.
 4. Click **Create**.
 
-![](attachments/getting-started-2/
+![](attachments/getting-started-2/create-new-test-case.png)
 
 5. When the **Test Case Details** page opens, you are now in the actual test case. In the top left corner of the page, you see the name and description of your test case. The **Test Case Details** page also displays the following buttons:
 
       * **Run** – brings you to the **Job Configuration** page.
       * **Export** – exports the test case as a XML file (this file can be uploaded into another ATS environment) or exports a PDF report or your test case.
 
-![](attachments/getting-started-2/
+![](attachments/getting-started-2/test-case-details-page.png)
 
 ### 4.2 Adding Test Steps
 
@@ -140,7 +140,7 @@ Before you start adding test steps, add the following tools:
 3. To use the recorder function, you need to have the Google Chrome browser installed on your system and install the ATS Recorder Chrome plugin. The ATS recorder only works in Chrome.
 4. Install the ATS recorder extension in your Chrome browser.
 
-![](attachments/getting-started-2/
+![](attachments/getting-started-2/information-dialog.png)
 
 #### 4.2.1 Record – Using the Recorder Function
 
@@ -149,25 +149,28 @@ With the ATS Recorder plugin installed, you can start a recording session at any
 To use the recorder function, follow these steps:
 
 1. Click **Record** while inside a test case in ATS, which opens the **Recording Session** page. On this page you can manage your recording session.
+
+![](attachments/getting-started-2/click-record.png)
+
 2. You can now open the Mendix application you want to test in another tab of the browser and start testing the application manually. The test steps you take are recorded in the recording session.
 3.  Click **Save** to save your test steps.
 
-![](attachments/getting-started-2/
+![](attachments/getting-started-2/recording-session.png)
 
 | Field | Description |
 | :--- | :--- |
 | **Recorded event** | All the registered clicks/entering text will show up here in the sequence where they were done. Select an event to open the **Action mapping** menu of that particular event. The ATS recorder selects the actions for you. |
 | **Action mapping** | This shows all the available actions for this event. Click **Select** if you want to choose a different action.|
 
-![](attachments/getting-started-2/
-
 All the test steps are numbered for easy identification. The up and down arrows can be used to change the sequence of the test steps. You can **delete**, **copy** or **paste** a selected test step. With the **Extract action**, you can combine actions of multiple steps into one step. Select the steps you want to combine and click **Extract action**. For more information on extracting an action, see [Extract Action](/ats/refguide/rg-version-1/custom-actions).
+
+![](attachments/getting-started-2/recorded-test-case.png)
 
 #### 5.2.2 Test Data Tab
 
 In this tab, you can connect your data sets to a test case. Use the arrow to select the data set you need and click **Save**. A new menu will appear in which you can see the data set fields that are available to select. You can also use this menu to check if you selected the correct data set.
 
-![](attachments/getting-started-2/data-set-test-case.png)
+![](attachments/getting-started-2/test-data-tab.png)
 
 {{% alert type="info" %}}
 
@@ -179,13 +182,13 @@ If you do not use the data set, make sure to disconnect it. ATS will remember wh
 
 This tab shows you the actions used in this test case and the test suites that are using this test case. Use this screen to verify that if you make a change to a custom action, it does not affect another test case or test suite.
 
-![](attachments/getting-started-2/show-usages-test-case.png)
+![](attachments/getting-started-2/show-usages-tab.png)
 
 #### 5.2.4 Stories Tab
 
 This tab displays the user stories that are connected to your test case, the test cases within that story, and the success rate of the user story.
 
-![](attachments/getting-started-2/stories-test-case.png)
+![](attachments/getting-started-2/stories-tab.png)
 
 ### 5.3 Creating a Test Suite
 
