@@ -116,6 +116,9 @@ In this how-to, only the **Repository** tab is described.
 To create a test case, follow these steps:
 
 1. On the **Repository** tab, click **Actions** and click **New Test Case** in the drop-down. This opens the **Create new** dialog box.
+
+![](attachments/getting-started-2/actions-new-test-case.png)
+
 2. Enter a name for your test case. Since you are likely to create multiple test cases and test suites, using a predefined naming structure is advised.
 3. Enter a clear description for your test case. In case others may need to know what your test case does, use a template to make sure all aspects of the case are described clearly.
 4. Click **Create**.
@@ -194,65 +197,75 @@ This tab displays the user stories that are connected to your test case, the tes
 
 To create a test suite, follow these steps:
 
-1. Click **Add Test** and select **Test Suite** in the drop-down menu. The page **Create new** will open.
+1. On the **Repository** tab, click **Actions** and click **New Test Suite** in the drop-down. This opens the **Create new** dialog box.
+
+![](attachments/getting-started-2/actions-new-test-suite.png)
+
 2. Enter a name for your test suite. Since you are likely to create multiple test cases and test suites, using a predefined naming structure is advised.
-3. Enter a clear description for your test suite. Others may need to know what your test suite does. It might be handy to use a template to make sure all aspects of the suite are present.
+3. Enter a clear description for your test suite. In case others may need to know what your test suite does, use a template to make sure all aspects of the suite are described clearly.
+4. Click **Create**.
 
       ![](attachments/getting-started-2/create-new-test-suite.png)
 
-4. Click **Create**. 
 5. The **Test Suite** page looks similar to the **Test Case** page, but with fewer options. The **Test Suite** page also displays the following buttons:
+      * **Parallel** - executes the test steps at same time, depending on your selenium settings.
+      * **Sequential** - executes the test steps one at a time, like a test case.
+      * **Run** – brings you to the **Job Configuration** page.
+      * **Export** – exports the test suite as a XML file (this file can be uploaded into another ATS environment).
 
-      * **Run** – takes you to the **Run configuration** screen
-      * **Quickrun** – immediately executes a test suite with the last set of run configurations (use this option to check your test case while building)
-      * **Export** – exports the test suite as a XML file (this file can be uploaded into another ATS environment)
+![](attachments/getting-started-2/test-suite-details-page.png)
 
-![](attachments/getting-started-2/test-suite-page.png)
-
-#### 5.3.1 Test Cases/Suites Tab
+#### 5.3.1 Test Steps Tab
 
 Here you can see all the steps that are in your test suite. Each step is either a test suite or a test step.
 
-Clicking **Add** adds a test case to your test suite. Enter a clear description for this step and **Search** for a test case you want to add to your test suite. You can **Create a new Test Case** if you want to add a complete new test case to your test suite.
+You add a test case to your test suite by clicking the **Search** button or by using the **Add step** drop-down. When you click **Search**, you can also click **Create a new Test Case** if you want to add a complete new test case to your test suite.
 
-![](attachments/getting-started-2/select-test.png)
+![](attachments/getting-started-2/add-test-case.png)
 
 #### 5.3.2 Show Usages Tab
 
 This tab shows you all the **Test Cases used by this Test Suite**, all the **Test Suites used by this Test Suite**, and the **Test Suites using this Test Suite**. Use this screen to make sure that if you make a change, it does not affect other test cases or test suites.
 
-![](attachments/getting-started-2/show-usages-test-suite.png)
+![](attachments/getting-started-2/show-usages-tab-test-suite.png)
 
 #### 5.3.3 Stories Tab
 
 This tab displays the user stories that are connected to your test suite, the test cases within that story, and the success rate of the user story. You can **Open**, **Unlink**, or **Link** a user story to your test suite.
 
-![](attachments/getting-started-2/stories-test-suite.png)
+![](attachments/getting-started-2/stories-tab-test-suite.png)
 
 ## 6 Run Configuration
 
-When you click **Run** in the upper-right corner of your test case, the **Select Run Configuration** page will open.
+When you click **Run** in the upper-right corner of your test case/suite, the **Job Configuration** page will open.
 
-![](attachments/getting-started-2/run-configuration.png)
+![](attachments/getting-started-2/job-configuration.png)
 
-Here, you can select your AUT and Selenium hub for ATS to use.
+Here, you can select your Environment and Selenium hub for ATS to use.
 
 | Field | Description |
 | --- | --- |
-| **Application** | Select the app you want to test. |
+| **Environment** | Select the app you want to test. |
 | **Selenium Hub** | Select the Selenium Hub you want to use to execute the test case. |
-| **Browser** | Select the browser that the Selenium Hub uses to execute the test case. Please note that these are the supported browsers. | 
+| **Browser** | Select the browser that the Selenium Hub uses to execute the test case. Please note that these are the supported browsers. |
 
-Now click **Run** again in the upper-right corner to execute the test case against the provided parameters. For more information on the run configuration, see [Run Configuration](/ats/refguide/rg-version-1/test-run).
+When you select a supported selenium provider like Browserstack additional options appear, the **Platform Settings**.
+
+| Field | Description |
+| --- | --- |
+| **Platform** | Select the plaform you want to test on. |
+| **Resolution** | Select the resolution of the session screen. |
+
+Now click **Run** again in the upper-right corner to execute the test case/suite against the provided parameters.
 
 ## 7 Result
 
-When you click **Run**, the **Monitoring / Results** page will open.
+When you click **Run**, the **Test Runs** page will open.
 
-![](attachments/getting-started-2/monitoring-results-pending.png)
+![](attachments/getting-started-2/test-runs-page.png)
 
-Once your test case is executed, the result is shown here. For more information on results, see [Monitoring](/ats/refguide/rg-version-1/monitoring).
+Once your test case/suite is executed, the result is shown here.
 
-You have now finished the getting started guide for ATS. Please check the [how-to's](ht-version-1) and [best practices](/ats/bestpractices/bp-version-1/bp-version-1) for more information.
+You have now finished the getting started guide for ATS.
 
 Good luck testing your Mendix app with ATS!
