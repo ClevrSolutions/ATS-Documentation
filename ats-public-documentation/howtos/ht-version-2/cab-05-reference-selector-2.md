@@ -1,6 +1,6 @@
 ---
 title: "CAB.05 - Reference Selector"
-parent: "create-unsupported-widget-actions"
+parent: "create-unsupported-widget-actions-2"
 description: "This how-to explains step by step how to create an Unsupported Widget action for the Mendix Reference Selector widget."
 tags: ["ATS", "testing"]
 ---
