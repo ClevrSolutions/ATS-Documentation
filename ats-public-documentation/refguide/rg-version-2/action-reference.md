@@ -114,5 +114,5 @@ A ConfirmationDialog is shown when a delete or microflow action requires a confi
 
 | Action                    | Supported Widgets | Description                              |
 | ------------------------- | ----------------- | ---------------------------------------- |
-| Assert Active Tab Caption | TabContainer      | Asserts that the active tab page displays a specific caption |
-| Get Active Tab Caption    | TabContainer      | Returns the caption of the active tab page |
+| Assert Active Tab Name | TabContainer      | Asserts that the active tab page displays has a specific name |
+| Get Active Tab Name    | TabContainer      | Returns the name of the active tab page |
