@@ -151,6 +151,10 @@ This option requires you to set up your own Selenium Server on-premises.
 Selenium is an open-source third-party component and there is no active support from Mendix.
 {{% /alert %}}
 
+{{% alert type="info" %}}
+Selenium standalone support is dropped with ATS 2.0 and selenium grid is supported only. By following the instructions below, you will setup a selenium grid.
+{{% /alert %}}
+
 #### 5.4.1 Selenium Runner Setup
 
 We provide basic installation instructions for the Selenium Runner based on Docker containers. For details, see [Get Started with Docker](https://docs.docker.com/engine/getstarted/), [Selenium Documentation](http://www.seleniumhq.org/docs/), and [Docker-Selenium](https://github.com/SeleniumHQ/docker-selenium).
