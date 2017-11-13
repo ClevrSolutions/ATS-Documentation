@@ -22,3 +22,24 @@ Before starting with this how-to, make sure you have the following prerequisites
 
 * Have the appropriate role to gain access to the test settings in ATS.
 * Have access to a selenium provider account or internal selenium server.
+
+## 3 The Test Settings
+
+To get to the test settings follow these steps:
+
+1. Go to ATS and login.
+2. Open the app where you want to add the selenium hubs.
+3. Once inside your app click the profile menu and select **Show Test Settings**.
+
+Screenshot 1
+
+The **Selenium hubs** section contains all the configured selenium hubs for this app. Here you add a new selenium hub by clicking **New Selenium Hub**.
+
+Screenshot 2
+
+The **Select Provider** dialog box opens. Here you can select one of the four configurable selenium hub options. Each of the options is explained in the following chapters.
+
+Screenshot 3
+
+## 4 Configure Browserstack
+
