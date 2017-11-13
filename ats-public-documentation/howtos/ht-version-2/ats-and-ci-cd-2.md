@@ -94,7 +94,7 @@ Keep your API key at hand you need later on.
 
 You now generated the CI/CD access API key, you need this to gain access to your app in ATS. Next, the CI/CD template is explained.
 
-### 4.1 CI/CD Template
+### 4.2 CI/CD Template
 
 To create a CI/CD template follow these steps:
 
