@@ -51,16 +51,16 @@ Continuous deployment is an excellent way to accelerate the feedback loop with y
 
 ### 3.4 Conclusion
 
-The CI/CD process ensures that everything commit is tested and deployed. An example:
-A Mendix developer commits a change into his team server branche. The branche is then automatically deployed into the test environment and tested. If the tests pass the branche is deployed into the acceptance environment and also tested. You can even use Continuous Deployment to directly deploy to production and perform a regression test.
+The CI/CD process ensures that everything committed is tested and deployed. An example:
+A Mendix developer commits a change into his team server branch. The branche is then automatically deployed into the test environment and tested. If the tests passes, the branch is deployed into the acceptance environment and also tested. You can even use Continuous Deployment to directly deploy to production and perform a regression test.
 
 ## 4 ATS and CI/CD
 
-ATS can do the testing of your Mendix app in the CI/CD pipeline. In ATS 2.0 a CI/CD functionality is added so that customers can access their test cases or test suites from outside ATS. This way you can use a CI/CD tool to execute your test cases and test suites in ATS and retrieve the results. To access those specific test case and test suite you must generate an API. This chapter explains how to generate a CI/CD API for accessing ATS and how to generate a CI/CD template for a test case or test suite. The CI/CD template is pre configured test case or test suite with a set run configuration which can be fired from a CI/CD pipeline.
+ATS can do the testing of your Mendix app in the CI/CD pipeline. In ATS 2.0 a CI/CD API is added, so that customers can access their test cases or test suites from outside ATS. This way you can use a CI/CD tool to execute your test cases and test suites in ATS and retrieve the results. To access those specific test cases and test suites you must generate a CI/CD API key. This chapter explains how to generate a CI/CD API key for accessing ATS and how to generate a CI/CD template for a test case or test suite. The CI/CD template is a pre-configured test case or test suite with a set run configuration which can be fired from a CI/CD pipeline.
 
 ### 4.1 CI/CD access API
 
-To generate a CI/CD access API follow these steps:
+To generate a CI/CD API key follow these steps:
 
 1. Login to ATS 2.0.
 2. Open up the app you want to access for CI/CD.
@@ -90,9 +90,9 @@ This is the only time ATS shows the API. Write it down in a secure place.
 
 ![](attachments/ats-and-ci-cd-2/your-new-api-key.png)
 
-Keep your API key at hand you need later on. 
+Keep your API key at hand, you need it later on. 
 
-You now generated the CI/CD access API key, you need this to gain access to your app in ATS. Next, the CI/CD template is explained.
+You now generated the CI/CD API key, you need this to gain access to your app in ATS. Next, the CI/CD template is explained.
 
 ### 4.2 CI/CD Template
 
