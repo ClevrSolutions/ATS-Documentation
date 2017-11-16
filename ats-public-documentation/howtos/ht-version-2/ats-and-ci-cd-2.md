@@ -29,7 +29,7 @@ In this chapter the three components of CI/CD are described. There are two possi
 * Continuous Integration and Continuous Delivery
 * Continuous Integration and Continuous Deployment
 
-The difference is in the final phase either manually deploy to the customer or use Continuous Deployement to do it automatically.
+The difference is in the final phase either manually deploy to the customer or use Continuous Deployment to do it automatically.
 
 ### 3.1 Continuous Integration
 
