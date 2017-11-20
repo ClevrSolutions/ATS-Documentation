@@ -146,7 +146,7 @@ To find the username and access key follow these steps:
 
 Leave the **New Selenium Hub** dialog box open for the next chapter.
 
-### 5.2 Custom Capabilities
+### 6.2 Custom Capabilities
 
 To set a custom capability for SauceLabs follow these steps:
 
@@ -174,6 +174,67 @@ The datatype is always a *String* unless you must enter a *true* or *false* then
 
 7. Add another custom capability or click **Save** again to store your selenium hub set-up.
 
-You now configured your SauceLabs Selenium Hub. You can create as many variations as you like. When multiple people use the same Browserstack account, you can use the name capability to keep the test runs separated.
+You now configured your SauceLabs Selenium Hub. You can create as many variations as you like. When multiple people use the same Testingbot account, you can use the name capability to keep the test runs separated.
 
 ![](attachments/configure-a-selenium-hub-2/finished-saucelabs-selenium-hub.png)
+
+## 7 Configure Testingbot
+
+### 7.1 Basic Configuration
+
+To configure Testingbot as a selenium hub follow these steps:
+
+1. Go to the **Select Provider** dialog box and select **Testingbot**.
+
+![](attachments/configure-a-selenium-hub-2/select-provider-dialog-testingbot.png)
+
+2. The **New Selenium Hub** dialog box opens. Here you enter the necessary information for ATS to connect to your Testingbot account.
+3. First, you enter a name for your selenium hub. This is only meant to help you identify the selenium hub.
+4. Next, you enter the Client key of your Testingbot account. 
+5. Finally, you enter the Client secret of your testingbot account.
+
+![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-testingbot.png)
+
+To find the username and access key follow these steps:
+1. Go to [Testingbot](https://testingbot.com) and login with the account you want to connect to ATS.
+2. Click **My Account** in the upper right corner of the screen.
+
+![](attachments/configure-a-selenium-hub-2/my-account-testingbot.png)
+
+3. You find your Testingbot key and secret on this page.
+
+![](attachments/configure-a-selenium-hub-2/client-key-client-secret-testingbot.png)
+
+Leave the **New Selenium Hub** dialog box open for the next chapter.
+
+### 7.2 Custom Capabilities
+
+To set a custom capability for Testingbot follow these steps:
+
+1. Go to the **New Selenium Hub** dialog box.
+2. Click **New** in the **Custom Capabilities** section.
+
+![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-testingbot-custom-capability.png)
+
+3. The **New Capability** dialog box opens.
+4. To enter a custom capability you must know which capabilities you can use. Go to the [Test Configuration](https://testingbot.com/support/other/test-options#name) section on the Testingbot website. Choose a capability, for example, **name**.
+
+![](attachments/configure-a-selenium-hub-2/name-capability-testingbot.png)
+
+5. Now enter the *name* value in the **Key** field and the value you want in the **Value** field.
+
+ {{% alert type="info" %}}
+
+The datatype is always a *String* unless you must enter a *true* or *false* then the datatype must be set to *Boolean*.
+
+{{% /alert %}}
+
+![](attachments/configure-a-selenium-hub-2/name-capability-testingbot-ats.png)
+
+6. Click **Save**.
+
+7. Add another custom capability or click **Save** again to store your selenium hub set-up.
+
+You now configured your Testingbot Selenium Hub. You can create as many variations as you like. When multiple people use the same Testingbot account, you can use the name capability to keep the test runs separated.
+
+![](attachments/configure-a-selenium-hub-2/finished-testingbot-selenium-hub.png)
