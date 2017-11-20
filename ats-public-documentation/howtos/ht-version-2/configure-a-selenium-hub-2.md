@@ -238,3 +238,31 @@ The datatype is always a *String* unless you must enter a *true* or *false* then
 You now configured your Testingbot Selenium Hub. You can create as many variations as you like. When multiple people use the same Testingbot account, you can use the name capability to keep the test runs separated.
 
 ![](attachments/configure-a-selenium-hub-2/finished-testingbot-selenium-hub.png)
+
+## 8 Configure a Custom Selenium Hub
+
+### 8.1 Basic Configuration
+
+To configure a custom selenium hub follow these steps:
+
+1. Go to the **Select Provider** dialog box and select **Custom**.
+
+![](attachments/configure-a-selenium-hub-2/select-provider-dialog-custom.png)
+
+2. The **New Selenium Hub** dialog box opens. Here you enter the necessary information for ATS to connect to your local selenium server.
+3. First, you enter a name for your selenium hub. This is only meant to help you identify the selenium hub.
+4. Next, you enter the access URL of your server.
+
+![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-custom.png)
+
+{{% alert type="info" %}}
+
+For more information on local selenium set-up go to [Customer Hosted Selenium](../general/deployment#5-4-customer-hosted-selenium).
+
+{{% /alert %}}
+
+Leave the **New Selenium Hub** dialog box open for the next chapter.
+
+### 8.2 Custom Capabilities
+
+Setting a custom capability in your custom selenium is possible but must be configured on the server itself.
