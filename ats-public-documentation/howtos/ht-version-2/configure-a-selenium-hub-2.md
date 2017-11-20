@@ -116,3 +116,64 @@ The datatype is always a *String* unless you must enter a *true* or *false* then
 You now configured your Browserstack Selenium Hub. You can create as many variations as you like. When multiple people use the same Browserstack account, you can use the name capability to keep the test runs separated.
 
 ![](attachments/configure-a-selenium-hub-2/finished-browserstack-selenium-hub.png)
+
+## 6 Configure SauceLabs
+
+### 6.1 Basic Configuration
+
+To configure SauceLabs as a selenium hub follow these steps:
+
+1. Go to the **Select Provider** dialog box and select **SauceLabs**.
+
+![](attachments/configure-a-selenium-hub-2/select-provider-dialog-saucelabs.png)
+
+2. The **New Selenium Hub** dialog box opens. Here you enter the necessary information for ATS to connect to your SauceLabs account.
+3. First, you enter a name for your selenium hub. This is only meant to help you identify the selenium hub.
+4. Next, you enter the username of your SauceLabs account. 
+5. Finally, you enter the access key of your SauceLabs account.
+
+![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-saucelabs.png)
+
+To find the username and access key follow these steps:
+1. Go to [SauceLabs](https://saucelabs.com) and login with the account you want to connect to ATS.
+2. Open the profile menu in the upper right corner of your screen and click **My Account** in the drop-down menu.
+
+![](attachments/configure-a-selenium-hub-2/my-account-saucelabs.png)
+
+3. You find your SauceLabs username and access key on this page.
+
+![](attachments/configure-a-selenium-hub-2/username-access-key-saucelabs.png)
+
+Leave the **New Selenium Hub** dialog box open for the next chapter.
+
+### 5.2 Custom Capabilities
+
+To set a custom capability for SauceLabs follow these steps:
+
+1. Go to the **New Selenium Hub** dialog box.
+2. Click **New** in the **Custom Capabilities** section.
+
+![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-saucelabs-custom-capability.png)
+
+3. The **New Capability** dialog box opens.
+4. To enter a custom capability you must know which capabilities you can use. Go to the [Test Configuration](https://wiki.saucelabs.com/display/DOCS/Test+Configuration+Options#TestConfigurationOptions-TestAnnotation) section on the SauceLabs documentation website. Choose a capability, for example, **name**.
+
+![](attachments/configure-a-selenium-hub-2/name-capability-saucelabs.png)
+
+5. Now enter the key in the **Key** field and the value you want in the **Value** field.
+
+ {{% alert type="info" %}}
+
+The datatype is always a *String* unless you must enter a *true* or *false* then the datatype must be set to *Boolean*.
+
+{{% /alert %}}
+
+![](attachments/configure-a-selenium-hub-2/name-capability-saucelabs-ats.png)
+
+6. Click **Save**.
+
+7. Add another custom capability or click **Save** again to store your selenium hub set-up.
+
+You now configured your SauceLabs Selenium Hub. You can create as many variations as you like. When multiple people use the same Browserstack account, you can use the name capability to keep the test runs separated.
+
+![](attachments/configure-a-selenium-hub-2/finished-saucelabs-selenium-hub.png)
