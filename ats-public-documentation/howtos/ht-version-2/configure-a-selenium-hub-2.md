@@ -83,5 +83,36 @@ To find the username and access key follow these steps:
 
 ![](attachments/configure-a-selenium-hub-2/username-access-key-browserstack.png)
 
+Leave the **New Selenium Hub** dialog box open for the next chapter.
+
 ### 5.2 Custom Capabilities
 
+To set a custom capability for Browserstack follow these steps:
+
+1. Go to the **New Selenium Hub** dialog box.
+2. Click **New** in the **Custom Capabilities** section.
+
+![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-browserstack-custom-capability.png)
+
+3. The **New Capability** dialog box opens.
+4. To enter a custom capability you must know which capabilities you can use. Go to the [capabilities](https://www.browserstack.com/automate/capabilities) section on the Browserstack website. Choose a capability, for example, **name**.
+
+![](attachments/configure-a-selenium-hub-2/name-capability-browserstack.png)
+
+5. Now enter the capability in the **Key** field and the value you want in the **Value** field.
+
+ {{% alert type="info" %}}
+
+The datatype is always a *String* unless you must enter a *true* or *false* then the datatype must be set to *Boolean*.
+
+{{% /alert %}}
+
+![](attachments/configure-a-selenium-hub-2/name-capability-browserstack-ats.png)
+
+6. Click **Save**.
+
+7. Add another custom capability or click **Save** again to store your selenium hub set-up.
+
+You now configured your Browserstack Selenium Hub. You can create as many variations as you like. When multiple people use the same Browserstack account, you can use the name capability to keep the test runs separated.
+
+![](attachments/configure-a-selenium-hub-2/finished-browserstack-selenium-hub.png)
