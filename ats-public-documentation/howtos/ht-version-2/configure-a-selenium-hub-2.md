@@ -174,7 +174,7 @@ The datatype is always a *String* unless you must enter a *true* or *false* then
 
 7. Add another custom capability or click **Save** again to store your selenium hub set-up.
 
-You now configured your SauceLabs Selenium Hub. You can create as many variations as you like. When multiple people use the same Testingbot account, you can use the name capability to keep the test runs separated.
+You now configured your SauceLabs Selenium Hub. You can create as many variations as you like. When multiple people use the same SauceLabs account, you can use the name capability to keep the test runs separated.
 
 ![](attachments/configure-a-selenium-hub-2/finished-saucelabs-selenium-hub.png)
 
