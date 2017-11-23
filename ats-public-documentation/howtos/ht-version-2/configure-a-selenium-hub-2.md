@@ -29,7 +29,7 @@ To get to the test settings follow these steps:
 
 1. Go to ATS and login.
 2. Open the app where you want to add the selenium hubs.
-3. Once inside your app click the profile menu and select **Show Test Settings**.
+3. Once inside your app click the profile menu and click **Show Test Settings**.
 
 ![](attachments/configure-a-selenium-hub-2/show-test-settings.png)
 
@@ -37,7 +37,7 @@ The **Selenium hubs** section contains all the configured selenium hubs for this
 
 ![](attachments/configure-a-selenium-hub-2/new-selenium-hub.png)
 
-The **Select Provider** dialog box opens. Here you can select one of the four configurable selenium hub options. Each of the options is explained in the following chapters.
+The **Select Provider** dialog box opens. Here you select one of the four configurable selenium hub options. Each of the options is explained in the following chapters.
 
 ![](attachments/configure-a-selenium-hub-2/select-provider-dialog.png)
 
@@ -53,11 +53,11 @@ Some examples are:
 
 {{% alert type="info" %}}
 
-Browser overwrites do not work! ATS only executes test cases and test suites on the supported browsers.
+Browser and platform overwrites do not work! ATS only executes test cases and test suites on the selected browser and platform.
 
 {{% /alert %}}
 
-This is explained for each selenium hub option.
+Custom capabilities are explained separately for each Selenium option.
 
 ## 5 Configure Browserstack
 
@@ -71,7 +71,7 @@ To configure Browserstack as a selenium hub follow these steps:
 
 2. The **New Selenium Hub** dialog box opens. Here you enter the necessary information for ATS to connect to your Browserstack account.
 3. First, you enter a name for your selenium hub. This is only meant to help you identify the selenium hub.
-4. Next, you enter the username of your Browserstack account. 
+4. Next, you enter the username of your Browserstack account.
 5. Finally, you enter the access key of your Browserstack account.
 
 ![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-browserstack.png)
@@ -79,7 +79,7 @@ To configure Browserstack as a selenium hub follow these steps:
 To find the username and access key follow these steps:
 1. Go to [Browserstack](https://www.browserstack.com) and login with the account you want to connect to ATS.
 2. Click **Automate** in the navigation bar.
-3. There is a collapsible menu on the left side of the screen. It displays the **Username** and the **Access Key** when you unfold it. It also has a **Copy** button. 
+3. There is a collapsible menu on the left side of the screen. It displays the **Username** and the **Access Key** when you unfold it. It also has a **Copy** button.
 
 ![](attachments/configure-a-selenium-hub-2/username-access-key-browserstack.png)
 
