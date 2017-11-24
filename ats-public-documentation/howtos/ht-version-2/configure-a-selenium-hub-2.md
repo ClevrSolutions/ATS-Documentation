@@ -7,7 +7,7 @@ tags: ["ATS", "testing"]
 
 ## 1 Introduction 
 
-This how-to explains how to configure a selenium hub in ATS. The four different possibilities are explained and where you can retrieve the necessary information.
+This how-to explains how to configure a selenium hub in ATS. There are four selenium hub possibilities in ATS. How to configure all the four selenium hubs and where you can retrieve the necessary information is explained.
 
 **This how-to will teach you how to do the following:**
 
@@ -37,15 +37,20 @@ The **Selenium hubs** section contains all the configured selenium hubs for this
 
 ![](attachments/configure-a-selenium-hub-2/new-selenium-hub.png)
 
-The **Select Provider** dialog box opens. Here you select one of the four configurable selenium hub options. Each of the options is explained in the following chapters.
+The **Select Provider** dialog box opens. Here you select one of the four configurable selenium hub options. Each of the options is explained in the following chapters:
+
+* [5 Configure Browserstack](#5)
+* [6 Configure SauceLabs](#6)
+* [7 Configure Testingbot](#7)
+* [8 Configure Custom Selenium Hub](#8)
 
 ![](attachments/configure-a-selenium-hub-2/select-provider-dialog.png)
 
 ## 4 Custom Capabilities
 
-Each selenium provider allows the user to set certain custom capabilities. The custom capabilities are used to set specific conditions. ATS enters these custom capabilities when you execute a test case or test suite. For example, Selecting 'Chrome' as your browser is a custom capability. The different selenium providers allow for different custom capabilities that is why ATS allows you to enter your own capabilities.
+Each selenium provider allows the user to set certain custom capabilities. The custom capabilities are used to set specific conditions. ATS uses these custom capabilities when you execute a test case or test suite. For example, Selecting 'Chrome' as your browser is a custom capability. ATS will then execute the test case or test suite using Chrome. The different selenium providers allow for different custom capabilities. How to select custom capabilities is explained for each Selenium Hub in the corresponding chapter.
 
-Some examples are:
+Some examples of custom capabilities are:
 * Timezone
 * Resolution
 * Builds
@@ -53,11 +58,11 @@ Some examples are:
 
 {{% alert type="info" %}}
 
-Browser and platform overwrites do not work! ATS only executes test cases and test suites on the selected browser and platform.
+Browser and platform overwrites do not work! The ATS run configuration will overwrite your custom capabilities. So selecting InternetExplorer as your browser in custom capabilities does not work.
 
 {{% /alert %}}
 
-Custom capabilities are explained separately for each Selenium option.
+Custom capabilities are explained separately for each Selenium option in the next chapters.
 
 ## 5 Configure Browserstack
 
@@ -70,16 +75,16 @@ To configure Browserstack as a selenium hub follow these steps:
 ![](attachments/configure-a-selenium-hub-2/select-provider-dialog-browserstack.png)
 
 2. The **New Selenium Hub** dialog box opens. Here you enter the necessary information for ATS to connect to your Browserstack account.
-3. First, you enter a name for your selenium hub. This is only meant to help you identify the selenium hub.
-4. Next, you enter the username of your Browserstack account.
-5. Finally, you enter the access key of your Browserstack account.
+3. In the **Name** field you enter a name for your selenium hub. This is only meant to help you identify the selenium hub when selecting the selenium hub for a test run.
+4. In the **Username** field you enter the username of your Browserstack account.
+5. In the **Access Key** field you enter the access key of your Browserstack account.
 
 ![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-browserstack.png)
 
 To find the username and access key follow these steps:
 1. Go to [Browserstack](https://www.browserstack.com) and login with the account you want to connect to ATS.
 2. Click **Automate** in the navigation bar.
-3. There is a collapsible menu on the left side of the screen. It displays the **Username** and the **Access Key** when you unfold it. It also has a **Copy** button.
+3. There is a collapsible menu on the left side of the screen. When you unfold it, it displays the **Username** and the **Access Key** when you unfold it. It also has a **Copy** button.
 
 ![](attachments/configure-a-selenium-hub-2/username-access-key-browserstack.png)
 
@@ -103,7 +108,7 @@ To set a custom capability for Browserstack follow these steps:
 
  {{% alert type="info" %}}
 
-The datatype is always a *String* unless you must enter a *true* or *false* then the datatype must be set to *Boolean*.
+The datatype is always *String* unless you must enter *true* or *false* then the datatype must be set to *Boolean*.
 
 {{% /alert %}}
 
@@ -111,7 +116,9 @@ The datatype is always a *String* unless you must enter a *true* or *false* then
 
 6. Click **Save**.
 
-7. Add another custom capability or click **Save** again to store your selenium hub set-up.
+7. Add another custom capability or click **Save** when on the **New Selenium Hub** dialog to store your selenium hub set-up.
+
+![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-browserstack-with-name-capability.png)
 
 You now configured your Browserstack Selenium Hub. You can create as many variations as you like. When multiple people use the same Browserstack account, you can use the name capability to keep the test runs separated.
 
@@ -128,9 +135,9 @@ To configure SauceLabs as a selenium hub follow these steps:
 ![](attachments/configure-a-selenium-hub-2/select-provider-dialog-saucelabs.png)
 
 2. The **New Selenium Hub** dialog box opens. Here you enter the necessary information for ATS to connect to your SauceLabs account.
-3. First, you enter a name for your selenium hub. This is only meant to help you identify the selenium hub.
-4. Next, you enter the username of your SauceLabs account. 
-5. Finally, you enter the access key of your SauceLabs account.
+3. In the **Name** field you enter a name for your selenium hub. This is only meant to help you identify the selenium hub when selecting the selenium hub for a test run.
+4. In the **Username** field you enter the username of your SauceLabs account.
+5. In the **Access Key** field you enter the access key of your SauceLabs account.
 
 ![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-saucelabs.png)
 
@@ -164,7 +171,7 @@ To set a custom capability for SauceLabs follow these steps:
 
  {{% alert type="info" %}}
 
-The datatype is always a *String* unless you must enter a *true* or *false* then the datatype must be set to *Boolean*.
+The datatype is always *String* unless you must enter *true* or *false* then the datatype must be set to *Boolean*.
 
 {{% /alert %}}
 
@@ -172,7 +179,9 @@ The datatype is always a *String* unless you must enter a *true* or *false* then
 
 6. Click **Save**.
 
-7. Add another custom capability or click **Save** again to store your selenium hub set-up.
+7. Add another custom capability or click **Save** when on the **New Selenium Hub** dialog to store your selenium hub set-up.
+
+![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-saucelabs-with-name-capability.png)
 
 You now configured your SauceLabs Selenium Hub. You can create as many variations as you like. When multiple people use the same SauceLabs account, you can use the name capability to keep the test runs separated.
 
@@ -189,9 +198,9 @@ To configure Testingbot as a selenium hub follow these steps:
 ![](attachments/configure-a-selenium-hub-2/select-provider-dialog-testingbot.png)
 
 2. The **New Selenium Hub** dialog box opens. Here you enter the necessary information for ATS to connect to your Testingbot account.
-3. First, you enter a name for your selenium hub. This is only meant to help you identify the selenium hub.
-4. Next, you enter the Client key of your Testingbot account. 
-5. Finally, you enter the Client secret of your testingbot account.
+3. In the **Name** field you enter a name for your selenium hub. This is only meant to help you identify the selenium hub when selecting the selenium hub for a test run.
+4. In the **Client Key** field you enter the Client key of your Testingbot account. 
+5. In the **Client Secret** field you enter the Client secret of your testingbot account.
 
 ![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-testingbot.png)
 
@@ -225,7 +234,7 @@ To set a custom capability for Testingbot follow these steps:
 
  {{% alert type="info" %}}
 
-The datatype is always a *String* unless you must enter a *true* or *false* then the datatype must be set to *Boolean*.
+The datatype is always *String* unless you must enter *true* or *false* then the datatype must be set to *Boolean*.
 
 {{% /alert %}}
 
@@ -233,7 +242,9 @@ The datatype is always a *String* unless you must enter a *true* or *false* then
 
 6. Click **Save**.
 
-7. Add another custom capability or click **Save** again to store your selenium hub set-up.
+7. Add another custom capability or click **Save** when on the **New Selenium Hub** dialog to store your selenium hub set-up.
+
+![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-testingbot-with-name-capability.png)
 
 You now configured your Testingbot Selenium Hub. You can create as many variations as you like. When multiple people use the same Testingbot account, you can use the name capability to keep the test runs separated.
 
@@ -250,8 +261,8 @@ To configure a custom selenium hub follow these steps:
 ![](attachments/configure-a-selenium-hub-2/select-provider-dialog-custom.png)
 
 2. The **New Selenium Hub** dialog box opens. Here you enter the necessary information for ATS to connect to your local selenium server.
-3. First, you enter a name for your selenium hub. This is only meant to help you identify the selenium hub.
-4. Next, you enter the access URL of your server.
+3. In the **Name** field you enter a name for your selenium hub. This is only meant to help you identify the selenium hub when selecting the selenium hub for a test run.
+4. In the **Custom URL** field you enter the access URL of your server.
 
 ![](attachments/configure-a-selenium-hub-2/new-selenium-hub-dialog-custom.png)
 
@@ -266,3 +277,7 @@ Leave the **New Selenium Hub** dialog box open for the next chapter.
 ### 8.2 Custom Capabilities
 
 Setting a custom capability in your custom selenium is possible but must be configured on the server itself.
+
+You now configured your Custom Selenium Hub. You can create as many variations as you like.
+
+![](attachments/configure-a-selenium-hub-2/finished-custom-selenium-hub.png)
