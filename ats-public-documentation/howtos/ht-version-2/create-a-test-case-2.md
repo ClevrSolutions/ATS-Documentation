@@ -75,8 +75,6 @@ The following steps describe how to add test steps manually to your test case. Y
 
     ![](attachments/create-a-test-case-2/open-input-value-dropdown.png)
   
-    This will open the **Edit Input Value** dialog box.
-
     ATS now uses the application URL you selected in the **Run Configuration** application.
     
 8.  After opening the application, you must log in. ATS has a standard login action for logging in to a Mendix application that you must use, which is the [login](/ats/refguide/rg-version-1/login) action. The login page of the company expenses app looks like this:
