@@ -102,7 +102,7 @@ The following steps describe how to add test steps manually to your test case. Y
     ![](attachments/create-a-test-case-2/click-widget-new-expense.png)
 
 15. Add a description in **Describe your test step here**
-16. Click the **Edit icon** of the **Widget Name** input parameter.
+16. Click the edit icon of the **Widget Name** input parameter.
 
 ![](attachments/create-a-test-case-2/click-widget-action-edit-icon-c.png)
 
