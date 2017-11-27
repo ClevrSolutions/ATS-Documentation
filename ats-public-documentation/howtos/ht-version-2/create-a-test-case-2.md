@@ -7,7 +7,7 @@ tags: ["ATS", "testing"]
 
 ## 1 Introduction
 
-This how-to explains how to create a test case, add test steps manually, and add test steps using the ATS Recorder. A test case consists of test steps that contain actions. Each action (like clicking a button) performs a task.
+This how-to explains how to create a test case, add test steps manually and add test steps using the ATS Recorder. A test case consists of test steps that contain actions. Each action (like clicking a button) performs a task.
 
 This how-to uses the Mendix Company Expenses app as an example, and you will create a test case that submits a new expense in this app. You create the same test case twice, once manually, and once with the ATS Recorder. 
 
@@ -72,16 +72,11 @@ The first step is opening the Company Expenses app, which you do by entering a U
 
     ![](attachments/create-a-test-case-2/test-case-page-add-description.png)
 
-4. Add the URL of the application you want to test by clicking the **magnifying glass**.
+4. Add the URL of the application you want to test by clicking the dropdown of the input parameter **Application URL**. In the dropdown select the **Environment URL** below the **Global constant**. 
 
-    ![](attachments/create-a-test-case-2/test-case-page-add-application-URL.png)
+    ![](attachments/create-a-test-case-2/open-input-value-dropdown.png)
   
     This will open the **Edit Input Value** dialog box.
-5. Select **Global Constant**.
-6. Select **Application URL**.
-7. Click **Save**:
-
-    ![](attachments/create-a-test-case-2/open-app-input-value-e.png)
 
     ATS now uses the application URL you selected in the **Run Configuration** application.
     
@@ -108,14 +103,14 @@ The first step is opening the Company Expenses app, which you do by entering a U
     ![](attachments/create-a-test-case-2/click-widget-new-expense.png)
 
 14. Add a description in **Describe your test step here**
-15. Click the **magnifying glass** of the **Widget Name** input parameter.
+15. Click the **Edit icon** of the **Widget Name** input parameter.
 
-![](attachments/create-a-test-case-2/click-widget-action-magnifyinglass.png)
+![](attachments/create-a-test-case-2/click-widget-action-edit-icon-c.png)
 
-16. Click **constant** (1) and add the widget name displayed in the ATS Helper (2)
-16. Click **Save** (3):
+16. Add the widget name displayed in the ATS Helper (1)
+16. Click **Save** (2):
 
-    ![](attachments/create-a-test-case-2/new-expense-input-parameter-e.png)
+    ![](attachments/create-a-test-case-2/new-expense-input-parameter-edited.png)
 
 19. After clicking **New Expense** in the Company Expenses app, a dialog box opens called **New Expense**:
 
@@ -246,7 +241,8 @@ To add test steps using the ATS Recorder, follow these steps:
 
     Note that you can also add actions manually between recording sessions. 
 
-14.  Click the **Dialog Title** input parameter and add the title of the dialog box:
+14.  Add a description in **Describe your test step here**.
+15. Click the **Dialog Title** input parameter and add the title of the dialog box:
     ![](attachments/create-a-test-case-2/new-expense-dialog-action-input-parameters-recorder.png)
 
 15.  For the logout, you can choose to keep the recorded click on the **Sign Out** button or replace it with the **Logout** action.
