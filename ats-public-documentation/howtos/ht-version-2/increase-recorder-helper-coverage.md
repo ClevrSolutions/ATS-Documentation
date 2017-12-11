@@ -22,7 +22,7 @@ Before starting this how-to, make sure you have the following prerequisites in p
 
 ## 3 Increasing ATS Recorder coverage of your AUT
 
-Using the ATS Recorder is the easiest and least time-consuming way to create test cases. So increasing the number of widgets on your AUT that the ATS Recorder can record, simplifies creating test cases and reduces the total time needed. The following steps increase the recorder coverage is:
+Using the ATS Recorder is the easiest and least time-consuming way to create test cases. So increasing the number of widgets on your AUT that the ATS Recorder can record, simplifies creating test cases and reduces the total time needed. The following steps increase the recorder coverage:
 
 * Giving snippets a unique name
 * Give widgets a unique name
