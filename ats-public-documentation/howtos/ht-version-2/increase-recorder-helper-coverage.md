@@ -87,11 +87,11 @@ In case the widget doesn't have a unique mx-name or an mx-name at all, the follo
 * Adding an mx-name in the class of the widget
 
 ### 4.1 Giving buttons a unique name in ATS
-The previous chapter described that ATS can interact with the correct widget by giving it a unique name in the Mendix modeler. Another way to let ATS interact with the correct widget is by adding another mx-name in the ATS action:
+The previous chapter described that ATS can interact with the correct widget by giving it a unique name in the Mendix modeler. Another way to let ATS interact with the correct widget is by adding another mx-name in the ATS action. ATS will search for the second mx-name within the first mx-name:
 
 ![](attachments/increase-recorder-coverage-2/2-mx-names.png)
 
-You have to add this manually in ATS.  To find the mx-name you can use, use the ATS Helper in your AUT. 
+You have to add this manually in ATS. To find the mx-name you can use, use the ATS Helper in your AUT.
 
 ### 4.2 Adding an mx-name in the class of the widget
 You can develop a widget without an mx-name, for example, a navigation list with several navigation options:
