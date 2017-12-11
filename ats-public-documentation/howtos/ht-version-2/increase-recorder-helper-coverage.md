@@ -98,7 +98,7 @@ You can develop a widget without an mx-name, for example, a navigation list with
 
 ![](attachments/increase-recorder-coverage-2/no-mx-name-listview.png)
 
-The ATS Recorder cannot record the options in the navigation list, as they do not have a mx-name. For the same reason, the ATS Helper can not interact with these options. The ATS Helper shows the mx-name of the complete navigation list, instead of the options:
+The ATS Recorder cannot record the options in the navigation list, as they do not have an mx-name. For the same reason, the ATS Helper can not interact with these options. The ATS Helper shows the mx-name of the complete navigation list, instead of the options:
 
 ![](attachments/increase-recorder-coverage-2/no-mx-name-listview-app-e.png)
 
@@ -108,11 +108,11 @@ You can manually enter a class in the **Class** of the modeler with an mx-name t
 
 ![](attachments/increase-recorder-coverage-2/mx-name-listview-app-e.png)
 
-As the options in the navigation list have a mx-name, the ATS helper can interact with them. In ATS you can *Find, Click, Set, Assert, and Get* these widgets with the standard Mendix actions. ATS can still interact with the options if you add another class as well:
+As the options in the navigation list have an mx-name, the ATS helper can interact with them. In ATS you can *Find, Click, Set, Assert, and Get* these widgets with the standard Mendix actions. ATS can still interact with the options if you add another class as well:
 
 ![](attachments/increase-recorder-coverage-2/extra-class-name.png)
 
-You have given the **Class** a mx-name and not the widget name in the **Name** field, as the options of the navigation list do not have a **Name** field. Widgets that the ATS Recorder recognizes get their mx-name from the name in the **Name** field. For example, the navigation list:
+You have given the **Class** an mx-name and not the widget name in the **Name** field, as the options of the navigation list do not have a **Name** field. Widgets that the ATS Recorder recognizes get their mx-name from the name in the **Name** field. For example, the navigation list:
 
 ![](attachments/increase-recorder-coverage-2/mx-name-in-name.png)
 
