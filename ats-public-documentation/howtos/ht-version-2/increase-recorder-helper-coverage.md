@@ -7,7 +7,7 @@ tags: ["ATS", "testing"]
 
 ## 1 Introduction
 
-ATS provides two different tools to help build test scripts: the ATS Helper and ATS Recorder. The ATS Helper identifies the mx-name of widgets on the application under test (AUT). But, not all widgets have an mx-name, in which case the ATS Helper cannot interact with them. The ATS Recorder is a function/plugin within ATS that records your manual test steps in the AUT and automatically selects the correct action for each step. But the ATS Recorder does not record all manual test steps. To increase the ATS Recorder coverage of your AUT and the number of widgets the ATS helper can identify, you can take certain steps. This how-to describes these steps.
+ATS provides two different tools to help build test scripts: the ATS Helper and ATS Recorder. The ATS Helper identifies the mx-name of widgets on the application under test (AUT). But, not all widgets have an mx-name, in which case the ATS Helper cannot interact with them. The ATS Recorder is a function/plugin within ATS that records your manual test steps in the AUT and automatically selects the correct action for each step. However, the ATS Recorder does not record all manual test steps. To increase the ATS Recorder coverage of your AUT and the number of widgets the ATS helper can identify, you can take certain steps. This how-to describes these steps.
 
 **This how-to will teach you how to do the following:**
 
@@ -91,31 +91,31 @@ The previous chapter described that ATS can interact with the correct widget by 
 
 ![](attachments/increase-recorder-coverage-2/2-mx-names.png)
 
-You have to add this manually in ATS. To find the mx-name you can use, use the ATS Helper in your AUT.
+You have to add this manually in ATS. To find the mx-name use the ATS Helper in your AUT.
 
 ### 4.2 Adding an mx-name in the class of the widget
 You can develop a widget without an mx-name, for example, a navigation list with several navigation options:
 
 ![](attachments/increase-recorder-coverage-2/no-mx-name-listview.png)
 
-The ATS Recorder cannot record the options in the navigation list, as they do not have an mx-name. For the same reasons, the ATS Helper can not interact with these options. The ATS Helper shows the mx-name of the complete navigation list, instead of the options:
+The ATS Recorder cannot record the options in the navigation list, as they do not have a mx-name. For the same reason, the ATS Helper can not interact with these options. The ATS Helper shows the mx-name of the complete navigation list, instead of the options:
 
 ![](attachments/increase-recorder-coverage-2/no-mx-name-listview-app-e.png)
 
-As the mx-name is always a class, you can manually enter a class in the **Class** of the modeler with an mx-name to solve this:
+You can manually enter a class in the **Class** of the modeler with an mx-name to solve this:
 
 ![](attachments/increase-recorder-coverage-2/mx-name-listview.png)
 
 ![](attachments/increase-recorder-coverage-2/mx-name-listview-app-e.png)
 
-As the options in the navigation list have an mx-name, the ATS helper can interact with them. In ATS you can *Find, Click, Set, Assert, and Get* these widgets with the standard Mendix actions. ATS can still interact with the options if you add another class as well:
+As the options in the navigation list have a mx-name, the ATS helper can interact with them. In ATS you can *Find, Click, Set, Assert, and Get* these widgets with the standard Mendix actions. ATS can still interact with the options if you add another class as well:
 
 ![](attachments/increase-recorder-coverage-2/extra-class-name.png)
 
-You have given the **Class** an mx-name and not the widget name in the **Name** field, as the options of the navigation list do not have a **Name** field. Widgets that the ATS Recorder recognizes get their mx-name from the name in the **Name** field. For example, the navigation list:
+You have given the **Class** a mx-name and not the widget name in the **Name** field, as the options of the navigation list do not have a **Name** field. Widgets that the ATS Recorder recognizes get their mx-name from the name in the **Name** field. For example, the navigation list:
 
 ![](attachments/increase-recorder-coverage-2/mx-name-in-name.png)
 
 For this reason, recording this widget is still not possible.
 
-With these tips you can increase the ATS Recorder and ATS Helper coverage of your AUT. Good luck using these tips.
+With these tips you increase the ATS Recorder and ATS Helper coverage of your AUT. Good luck using these tips.
