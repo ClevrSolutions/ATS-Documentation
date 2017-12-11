@@ -29,20 +29,20 @@ Using the ATS Recorder is the easiest and least time-consuming way to create tes
 * Reduce the use of custom widgets
 
 {{% alert type="info" %}}
-To put these changes in place, developers should make changes in the Mendix modeler.
+To put these changes in place, developers must make changes in the Mendix modeler.
 {{% /alert %}}
 
 The next chapters give a description of how to take each step and how it increases ATS Recorder and ATS Helper coverage of your AUT.
 
 ### 3.1 Giving snippets a unique name 
 
-If developers create a snippet in Mendix and reuse that snippet on one page, the ATS Recorder cannot distinguish between the separate snippets. This can also be the case when developers use several snippets on one page. The ATS Recorder cannot distinguish the snippets, as they do not have a unique name. You can enable unique snippet names in the Mendix modeler by adding a constant to your project with certain properties.
+When developers create a snippet in Mendix and reuse that snippet on the same page, the ATS Recorder cannot distinguish them. This can also be the case when developers use several snippets on one page. The ATS Recorder cannot distinguish the snippets, as they do not have a unique name. You enable unique snippet names in the Mendix modeler by adding a constant to your project with certain properties.
 
 {{% alert type="info" %}}
 This only works for Mendix version 6.10 and above.
 {{% /alert %}}
 
-To add a constant this in the Mendix modeler follow these steps:
+To add a constant in the Mendix modeler follow these steps:
 
 1. Open your project in the Mendix modeler and open the project settings.
 2. In the **Configuration** tab click **New**. This opens the **New Configuration** dialog.
@@ -59,7 +59,7 @@ To add a constant this in the Mendix modeler follow these steps:
 6. Click **OK**. This opens the **New Constant Value** dialog.
 7. Click **OK** in the **New Constant Value** dialog and click **OK** in the **New Configuration** dialog.
 
-You have now added the constant in the Mendix modeler. If you have such a constant anywhere in your project, the mx-name classes of snippets are longer and more unique.
+You have now added the constant in the Mendix modeler. If you have such a constant anywhere in your project, the mx-name classes of snippets are longer and unique.
 
 ### 3.2 Giving widgets a unique name
 
