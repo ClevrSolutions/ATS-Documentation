@@ -264,7 +264,6 @@ We advise you to use the recorder as much as possible to add test steps. But, th
 * Record your manual test steps using the ATS Recorder
 * Adding test steps using the ATS Helper, see [Finding the action you need](/bestpractices/bp-version-2/finding-the-action-you-need-2).
 * Create a custom action, see [Create custom action](/howtos/ht-version-2/create-custom-actions-2.md).
-* Create a custom action using an **Execute Javascript** action
 
  We advice to read next [How to Create a Test Suite](create-a-test-suite-2).
 

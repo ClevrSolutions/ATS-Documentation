@@ -140,7 +140,6 @@ Now that you have created a test case, the next step is to configure your test c
 * Record your manual test steps using the ATS Recorder
 * Adding test steps using the ATS Helper, see [Finding the action you need](/bestpractices/bp-version-2/finding-the-action-you-need-2).
 * Create a custom action, see [Create custom action](/howtos/ht-version-2/create-custom-actions-2.md).
-* Create a custom action using an **Execute Javascript** action
 
 Before you start adding test steps, add the ATS Helper and ATS Recorder tools:
 
