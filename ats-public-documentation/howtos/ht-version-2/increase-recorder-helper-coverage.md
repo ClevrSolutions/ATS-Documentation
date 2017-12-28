@@ -7,7 +7,7 @@ tags: ["ATS", "testing"]
 
 ## 1 Introduction
 
-ATS provides two different tools to help build test scripts: the ATS Helper and ATS Recorder. The ATS Helper identifies the mx-name of widgets on the application under test (AUT). But, not all widgets have an mx-name, in which case the ATS Helper cannot interact with them. The ATS Recorder is a function/plugin within ATS that records your manual test steps in the AUT and automatically selects the correct action for each step. However, sometimes the ATS recorder does not record the step you are performing. There are ways to increase the ATS Recorder coverage of your AUT. This how-to describes how to increase the ATS Recorder coverage of your AUT.
+ATS provides two different tools to help build test scripts: the ATS Helper and ATS Recorder. The ATS Helper identifies the mx-name of widgets on the application under test (AUT). But, not all widgets have an mx-name, in which case the ATS Helper cannot interact with them. The ATS Recorder is a function/plugin within ATS that records your manual test steps in the AUT and automatically selects the correct action for each step. However, sometimes the ATS recorder does not record the step you are performing. There are ways to increase the ATS Recorder coverage of your AUT. This how-to describes how to increase the overall coverage of the ATS tools for your AUT.
 
 **This how-to will teach you how to do the following:**
 
