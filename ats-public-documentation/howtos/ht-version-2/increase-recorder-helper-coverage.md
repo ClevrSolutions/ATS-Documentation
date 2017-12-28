@@ -120,4 +120,4 @@ You have given the **Class** an mx-name and not the widget name in the **Name** 
 
 For this reason, recording this widget is still not possible.
 
-With these tips you increase the ATS Recorder and ATS Helper coverage of your AUT. Good luck using these tips.
+With these tips you increase the ATS Recorder and ATS Helper coverage of your AUT. Happy testing!
