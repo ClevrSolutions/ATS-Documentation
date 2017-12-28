@@ -49,7 +49,7 @@ In **Column 1 Name** you have to add the mx-name of the column you want to asser
 
 #### **Column 1 Value**:
 
-In **Column 1 Value** you have to add the value in the column you want to assert:
+In **Column 1 Value** you have to add the value of the column you want to assert:
 
 ![](attachments/assert-datagrid-rows-2/value-of-column-1.png)
 
