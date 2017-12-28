@@ -89,7 +89,7 @@ In case the widget doesn't have a unique mx-name or an mx-name at all, the follo
 * Adding an mx-name in the class of the widget
 
 ### 4.1 Giving buttons a unique name in ATS
-The previous chapter described that ATS can interact with the correct widget by giving it a unique name in the Mendix modeler. Another way to let ATS interact with the correct widget is by adding another mx-name in the ATS action. The mechanics are the same as the **Search Context** input parameter. ATS will search for the widget with the second mx-name inside the widget with the first mx-name. For example: 'container8 microflowButton2' ATS searches for the microflowbutton inside the container. ATS will search for the second mx-name within the first mx-name:
+The previous chapter described that ATS can interact with the correct widget by giving it a unique name in the Mendix modeler. Another way to let ATS interact with the correct widget is by adding another mx-name in the ATS action. The mechanics are the same as the **Search Context** input parameter. ATS will search for the widget with the second mx-name inside the widget with the first mx-name. For example: 'container8 microflowButton2' ATS searches for the microflowbutton inside the container. ATS searches for the second mx-name within the first mx-name:
 
 ![](attachments/increase-recorder-coverage-2/2-mx-names.png)
 
