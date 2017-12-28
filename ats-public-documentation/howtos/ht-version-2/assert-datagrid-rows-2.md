@@ -65,13 +65,13 @@ As there could be more rows with the same description, ATS can assert the wrong 
 
 #### **Column 2**
 
-In **Column 2 Name** you have to add the mx-name of the column. In **Column 2 Value** you have to add the value in the column you want to assert:
+In **Column 2 Name** you have to add the mx-name of the column. In **Column 2 Value** you have to add the value of the column you want to assert:
 
 ![](attachments/assert-datagrid-rows-2/column-value-2.png)
 
 #### **Column 3**
 
-In **Column 3 Name** you have to add the mx-name of the column. In **Column 3 Value** you have to add the value in the column you want to assert:
+In **Column 3 Name** you have to add the mx-name of the column. In **Column 3 Value** you have to add the value of the column you want to assert:
 
 ![](attachments/assert-datagrid-rows-2/column-value-3.png)
 
