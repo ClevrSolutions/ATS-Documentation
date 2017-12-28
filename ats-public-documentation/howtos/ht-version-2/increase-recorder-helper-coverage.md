@@ -59,23 +59,25 @@ To add a constant in the Mendix modeler follow these steps:
 6. Click **OK**. This opens the **New Constant Value** dialog.
 7. Click **OK** in the **New Constant Value** dialog and click **OK** in the **New Configuration** dialog.
 
-You have now added the constant in the Mendix modeler. If you have such a constant anywhere in your project, the mx-name classes of snippets are longer and unique.
+You now added the constant in the Mendix modeler. If you have this constant anywhere in your project, the mx-name classes of snippets are longer and unique.
 
 ### 3.2 Giving widgets a unique name
 
-Your application has many buttons, images, and menu widgets etc. on each page. It is possible that those widgets have the same mx-name, for example, mx-name-actionButton1. The recorder can often record these widgets, but when you run your script it might fail. It might fail because ATS interacts with the first widget it finds with that mx-name. Changing the name in the Mendix modeler to a unique name solves this problem:
+Your application has many buttons, images, and menu widgets etc. on each page. It is possible that those widgets have the same mx-name, for example, mx-name-actionButton1. The recorder can often record these widgets, but when you run your test case it might fail. It might fail because ATS interacts with the first widget it finds with that mx-name. Changing the name in the Mendix modeler to a unique name solves this problem:
 
 ![](attachments/increase-recorder-coverage-2/changed-mx-name.png)
 
+Make sure you use some kind of naming structure when deciding to rename several widgets in your app. Consistency is important.
+
 ### 3.3 Reducing the use of custom widgets
 
-Custom widgets are often designed differently than Mendix widgets. As the ATS Recorder is designed to recognize Mendix widgets. So it can have difficulties recording test steps you take in custom widgets. The advice is to build functionalities as much with Mendix widget as possible. You should only use custom widgets in your application if Mendix widgets do not suffice. To use as many Mendix widgets as possible you should ask yourself questions like:
+Custom widgets are often designed differently than Mendix widgets. As the ATS Recorder is designed to recognize Mendix widgets. Some custom widgets are not supported by the ATS Recorder, they can still be supported by ATS! The advice is to build functionalities with Mendix widgets. You must only use custom widgets in your application if Mendix widgets do not suffice. Questions that you must ask yourself when you create new functionalities:
 * Does it add value to the application if I add a custom widget instead of a standard widget?
 * Can it be solved in a different way, with the use of standard widgets?
 
 ## 4 Increasing ATS Helper coverage of your AUT
 
-Even with the tips from the previous chapter recording every widget on your AUT is likely not possible. But if the ATS Recorder doesn't record a widget, it doesn't mean ATS cannot interact with it. If the ATS Recorder doesn't record certain widgets, you should check with the ATS Helper if that widget has an mx-name. For example, the ATS Recorder might not record clicking on a certain image. But if you check that image with the ATS Helper you see that that image does have an mx-name:
+Even with the tips from the previous chapter recording every widget on your AUT is not possible. There are some widgets that are too complicated to record. But if the ATS Recorder doesn't record a widget, it doesn't mean ATS cannot interact with it. When the ATS Recorder doesn't record certain widgets, you must check with the ATS Helper if that widget has an mx-name. For example, the ATS Recorder might not record clicking on a certain image. But when you check that image with the ATS Helper you see that that image does have an mx-name:
 
 ![](attachments/increase-recorder-coverage-2/not-recordable-image.png)
 
@@ -87,7 +89,7 @@ In case the widget doesn't have a unique mx-name or an mx-name at all, the follo
 * Adding an mx-name in the class of the widget
 
 ### 4.1 Giving buttons a unique name in ATS
-The previous chapter described that ATS can interact with the correct widget by giving it a unique name in the Mendix modeler. Another way to let ATS interact with the correct widget is by adding another mx-name in the ATS action. ATS will search for the second mx-name within the first mx-name:
+The previous chapter described that ATS can interact with the correct widget by giving it a unique name in the Mendix modeler. Another way to let ATS interact with the correct widget is by adding another mx-name in the ATS action. The mechanics are the same as the **Search Context** input parameter. ATS will search for the widget with the second mx-name inside the widget with the first mx-name. For example: 'container8 microflowButton2' ATS searches for the microflowbutton inside the container. ATS will search for the second mx-name within the first mx-name:
 
 ![](attachments/increase-recorder-coverage-2/2-mx-names.png)
 
