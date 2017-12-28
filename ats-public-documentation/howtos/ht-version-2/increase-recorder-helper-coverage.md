@@ -29,7 +29,7 @@ Using the ATS Recorder is the easiest and least time-consuming way to create tes
 * Reduce the use of custom widgets
 
 {{% alert type="info" %}}
-To put these changes in place, developers must make changes in the Mendix modeler.
+To perform the steps in this chapter you must have access to your app in the Mendix Modeler.
 {{% /alert %}}
 
 The next chapters give a description of how to take each step and how it increases ATS Recorder and ATS Helper coverage of your AUT.
