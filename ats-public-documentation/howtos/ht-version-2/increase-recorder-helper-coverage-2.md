@@ -120,4 +120,6 @@ You have given the **Class** an mx-name and not the widget name in the **Name** 
 
 For this reason, recording this widget is still not possible.
 
-With these tips you increase the ATS Recorder and ATS Helper coverage of your AUT. Happy testing!
+## 4 Next up
+
+With these tips you increase the ATS Recorder and ATS Helper coverage of your AUT. The next how-to is [How to create custom actions](create-custom-actions-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-To's](ht-version-2) page. We advise you to follow the predefined structure.

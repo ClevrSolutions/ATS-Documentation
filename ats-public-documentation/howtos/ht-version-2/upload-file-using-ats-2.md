@@ -98,4 +98,4 @@ When you use a Selenium SaaS provider you can also use their agent. Each provide
 
 ## 7 Next up
 
-You now learned how to upload a file and if it is possible with your selenium set up. The next how-to is [How to Create Custom Actions](create-custom-actions-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-To's](ht-version-2) page. We advise you to follow the predefined structure.
+You now learned how to upload a file and if it is possible with your selenium set up. The next how-to is [How to assert datagrid rows](assert-datagrid-rows-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-To's](ht-version-2) page. We advise you to follow the predefined structure.
