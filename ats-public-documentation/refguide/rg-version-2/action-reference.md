@@ -108,7 +108,9 @@ A ConfirmationDialog is shown when a delete or microflow action requires a confi
 | Find Widget Child Node | All widgets       | Finds a Node within a Mendix Widget. Also matches the widget node itself. |
 | Focus WebElement       | All web elements  | Focuses a WebElement and performs a Mendix wait afterwards |
 | Get Current Page Title | N/A                  | Returns the Current Page/Form Title     |
-| Mendix wait            | N/A                  | Injects Mendix Scripts and Waits           |
+| Mendix wait<sup>1</sup>| N/A                  | Injects Mendix Scripts and Waits           |
+
+<sup>1</sup>Wait action doesn't wait for HTML links that open a deeplink in a Mendix app. A workaround would be to use the generic *Sleep* action to wait a specific amount of time.
 
 ## 10 Tab
 
