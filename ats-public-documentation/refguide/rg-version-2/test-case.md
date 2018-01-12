@@ -43,13 +43,13 @@ A dialog box will open where you can search for a specific action or you explore
 
 ![](attachments/test/select-function-action.png).
 
-After you have found the desired action, add it to your test case as a test step by selecting it and clicking **Add**.
+After you have found the desired action, add it to your test case as a test step by selecting it and clicking **Select**.
 
-Another way of adding test steps to a test case is to use the recorder by clicking **Record**. For more information, see [Recorder](recorder).
+Another way of adding test steps to a test case is to use the recorder by clicking **Record step**. For more information, see [Recorder](recorder).
 
 The details of a test step open by clicking the test step. For more information, see [Test Step](test-step).
 
-To add a new step above or below an existing test step, click **Add above** or **Add below**. These buttons appear if you hover over an existing test step.
+To add a new step above or below an existing test step, click **Add above** or **Add below**, or click on the red record icon, to add a new step by using the recorder. These buttons appear if you hover over an existing test step.
 
 ### 3.1 Copying, Pasting, Deleting, and  Extracting an Action
 
