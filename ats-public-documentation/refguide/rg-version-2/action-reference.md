@@ -15,8 +15,8 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 ## 2 Widget - Set
 
-| Action                           | Supported Widgets                | Description                              |
-| -------------------------------- | -------------------------------- | ---------------------------------------- |
+| Action           | Supported Widgets | Description                              |
+| ---------------- | ----------------- | ---------------------------------------- |
 | Set BooleanSlider Value          | BooleanSlider                    | Checks if the given value is available for the BooleanSlider and sets the value |
 | Set BootstrapRTE Value           | BootstrapRTE                     | Sets the given value as current value for the BootstrapRTE value. Strings can be formatted via html-code |
 | Set Checkbox Set Selector Value  | Checkbox Set Selector            | Un-/Check 'select all' checkbox |
@@ -36,8 +36,8 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 ## 3 Widget - Get
 
-| Action                  | Supported Widgets                        | Description                              |
-| ----------------------- | ---------------------------------------- | ---------------------------------------- |
+| Action           | Supported Widgets | Description                              |
+| ---------------- | ----------------- | ---------------------------------------- |
 | Get Active Tab Caption  | TabContainer                       | Returns the caption of the active tab page |
 | Get BooleanSlider Value | BooleanSlider                       | Returns the current value of the BooleanSlider as string |
 | Get BootstrapRTE Value  | BootstrapRTE | Returns the current BootstrapRTE value as html-string |
@@ -93,8 +93,8 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 ## 6 Widget - Other
 
-| Action                | Supported Widgets | Description                              |
-| --------------------- | ----------------- | ---------------------------------------- |
+| Action           | Supported Widgets | Description                              |
+| ---------------- | ----------------- | ---------------------------------------- |
 | Click DataGrid Row | DataGrid | Click a DataGrid Row by Column Value |
 | Click Dropdown Div Converter dropdown button | Dropdown Div Converter | Clicks the dropdown div converter dropdown button |
 | Click Dropdown Div Converter split button | Dropdown Div Converter | Clicks the dropdown div converter split button |
@@ -113,8 +113,8 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 ## 7 Mendix
 
-| Action                | Supported Widgets                        | Description                              |
-| --------------------- | ---------------------------------------- | ---------------------------------------- |
+| Action           | Supported Widgets | Description                              |
+| ---------------- | ----------------- | ---------------------------------------- |
 | Assert Current Page | N/A | Asserts that a certain Page is open, by checking the current page title. Note that the page title may depend on the users language! For dialogs use the Find/Assert Dialog action |
 | Cancel Dialog | ConfirmationDialog | Click Cancel on a Confirmation Dialog |
 | Click/Doubleclick | All web elements | Perform a Click or Doubleclick and wait for Mendix activities |
@@ -130,8 +130,8 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 ## 8 Web
 
-| Action                | Supported Widgets                      | Description                              |
-| --------------------- | -------------------------------------- | ---------------------------------------- |
+| Action           | Supported Widgets | Description                              |
+| ---------------- | ----------------- | ---------------------------------------- |
 | Accept Browser Alert | N/A | |
 | Clear WebElement | WebElement | Clear a webelement (input or textarea) |
 | Close Window | N/A | Closes currently active window. Does not switch to another window automatically |
@@ -175,8 +175,8 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 ## 9 Mouse & Keyboard
 
-| Action                 | Supported Widgets | Description                              |
-| ---------------------- | ----------------- | ---------------------------------------- |
+| Action           | Supported Widgets | Description                              |
+| ---------------- | ----------------- | ---------------------------------------- |
 | Click | WebElement | |
 | Click Coordinates | N/A | Clicks on the given point on the page, described by X and Y Offset. If no reference element is given, the upper left corner of the page is used as point of origin for calculating the desired point. Otherwise the upper left corner of the reference element is used |
 | Doubleclick | WebElement | Perform a Click or Doubleclick and wait for Mendix activities |
@@ -192,8 +192,8 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 ## 10 Logic
 
-| Action                    | Supported Widgets | Description                              |
-| ------------------------- | ----------------- | ---------------------------------------- |
+| Action           | Supported Widgets | Description                              |
+| ---------------- | ----------------- | ---------------------------------------- |
 | Assert | N/A | Hamcrest assert |
 | Assert 1 | N/A | Asserts that the value is 1. ([null]=0) |
 | Assert all not null | N/A | Fails if one of the objects is  null" |
@@ -239,8 +239,8 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 ## 11 Generators
 
-| Action                    | Supported Widgets | Description                              |
-| ------------------------- | ----------------- | ---------------------------------------- |
+| Action           | Supported Widgets | Description                              |
+| ---------------- | ----------------- | ---------------------------------------- |
 | Generate GUID | N/A | Generates and returns a GUI |
 | Get Current DateTime String | N/A | Returns the current date and time in supplied format (java date format) e.g. 'yyyy-MM-dd HH:mm:ss' |
 | Random Number | N/A | Creates a random Integer using: 'Math.floor(Math.random() * (max - min)) + min', You need to define the min(included) and max (excluded) |
