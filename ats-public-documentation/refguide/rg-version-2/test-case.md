@@ -13,7 +13,7 @@ A dialog box opens where you give your test case a name and an optional descript
 
 ## 2 Test Case Details
 
-![](attachments/test/testcase-details.JPG)
+![](attachments/test/testcase-details.png)
 
 In the top-left corner of the **Test Case Details** page, you will find the name and the description of the test case. You can click these fields and make changes to them. ATS saves these changes automatically.
 
@@ -37,7 +37,7 @@ In the top right corner of the screen, you will find the **Export** and **Run** 
 
 Test steps describe the actions that the test case performs. You can add new test steps by searching an action in the **Add step** box. For a more detailed search, use the **Test Step Setup** dialog box by clicking this button:
 
-![](attachments/test/select-function-action.JPG)
+![](attachments/test/select-function-action.png)
 
 A dialog box will open where you can search for a specific action or you explore all the available actions inside ATS and your current project:
 
