@@ -11,7 +11,7 @@ When you create a new test case, it is empty by default. You must add test steps
 
 To see the details of a test step, click on the name of the test step. The details open below the test step.
 
-![Test step details](attachments/test/test-step-details.png)
+![Test step details](attachments/test/expand-test-step.png)
 
 ## Description
 
