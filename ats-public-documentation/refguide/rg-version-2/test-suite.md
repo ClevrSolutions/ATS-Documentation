@@ -12,7 +12,7 @@ A dialog opens where you give your test suite a name and an optional description
 
 ## Test Suite Details
 
-![Edit Test Suite](attachments/test/test-suite-details.png)
+![Edit Test Suite](attachments/test/testsuite-details.png)
 
 In the top left corner of the **Test Suite Details** page, you find the name and the description of the test case.  To change them, click them and edit the text. ATS saves the changes automatically.
 
@@ -36,7 +36,7 @@ In the top right corner of the page, you find the **Export** and **Run** buttons
 
 Under test steps you find all test cases and test suites that are used in the current test suite. You add new test case or test suite by searching for it in the **Add step** box.
 
-For a more detailed search, you use the **Test Step Setup** dialog box by clicking ![](attachments/test/action-search-dialog.png). There you search for the desired test case or test suite in your project. You can also navigate through your project and explorer all available tests in it. ![](attachments/test/TestStepCaseSearch.png)
+For a more detailed search, you use the **Test Step Setup** dialog box by clicking ![](attachments/test/search-testcase-testsuite.png). There you search for the desired test case or test suite in your project. You can also navigate through your project and explorer all available tests in it. ![](attachments/test/dialog-testcase-testsuite.png)
 
 You add a new step above or below an existing test step, by clicking **Add above** or **Add below**. The buttons appear when you hover your mouse over an existing test step.
 
