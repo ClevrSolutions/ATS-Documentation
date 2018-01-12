@@ -37,11 +37,11 @@ In the top right corner of the screen, you will find the **Export** and **Run** 
 
 Test steps describe the actions that the test case performs. You can add new test steps by searching an action in the **Add step** box. For a more detailed search, use the **Test Step Setup** dialog box by clicking this button:
 
-![](attachments/test/select-function-action.png)
+![](attachments/test/search-button.png)
 
 A dialog box will open where you can search for a specific action or you explore all the available actions inside ATS and your current project:
 
-![](attachments/test/TestStepActionSearch.png).
+![](attachments/test/select-function-action.png).
 
 After you have found the desired action, add it to your test case as a test step by selecting it and clicking **Add**.
 
