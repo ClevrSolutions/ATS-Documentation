@@ -9,7 +9,7 @@ To run an existing test, you must open the test case or test suite by clicking i
 
 The test case (or test suite) details page opens. On this page, you see all the test steps and for the test suite the containing test case of your test. If you want to execute your test case, click **Run**.
 
-![Test case details run](attachments/test-run/test-case-details-run.png)
+![Test case details run](attachments/test-run/testcase-run.png)
 
 The _Job Configuration_ page opens. On this page, you set the job configuration for the test case (or test suite) you want to execute. For every test run, a new job is created.
 
