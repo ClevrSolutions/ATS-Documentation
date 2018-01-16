@@ -132,7 +132,7 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 | Action           | Supported Widgets | Description                              |
 | ---------------- | ----------------- | ---------------------------------------- |
-| Accept Browser Alert | N/A | |
+| Accept Browser Alert | N/A | Accepts the alert available |
 | Clear WebElement | WebElement | Clear a webelement (input or textarea) |
 | Close Window | N/A | Closes currently active window. Does not switch to another window automatically |
 | Close Window & Auto-Switch | N/A | Closes currently active window and automatically switches to the next one |
