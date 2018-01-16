@@ -136,7 +136,7 @@ The tables below list all the standard actions for Mendix. There is one table pe
 | Clear WebElement | WebElement | Clear a webelement (input or textarea) |
 | Close Window | N/A | Closes currently active window. Does not switch to another window automatically |
 | Close Window & Auto-Switch | N/A | Closes currently active window and automatically switches to the next one |
-| Dismiss Browser Alert | N/A | |
+| Dismiss Browser Alert | N/A | Dismisses the alert available |
 | Element matches Selector | WebElement | Returns whether given element matches the selector |
 | Execute Javascript Integer | N/A | Execute javascript snippet. Runs asynchronous when Timeout is set. Returns an Integer |
 | Execute Javascript String | N/A | Execute javascript snippet. Runs asynchronous when Timeout is set. Returns a String |
