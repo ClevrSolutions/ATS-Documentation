@@ -177,7 +177,7 @@ The tables below list all the standard actions for Mendix. There is one table pe
 
 | Action           | Supported Widgets | Description                              |
 | ---------------- | ----------------- | ---------------------------------------- |
-| Click | WebElement | |
+| Click | WebElement | Clicks in the middle of the given element. |
 | Click Coordinates | N/A | Clicks on the given point on the page, described by X and Y Offset. If no reference element is given, the upper left corner of the page is used as point of origin for calculating the desired point. Otherwise the upper left corner of the reference element is used |
 | Doubleclick | WebElement | Perform a Click or Doubleclick and wait for Mendix activities |
 | Focus and Clear Element Value | WebElement | Set an input element to an empty string |
