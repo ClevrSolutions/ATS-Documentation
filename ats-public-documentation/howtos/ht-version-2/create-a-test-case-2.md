@@ -51,7 +51,7 @@ To create a test case, follow these steps:
 
 The following steps describe how to add test steps manually to your test case. You will add the steps necessary for creating a new expense in the Company Expenses app.
 
-1.  Click **Setup step manually** on the **Test Case** page. This opens a dialog box where you find all actions:
+1.  Click **Setup step manually** on the **Test Case** page. This opens the **Select function or action** dialog box where you find all actions and functions:
 
     ![](attachments/create-a-test-case-2/test-case-page-add.png)
 
