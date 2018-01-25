@@ -41,7 +41,7 @@ Clicking **New Action** opens the **Create new** dialog box:
 
 This opens the **Action Details** page. ATS displays the **Name** and **Description** on this page.
 
-![](attachments/mask-your-password-2/action_details_page.png)
+![](attachments/mask-your-password-2/action_details-page.png)
 
 7. Add the **Open application** action.
 8. Enter a description of the test step. Also set the **Application URL** input parameter to **Environment URL** below **Global constant values**.
