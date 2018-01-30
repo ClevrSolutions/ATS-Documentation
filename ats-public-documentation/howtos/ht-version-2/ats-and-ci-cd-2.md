@@ -122,6 +122,10 @@ Keep the unique ID at hand for later on.
 
 You now created a CI/CD template which you can execute using a CI/CD pipeline.
 
+### 4.3 CI/CD webservice user
+
+The CI/CD in ATS is using a webservice with authentication. Please use the standard username which is ATSAPIUser and the standard password which is ATSAPIUser.
+
 ## 5 Configure ATS in your pipeline (Example)
 
 Using the CI/CD API key and the unique ID of the CI/CD template you can execute a test case from your CI/CD pipeline. In this chapter, you find an example for Jenkins.
