@@ -53,8 +53,8 @@ You must include the following information in the request:
 
 | Name | Description |
 | --- | --- |
-| username | The username of the web service user. |
-| password | The password of the web service user. |
+| username | ATSAPIUser |
+| password | ATSAPIUser |
 | AppAPIToken | The key for the CI/CD API. Generated on the **Test Settings** page. |
 | AppID | The ID of your Mendix app. |
 | JobTemplateID | The unique ID of the CI/CD Template. |
@@ -65,8 +65,8 @@ You must include the following information in the request:
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
   <soap:Header>
     <tns:authentication>
-      <username>exampleUser</username>
-      <password>examplePassword</password>
+      <username>ATSAPIUser</username>
+      <password>ATSAPIUser</password>
     </tns:authentication>
   </soap:Header>
   <soap:Body>
