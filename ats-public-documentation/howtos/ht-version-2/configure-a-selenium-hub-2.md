@@ -268,7 +268,7 @@ To configure a custom selenium hub follow these steps:
 
 {{% alert type="info" %}}
 
-For more information on local selenium set-up go to [Customer Hosted Selenium](../general/deployment#5-4-customer-hosted-selenium).
+For more information on local selenium set-up go to [Customer Hosted Selenium](../../general/deployment#5-4-customer-hosted-selenium).
 
 {{% /alert %}}
 
@@ -282,6 +282,6 @@ You now configured your Custom Selenium Hub. You can create as many variations a
 
 ![](attachments/configure-a-selenium-hub-2/finished-custom-selenium-hub.png)
 
-## 9 Next up
+## 9 Next Up
 
-You now learned how to configure the different selenium hubs. The next how-to is [How to Create a Test Case](create-a-test-case-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-To's](ht-version-2) page. We advise you to follow the predefined structure.
+You now learned how to configure the different selenium hubs. The next how-to is [How to Create a Test Case](create-a-test-case-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.

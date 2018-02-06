@@ -30,7 +30,7 @@ To create a test suite, follow these steps:
 1.  Open your project in ATS and go to **Test Cases**.
 2.  Click the **Action** drop-down menu and select **New Test Suite**.
     
-    ![](attachments/create-a-test-suite-2/repository-add-test-suite.png)
+    ![](attachments/create-a-test-suite-2/Repository-add-test-suite.png)
 
     Clicking the **New Test Suite** button opens the **Create new** dialog box:
     
@@ -74,6 +74,6 @@ Repeat this process for the Recorder test case to complete your test suite.
 You can add as many test cases and test suites as you want. 
 {{% /alert %}}
 
-## 5 Next up
+## 5 Next Up
 
-You now learned how to create a test suite. The next how-to is [How to create a Data-Driven Test Case](create-datadriven-test-case-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-To's](ht-version-2) page. We advise you to follow the predefined structure.
+You now learned how to create a test suite. The next how-to is [How to Create a Data-Driven Test Case](create-datadriven-test-case-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.

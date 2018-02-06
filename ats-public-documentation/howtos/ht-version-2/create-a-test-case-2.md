@@ -232,7 +232,7 @@ To add test steps using the ATS Recorder, follow these steps:
 
 13.  You must manually add the **New Expense** dialog box (you cannot record this). You must add the action between test step 3 and test step 4. A user visually confirms that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](/ats/refguide/rg-version-1/findassert-dialog) action. Inside your test case, hover over step 3 and click **Add Below**:
 
-![](attachments/create-a-test-case-2/add-test-step.png)
+![](attachments/create-a-test-case-2/Add-test-step.png)
 
 14. Add the **Find/Assert Dialog** action.
 
@@ -259,9 +259,9 @@ You have now created your test case using the ATS Recorder.
 
 We advise you to use the recorder as much as possible to add test steps. But, the ATS Recorder might not be able to record certain manual test steps. So, we advise to add steps in the following order:
 * Record your manual test steps using the ATS Recorder
-* Adding test steps using the ATS Helper, see [Finding the action you need](/bestpractices/bp-version-2/finding-the-action-you-need-2).
-* Create a custom action, see [Create custom action](/howtos/ht-version-2/create-custom-actions-2).
+* Adding test steps using the ATS Helper, see [Finding the action you need](../../bestpractices/bp-version-2/finding-the-action-you-need-2).
+* Create a custom action, see [Create custom action](create-custom-actions-2).
 
-## 6 Next up
+## 6 Next Up
 
-You now learned how to create a test case. The next how-to is [How to Create a Test Suite](create-a-test-suite-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-To's](ht-version-2) page. We advise you to follow the predefined structure.
+You now learned how to create a test case. The next how-to is [How to Create a Test Suite](create-a-test-suite-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.
