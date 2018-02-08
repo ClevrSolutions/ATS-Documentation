@@ -67,4 +67,4 @@ This option is only available for supported Selenium hubs.
 With this option, you specify the screen resolution for your test run. A list of all supported screen resolutions found in the [Supported selenium hub provider section](supported-selenium-hub-provider) of this documentation.
 
 After you set the run configuration, you execute the test case by clicking _Run_ or you schedule the test case by clicking _Schedule_.
-If you want to know more about scheduling test cases in ATS, visit the [Scheduling section](scheduling).
+If you want to know more about scheduling test cases in ATS, visit the [Scheduling section](schedule).

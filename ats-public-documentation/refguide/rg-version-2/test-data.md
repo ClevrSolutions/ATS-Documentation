@@ -21,7 +21,7 @@ Fields can have following data types: _Text_ or _Number_.
 | Field  | A column of a table for specific data, for example username. |
 | Record | A row in a data table containing a _Text_ or _Number_ value. |
 
-![Test Data tab](attachments/test/test-data.PNG)
+![Test Data tab](attachments/test/test-data.png)
 
 ## Using Test Data in Test Cases
 
