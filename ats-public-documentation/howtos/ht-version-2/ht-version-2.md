@@ -1,9 +1,9 @@
 ---
-title: "ATS Version 2 How-To's"
-category: "How-To's"
+title: "ATS 2 How-to's"
+category: "How-to's"
 ---
 
-These are the documents in this section:
+These are the main documents in this section:
 
 * [How to Get Started](getting-started-2)
 * [How to Install the ATS Helper and ATS Recorder](install-ats-helper-recorder-2)
