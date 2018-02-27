@@ -1,5 +1,5 @@
 ---
-title: "Data Driven Testing"
+title: "Data-Driven Testing"
 parent: "rg-version-2"
 ---
 
@@ -22,7 +22,7 @@ Fields can have following data types: text or number.
 | Field  | A column of a table for specific data (for example, *username*. |
 | Record | A row in a data table containing a text or number value. |
 
-![](attachments/test/test-data.png)
+![](attachments/test/test-data.PNG)
 
 ## 2 Using Test Data in Test Cases
 
@@ -67,11 +67,3 @@ For this type of error, fields are shown that are not in the selected master dat
 ### 5.2 Incompatible Data Types
 
 For this error type, parameters are shown that need a different data type than the data type of the field.
-
-Shows fields that are not in the selected master data set that are currently used in the test case.
-
-#### Incompatible datatypes**
-
-Shows parameters that need a different data type than the datatype of the field.
-
-ATS lists test step and parameter for each error, for easy identification.
