@@ -115,21 +115,21 @@ Selenium<sup>2</sup> Support          | ![][green] Yes<sup>3</sup> | ![][green] 
 <sup>3</sup> Provided by your Selenium SaaS provider.<br />
 <sup>4</sup> Not required in this option.
 
-### 4.3 Uploading files
+### 4.3 Uploading Files
 
-ATS does not support the uploading of files in every situation. Below you find a quick summary of the different possibilities.
+ATS does not support the uploading of files in every situation. This table presents a summary of the different possibilities:
 
-| Selenium Setup | Uploading your own file | Uploading a file | Uploading possible? |
+| Selenium Setup | Uploading Your Own File | Uploading a File | Uploading Possible? |
 | :-------------- | :---------------------- | :--------------- | :------------------ |
 | Local Selenium Server (Docker) | ![](attachments/deployment/grey.png) Limited<sup>1</sup> | ![](attachments/deployment/green.png) Yes | ![](attachments/deployment/green.png) Yes |
 | BrowserStack (SaaS) | ![](attachments/deployment/red.png) No | ![](attachments/deployment/green.png) Yes | ![](attachments/deployment/green.png) Yes |
 | SauceLabs (SaaS) | ![](attachments/deployment/red.png) No | ![](attachments/deployment/red.png) No | ![](attachments/deployment/red.png) No |
 | Selenium SaaS Agent | ![](attachments/deployment/grey.png) Limited<sup>2</sup> | ![](attachments/deployment/green.png) Yes | ![](attachments/deployment/green.png) Yes |
 
-<sup>1</sup> This is only possible when you prepare your own files on that server. <br>
+<sup>1</sup> This is only possible when you prepare your own files on that server.<br />
 <sup>2</sup> This depends on where the agent is installed.
 
-For more information see uploading files in the how-to section.
+For more information, see [How to Upload a File in Your App Using ATS](../howtos/ht-version-2/upload-file-using-ats-2].
 
 ## 5 Setup Instructions
 
@@ -168,7 +168,7 @@ Selenium is an open-source third-party component and there is no active support 
 {{% /alert %}}
 
 {{% alert type="info" %}}
-Selenium standalone support is dropped with ATS 2.0 and selenium grid is supported only. By following the instructions below, you will setup a selenium grid.
+Selenium standalone support has been dropped with ATS 2.0. Only Selenium Grid is supported. By following the instructions below, you will set up a Selenium Grid.
 {{% /alert %}}
 
 #### 5.4.1 Selenium Runner Setup
