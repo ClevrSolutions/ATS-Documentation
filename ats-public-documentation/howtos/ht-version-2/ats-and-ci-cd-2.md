@@ -191,7 +191,6 @@ The last API call results in a "Passed" or "Failed", you can email this result o
 This is only a powershell example for Jenkins on Windows and can be written in another scripting language of your choice.
 
 * Make sure that you install the powershell plugin.
-* Make sure that curl and xmllint are installed on your Linux server.
 * In your Jenkins project, add a build step of type Execute powershell and use the following powershell script.
 * In the script you will find the parameters displayed here. Change the values in the script with your own values:
 
