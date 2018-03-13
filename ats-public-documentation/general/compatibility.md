@@ -29,16 +29,20 @@ category: "General"
 | 1.7, 1.8 | 51-53 |   |
 |  | 54+ | Recent versions of Chrome usually work (unsupported). |
 
-### Internet Explorer and Edge
+### Internet Explorer
 
-The Application Test Suite (ATS) does currently not support testing in Internet Explorer 11 (the only remaining supported version of this browser).
+| ATS version | Supported Internet Explorer Versions | Notes |
+| ----------- | ------------------------------------ | ----- |
+| 2.x         | 11.x                                 |       |
 
-Due to its nature, Internet Explorer is very cumbersome to automate compared to other browsers. Browsers like Chrome or Firefox have vendor support for automation, while Internet Explorer's support for Selenium automation hasn't been touched since 2014 (for details, see [Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)). Without proper vendor support, it's difficult and sometimes impossible to work around or fix certain issues.
+Please be aware that we can not always guarantee the same smooth experience when testing with Internet Explorer (IE). IE is comparable slow and outdated. Also the support for automation by Microsoft and the Selenium project is much less mature, stable and efficient.
 
-Nonetheless, we are continuing our efforts to bring support for Internet Explorer 11 into ATS if possible.
+Internet Explorer gets the same development attention as other browsers. However, there's no guarantee that all features of ATS can be made available for IE without limitations.
 
-At the same time, we are planning to support Internet Explorer's successor, Edge. As soon as its built-in automation support is feature-complete, we will add support to ATS. For details, check the [Microsoft Edge Platform Status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/).
+#### Known Limitations
+
+IE one in a while produces typos when keys are sent to the browser. This can result in wrong values being set to input fields.
 
 ### Other Browsers
 
-No other browser is supported at the moment.
+We plan to support Edge and Safari in future releases.
