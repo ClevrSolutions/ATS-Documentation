@@ -48,6 +48,7 @@ Besides the default widgets, ATS supports the most commonly used widgets from th
 | GridSelector | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | InputReferenceSelector | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/red.png) No |
 | OnChangeInputbox | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
+| Radiobutton List | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | SearchInputDropDown | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | SimpleCheckboxSetSelector | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | SimpleMenuBar | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
