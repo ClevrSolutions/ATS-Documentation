@@ -23,7 +23,22 @@ In short, ATS brings you the following benefits:
 
 4. Improved testing morale
 
-## 1.2 
+## 1.2 What is the connection between ATS and Selenium?
+
+Selenium is an open source tool used for automating browser-based tests. To properly automate your tests with Selenium you need:
+- Coding knowledge
+- A way for test case management
+- A reporting tool
+- Know-how on using web driver
+
+This is where ATS comes in. ATS makes it easy to automate your tests using Selenium. 
+- ATS has reusable actions (modules) that work like building blocks. To click a button in your Mendix app, select the "Click Widget" action. This way the user doesn't need coding knowledge to test their Mendix app. ATS gives the command to Selenium and Selenium executes the test. 
+- ATS has a repository where you manage all your tests and can make adjustments. 
+- ATS shows the results of the test cases in an easy overview and also provides the option to create a report. 
+- ATS has built-in support for different browsers and platforms. It also integrated into the Mendix lifecycle ensuring it always up to date with Mendix releases.
+
+ATS enables non-technical users to automate their tests. The perfect test automation tool for a low-code platform.
+
 
 ## 1.3 ATS uses selenium, so why should I use ATS in combination with Selenium instead of solely using Selenium?
 
