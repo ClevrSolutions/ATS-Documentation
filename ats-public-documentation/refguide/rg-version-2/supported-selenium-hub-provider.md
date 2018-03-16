@@ -27,6 +27,11 @@ Operating System | Sauce Labs | TestingBot | BrowserStack
 **OS X Yosemite** | &#10003; | &#10003; | &#10003;
 **OS X Mavericks** | &#10003; | &#10003; | &#10003;
 
+[//]: # (We should change the above table with a table where both browsers and platform versions are shown.)
+[//]: # (We should group the tables by provider)
+[//]: # (see for example provider_platform_browser_compatiblitiy_table.md)
+
+
 ## 2 Supported Screen Resolutions
 
 ATS supports different screen resolutions for every operating system. The following lists show the currently supported resolutions for each operating system.
