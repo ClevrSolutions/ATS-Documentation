@@ -21,6 +21,7 @@ Operating System | Sauce Labs | TestingBot | BrowserStack
 **Windows 8** | &#10003; | &#10003; | &#10003;
 **Windows 7** | &#10003; | &#10003; | &#10003;
 **Windows XP** | &#10003; | &#10003; | &#10003;
+**macOS High Sierra**  | &#10003; | &#10003; | &#10003;
 **macOS Sierra**  | &#10003; | &#10003; | &#10003;
 **OS X El Capitan** | &#10003; | &#10003; | &#10003;
 **OS X Yosemite** | &#10003; | &#10003; | &#10003;
