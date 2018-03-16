@@ -21,6 +21,7 @@ We support all the widgets that are included in the Mendix Modeler:
 | DropDown | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | FileManager | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | GroupBox | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
+| Input Reference Set Selector | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | Label | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes|
 | ListView | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | MenuBar | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
