@@ -7,30 +7,21 @@ parent: "test-run"
 
 This section presents an overview of the currently supported external Selenium hub providers. When using these providers, ATS gives you the option to set the operating systems and the screen resolution.
 
-Currently, there are three Selenium providers supported:
+Currently, there are two Selenium providers supported:
 
 * [Sauce Labs](http://www.saucelabs.com/)
-* [TestingBot](http://www.testingbot.com/)
 * [BrowserStack](http://www.browserstack.com/)
 
 The following table shows the currently supported operating systems of each provider:
 
-Operating System | Sauce Labs | TestingBot | BrowserStack
----------------- | :--------: | :--------: | :------------:
-**Windows 10** | &#10003; | &#10003; | &#10003;
-**Windows 8** | &#10003; | &#10003; | &#10003;
-**Windows 7** | &#10003; | &#10003; | &#10003;
-**Windows XP** | &#10003; | &#10003; | &#10003;
-**macOS High Sierra**  | &#10003; | &#10003; | &#10003;
-**macOS Sierra**  | &#10003; | &#10003; | &#10003;
-**OS X El Capitan** | &#10003; | &#10003; | &#10003;
-**OS X Yosemite** | &#10003; | &#10003; | &#10003;
-**OS X Mavericks** | &#10003; | &#10003; | &#10003;
-
-[//]: # (We should change the above table with a table where both browsers and platform versions are shown.)
-[//]: # (We should group the tables by provider)
-[//]: # (see for example provider_platform_browser_compatiblitiy_table.md)
-
+Operating System       | Sauce Labs | BrowserStack
+---------------------- | :--------: | :------------:
+**Windows 10**         | &#10003;   | &#10003;
+**Windows 8**          | &#10003;   | &#10003;
+**Windows 7**          | &#10003;   | &#10003;
+**macOS High Sierra**  | &#10003;   | &#10003;
+**macOS Sierra**       | &#10003;   | &#10003;
+**OS X El Capitan**    | &#10003;   | &#10003;
 
 ## 2 Supported Screen Resolutions
 
