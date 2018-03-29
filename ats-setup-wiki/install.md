@@ -165,4 +165,3 @@ Some providers you can use:
 * http://www.browserstack.com
 * http://www.saucelabs.com
 * http://www.gridlastic.com
-* http://www.testingbot.com
