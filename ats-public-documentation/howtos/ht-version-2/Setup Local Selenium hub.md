@@ -194,12 +194,12 @@ java -jar selenium-server-standalone-3.8.1.jar -role hub -hubConfig gridHubConfi
 
 - create start.bat:
 
-
-    start /B java -jar C:\Selenium\selenium-server-standalone-3.8.1.jar -role hub -hubConfig C:\Selenium \gridHubConfig.json
-    timeout /t 10
-    start /B java -Dwebdriver.chrome.driver=C:\Selenium\chromedriver.exe -Dwebdriver.firefox.driver=C:\Selenium\geckodriver.exe -jar C:\Selenium\selenium-server-standalone-3.8.1.jar -role node -nodeConfig C:\Selenium\node.json
-    exit
-
+```
+start /B java -jar C:\Selenium\selenium-server-standalone-3.8.1.jar -role hub -hubConfig C:\Selenium \gridHubConfig.json
+timeout /t 10
+start /B java -Dwebdriver.chrome.driver=C:\Selenium\chromedriver.exe -Dwebdriver.firefox.driver=C:\Selenium\geckodriver.exe -jar C:\Selenium\selenium-server-standalone-3.8.1.jar -role node -nodeConfig C:\Selenium\node.json
+ exit
+```
 
 - starten vanuit cmd box
     
