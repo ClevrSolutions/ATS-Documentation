@@ -61,16 +61,6 @@
       "recording":true
    },
    {
-      "name":"SearchInputDropDown",
-      "execution":true,
-      "recording":true
-   },
-   {
-      "name":"Simple Checkbox Set Selector",
-      "execution":true,
-      "recording":true
-   },
-   {
       "name":"SimpleMenuBar",
       "execution":true,
       "recording":true
