@@ -11,7 +11,7 @@ In this How-to we will describe a few possible local Selenium solutions and a sm
 ## 1. Setup Local Selenium hub (SeleniumHQ) ##
 
 - Official website ([https://www.seleniumhq.org/](https://www.seleniumhq.org/))
-- How-to set it up link
+- [Setup Local Selenium hub](Setup Local Selenium hub)
 - Live-view only on the machine where Selenium is installed
 - No (out-of-the-box) video recording
 
