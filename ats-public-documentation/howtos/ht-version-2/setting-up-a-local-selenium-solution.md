@@ -11,14 +11,14 @@ In this How-to we will describe a few possible local Selenium solutions and a sm
 ## 1. Setup Local Selenium hub (SeleniumHQ) ##
 
 - Official website ([https://www.seleniumhq.org/](https://www.seleniumhq.org/))
-- [Setup Local Selenium hub](Setup Local Selenium hub)
+- How-to [Setup Local Selenium hub](setup-local-selenium-hub)
 - Live-view only on the machine where Selenium is installed
 - No (out-of-the-box) video recording
 
 ## 2. Setup Local Docker Selenium hub (Docker Selenium) ##
 
 - Official github page ([https://github.com/SeleniumHQ/docker-selenium](https://github.com/SeleniumHQ/docker-selenium))
-- How to set it up link
+- How-to [Setup Local Docker Selenium hub](setup-local-docker-selenium-hub)
 - Browsers run in Linux containers
 - Live-view possible with debug images and VNC (viewer)
 - No (out-of-the-box) video recording
@@ -28,7 +28,7 @@ In this How-to we will describe a few possible local Selenium solutions and a sm
 - Selenoid is a powerful Go implementation of original Selenium hub code. It is using Docker to launch browsers.
 - Official website ([http://aerokube.com/](http://aerokube.com/))
 - While ATS works fine with Selenoid (since it's based on the official Selenium code) and it even supports parallel testing on the Selenoid hub. We can't guarantee it will always be supported in the future.
-- How-to set it up link
+- How-to Setup Local Selenoid hub (will be online soon)
 - Browsers run in Linux containers
 - Live-view with a seperated to be installed portal. Works with debug browser images and vnc.
 - It also has a out-of-the box video recording option
