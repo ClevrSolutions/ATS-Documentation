@@ -1,11 +1,11 @@
 [
    {
-      "name":"BooleanSlider",
+      "name":"Boolean Slider",
       "execution":true,
       "recording":true
    },
    {
-      "name":"BootStrapRTE",
+      "name":"Bootstrap RTE",
       "execution":true,
       "recording":false
    },
@@ -15,12 +15,12 @@
       "recording":true
    },
    {
-      "name":"CheckboxSetSelector",
+      "name":"Checkbox Set Selector	",
       "execution":true,
       "recording":true
    },
    {
-      "name":"CKEditor",
+      "name":"CKEditor for Mendix",
       "execution":true,
       "recording":false,
       "comment":"The get value function for CKEditor returns the inner HTML of the widget. Because of the way the CKEditor itself is implemented it might generate different html tags depending on which browser is used, e.g. in some versions of Firefox a tag - <br type=\"_moz\"> is added. This has the implication that we can not guarantee that the returned html from \"Get Value\" will be the same across all browsers."
@@ -31,22 +31,32 @@
       "recording":true
    },
    {
-      "name":"GridSelector",
+      "name":"Checkbox grid selector",
       "execution":true,
       "recording":true
    },
    {
-      "name":"InputReferenceSelector",
+      "name":"Radio grid selector",
+      "execution":true,
+      "recording":true
+   },
+   {
+      "name":"InputRefSelector",
       "execution":true,
       "recording":false
    },
    {
-      "name":"OnChangeInputbox",
+      "name":"OnChange Inputbox",
       "execution":true,
       "recording":true
    },
    {
-      "name":"Radiobutton List",
+      "name":"OnChange Textarea",
+      "execution":true,
+      "recording":true
+   },
+   {
+      "name":"Attribute Radiobutton List",
       "execution":true,
       "recording":true
    },
@@ -56,7 +66,7 @@
       "recording":true
    },
    {
-      "name":"SimpleCheckboxSetSelector",
+      "name":"Simple Checkbox Set Selector",
       "execution":true,
       "recording":true
    },
