@@ -23,7 +23,7 @@
       "name":"CKEditor for Mendix",
       "execution":true,
       "recording":false,
-      "comment":"The get value function for CKEditor returns the inner HTML of the widget. Because of the way the CKEditor itself is implemented it might generate different html tags depending on which browser is used, e.g. in some versions of Firefox a tag - <br type=\"_moz\"> is added. This has the implication that we can not guarantee that the returned html from \"Get Value\" will be the same across all browsers."
+      "comment":"The get value function for CKEditor returns the inner HTML of the widget. Because of the way the CKEditor itself is implemented it might generate different html tags depending on which browser is used, e.g. in some versions of Firefox a tag - &lt;br type$eq;\"_moz\"&gt; is added. This has the implication that we can not guarantee that the returned html from \"Get Value\" will be the same across all browsers."
    },
    {
       "name":"DropdownDivConverter",
