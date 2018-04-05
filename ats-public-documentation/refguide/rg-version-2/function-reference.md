@@ -119,7 +119,7 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | Get Current Page Title | N/A | Returns the current page/form title. |
 | Login | Standard login page | Logs in to the Mendix application with the standard login page or on the cloud using MxID. |
 | Logout | N/A | Triggers the logout/logoff from application via the Client API. Use this keyword in the teardown of your test cases to end the user session. This will work regardless of the UI state. |
-| Mendix wait | N/A | Injects Mendix scripts and waits. |
+| Mendix wait | N/A | Wait for microflow and UI activities. |
 | Open Mendix Application | N/A | Opens a Mendix application at the website URL in a browser with Mendix-specific settings. |
 
 ## 8 Web
@@ -130,7 +130,7 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | Assert Element matches Selector | Mx4/Mx5 - Returns whether given element matches the selector. |
 | Close Window | Closes the currently active window. Does not switch to another window automatically. |
 | Close Window & Auto-Switch | Closes the currently active window and automatically switches to the next one. |
-| Element matches Selector | Returns whether the given element matches the selector. |
+| Element matches Selector | Returns whether the given element matches a selector. |
 | Execute Javascript Integer | Executes the JavaScript snippet. Runs asynchronously when the timeout is set. Returns an integer. |
 | Execute Javascript String | Executes the JavaScript snippet. Runs asynchronously when the timeout is set. Returns a string. |
 | Execute Javascript WebElement | Executes the JavaScript snippet. Runs asynchronously when the timeout is set. Returns a web element. |
@@ -138,30 +138,30 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | Find Element by CSS | Finds a web element by CSS. It optionally restricts search to the specified SearchContext element. The occurrence lets you specify which element to fetch from the result list, starting at 1 for the first element (defaults to the first element). |
 | Find Element by ID | Finds a web element by the ID. It optionally restricts the search to the specified SearchContext element. The occurrence lets you specify which element to fetch from the result-list, starting at 1 for the first element (defaults to the first element). |
 | Find Element by Sizzle | Finds a web element by Sizzle. Optionally restrict search to the specified SearchContext element. The occurrence lets you specify which element to fetch from the result list, starting at 1 for the first element (defaults to the first element). |
-| Get Current Window Handle | Returns the handle (meaning, the identifier) of the currently active window. |
-| Get Property Value | Returns the property value from the web element. (Does not have access to Dojo widget properties). |
-| Get Selected Option Index   | |
-| Get Selected Option Text | |
-| Get Selected Option Value | |
-| Get Text | |
+| Get Current Window Handle | Returns the handle i.e. the identifier of the currently active window. |
+| Get Property Value | Returns the property value from the web element. Does not have access to Dojo widget properties. |
+| Get Selected Option Index   | Returns the index of the first selected option in a select element. |
+| Get Selected Option Text | Returns the text of the first selected option in a select element. |
+| Get Selected Option Value | Returns the value of the first selected option in a select element. |
+| Get Text | Get the visible, i.e. not hidden by CSS, innerText of this element, including sub-elements, without any leading or trailing whitespace. |
 | Is Element Displayed | Returns true if the supplied element is displayed (visible). |
 | Is Selected | Checks whether the check box is selected. |
 | Maximize | Maximizes the current browser window. |
 | Open Application | Deprecated in favor of **Open Mendix Application**.<br /> Opens an application at the application's URL in a browser. |
 | Open Website | Deprecated in favor of **Open Mendix Application**. |
 | Select Option | Deprecated in favor of **Select Option by Index**, **Select Option by Text**, and **Select Option by Value**. |
-| Select Option by Index | |
-| Select Option by Text | |
-| Select Option by Value | |
+| Select Option by Index | Select the option at the given index. |
+| Select Option by Text | Select all options that display text matching the argument. |
+| Select Option by Value | Select all options that have a value matching the argument. |
 | Set Browser Dimensions | Deprecated in favor of **Set Size**. |
-| Set Page Load Timeout | |
-| Set Size | Sets the size of a browser window. |
-| Switch to Default Frame | |
-| Switch to Frame | |
-| Switch to Next Window | Switches to the next open window. An error is thrown if there is only one window. Returns the window handle (meaning, the identifier) of the new active window. |
+| Set Page Load Timeout | Sets the amount of time (in milliseconds) to wait for a page load to complete before throwing an error. If the timeout is negative, page loads can be indefinite. |
+| Set Size | Sets the size of the current browser window. This will change the outer window dimension, not just the view port. |
+| Switch to Default Frame | Selects either the first frame on the page, or the main document when a page contains iframes. |
+| Switch to Frame | Select a frame using its previously located WebElement. |
+| Switch to Next Window | Switch to the next open window. An error is thrown if there is only one window. Returns the window handle, i.e. identifier, of the new active window. |
 | Switch to Window | Switches to the window via its identifier. An error is thrown if the window is not found. |
-| Unfocus WebElement | |
-| Wait for Condition | |
+| Unfocus WebElement | Removes focus from a web element by calling the blur method. |
+| Wait for Condition | Repeatedly runs the condition java script snippet every Interval (in milliseconds) until one of the following is fulfilled: <br />  * the snippet returns neither null nor false <br />  * the snippet throws an unignored exception <br />  * the timeout (in milliseconds) expires. |
 | Wait for Condition JS | Waits until the given expression returns true. |
 
 ## 9 Mouse & Keyboard
@@ -170,14 +170,13 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | ---------------- | ----------------- | ---------------------------------------- |
 | Accept Browser Alert | N/A | Accepts the alert available. |
 | Clear WebElement | WebElement | Clears a web element (input or text area). |
-| Click | WebElement | Clicks in the middle of the given element. |
+| Click | WebElement | Clicks in the middle of a given web element. |
 | Click/Doubleclick | All web elements | Performs a click or double-click and waits for Mendix activities |
 | Click Coordinates | N/A | Clicks a given point on the page as described by the X and Y offset. If no reference element is given, the upper-left corner of the page is used as point of origin for calculating the desired point. Otherwise, the upper-left corner of the reference element is used. |
 | Dismiss Browser Alert | N/A | Dismisses the alert available. |
 | Doubleclick | WebElement | Performs a click or double-click and then a wait for Mendix activities. |
 | Focus and Clear Element Value | WebElement | Sets an input element to an empty string. |
 | Focus WebElement | WebElement | Focuses the web element and performs a wait afterwards. |
-| Focus WebElement | WebElement | |
 | Hover | WebElement | Hovers a web element. |
 | Send Enter | N/A                  | Simulates pressing <kbd>Enter</kbd> in the element. |
 | Send Keys | N/A                  | Simulates typing <kbd>Text</kbd> into the element. |
