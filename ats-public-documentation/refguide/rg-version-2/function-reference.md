@@ -13,18 +13,18 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | ---------------- | ----------------- | ---------------------------------------- |
 | Set BooleanSlider Value          | BooleanSlider                    |  Deprecated in favor of **Set Value**.<br /> Checks if the given value is available for the BooleanSlider and sets the value. |
 | Set BootstrapRTE Value           | BootstrapRTE                     | Deprecated in favor of **Set Value**.<br /> Sets the given value as current value for the BootstrapRTE value. Strings can be formatted via html-code. |
-| Set Checkbox Set Selector Value  | Checkbox Set Selector            | Checks/clears the **Select all** check box. |
+| Set Checkbox Set Selector Value  | Checkbox Set Selector            | Find checkbox by given entity attribute and un-/check it. |
 | Set Checkbox Set Selector Value (all) | Checkbox Set Selector       | Checks/clears the **Select all** check box. |
 | Set Checkbox Value               | Checkbox                         | Sets the value of a check box. |
 | Set CKEditor Value               | CKEditor                         | Deprecated in favor of **Set Value**.<br /> Sets the CKEditor content value. |
-| Set File Manager                 | FileManager                      | Sets the file manager to the given file path to upload a file. |
-| Set Grid Selector Checkbox Value | Grid Selector                    | Checks/clears the check box. |
-| Set Grid Selector Radiobutton checked  | Grid Selector              | Selects the radio button for the given column and row caption. |
+| Set File Manager                 | FileManager                      | Sets the file manager to a given file path to upload a file. |
+| Set Grid Selector Checkbox Value | Grid Selector                    | Un-/Check check box for a given column and row caption in a grid selector widget. |
+| Set Grid Selector Radiobutton checked  | Grid Selector              | Selects the radio button for a given column and row caption. |
 | Set InputReferenceSelector Value | InputReferenceSelector            | Deprecated in favor of **Set Value**.<br /> Sets the input reference selector to the given value. |
-| Set Row Cell Value               | DataGrid                         | Set the cell value in a data grid row. |
-| Set Simple Checkbox Set Selector Value | Simple Checkbox Set Selector | Checks/clears the check box found by a given entity attribute value. |
-| Set Value | Standard widgets: TextBox, TextArea, DropDown, RadioButton, DatePicker, ReferenceSelector, SearchInput Text, SearchInput DropDown.<br /> App Store widgets: OnChange Inputbox, BooleanSlider, Bootstrap Wysiwyg Editor (Bootstrap RTE), CK Editor For Mendix, Input Reference Selector, Radiobutton List. | Sets the value of all supported widgets. |
-| Set Value (by index) | Drop Down, Reference Selector, Search Input Drop Down | Sets the value of all supported drop-down widgets by index. |
+| Set Row Cell Value               | DataGrid                         | Set the cell value for a particular column in a data grid row. |
+| Set Simple Checkbox Set Selector Value | Simple Checkbox Set Selector | Checks/clears the check box for a given entity attribute value. |
+| Set Value | Standard widgets: text box, text area, drop down, radio button, date picker, reference selector, search input text, search input drop down.<br /> App Store widgets: OnChange Inputbox, BooleanSlider, Bootstrap Wysiwyg Editor (Bootstrap RTE), CK Editor For Mendix, Input Reference Selector, Radiobutton List. | Sets a value to a widget. |
+| Set Value (by index) | Drop Down, Reference Selector, Search Input Drop Down, EnumSelect | Sets the value of a drop-down widgets by index. |
 
 ## 3 Widget – Get
 
@@ -33,22 +33,22 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | Get Active Tab Caption  | TabContainer                       | Returns the caption of the active tab page. |
 | Get BooleanSlider Value | BooleanSlider                      | Deprecated in favor of **Get Value**.<br /> Returns the current value of the BooleanSlider as a string. |
 | Get BootstrapRTE Value | BootstrapRTE | Deprecated in favor of **Get Value**.<br /> Returns the current BootstrapRTE value as an HTML string. |
-| Get Checkbox Set Selector Value | Checkbox Set Selector | Finds the check box by column caption and cell value and returns its value. |
+| Get Checkbox Set Selector Value | Checkbox Set Selector | Finds a check box by column caption and cell value and returns its value. |
 | Get Checkbox Set Selector Value (all) | Checkbox Set Selector | Returns the **Select all** check box value. |
 | Get Checkbox Value | Checkbox | Returns true if the check box is checked. |
 | Get CKEditor Value | CKEditor | Deprecated in favor of **Get Value**.<br /> Returns the CKEditor value. |
 | Get Dialog Message Text | ConfirmationDialog, DialogMessage | Get the text from message and confirmation dialogs. |
 | Get Grid Selector Box Value | Grid Selector Box | Returns the current check box/radio button value. |
-| Get Index | DropDown, ReferenceSelector, SearchInput DropDown | Gets the index of selected values in a drop-down menu (for example, an EnumSelect or ReferenceSelector). |
+| Get Index | DropDown, ReferenceSelector, SearchInput DropDown | Gets the index of selected values in a drop-down menu. |
 | Get InputReferenceSelector Value | InputReferenceSelector | Deprecated in favor of **Get Value**.<br /> Returns the current value of the InputReferenceSelector. |
 | Get Item/Row Index | DataGrid, TemplateGrid, ListView | Gets the index of a row in a data grid or an item in a template grid or list view. |
-| Get Row Cell Value | DataGrid | Gets the cell value of a data grid row. |
+| Get Row Cell Value | DataGrid | Gets the cell value of a data grid row for a given column name. |
 | Get Simple Checkbox Set Selector Value | Simple Checkbox Set Selector | Returns the current value of the check box found by the entity attribute value. |
-| Get Total Item/Row Count | DataGrid, TemplateGrid, ListView | Gets the total grid count from the paging status. |
+| Get Total Item/Row Count | DataGrid, TemplateGrid, ListView | Gets the total grid count from the paging status. Does not work if pagination is not shown.|
 | Get Validation Message | All widgets | Returns the validation message of a widget. |
-| Get Value | Standard widgets: TextBox, TextArea, DropDown, RadioButtons, DatePicker, ReferenceSelector, SearchInput Text, SearchInput DropDown, Label, Input Reference Set Selector.<br /> App Store widgets: OnChange Inputbox, BooleanSlider, BootstrapWysiwygEditor (Bootstrap RTE), CKEditor For Mendix¹, InputReferenceSelector, RadiobuttonList. | Returns the current value of all supported widgets.|
+| Get Value | Standard widgets: text box, text area, drop down, radio button, date picker, reference selector, search input text, search input drop down, label, input reference set selector.<br /> App Store widgets: OnChange Inputbox, BooleanSlider, BootstrapWysiwygEditor (Bootstrap RTE), CKEditor For Mendix¹, InputReferenceSelector, RadiobuttonList. | Returns the current value of all supported widgets.|
 | Get Visible Item/Row Count | DataGrid, TemplateGrid, ListView | Returns the number of currently visible items/rows in a template grid, data grid, or list view. |
-| Groupbox is Collapsed | GroupBox | Gets the group box collapsed state: true if collapsed, otherwise false. |
+| Groupbox is Collapsed | GroupBox | Gets the group box collapsed state: true if collapsed, false otherwise. |
 
 ¹ The get value function for CKEditor returns the inner HTML of the widget. Because of the way the CKEditor itself is implemented it might generate different html tags depending on which browser is used,  e.g. in some versions of Firefox  a tag - `<br type="_moz">` is added. This has the implication that we can not guarantee that the returned html from "Get Value" will be the same across all browsers.
 
@@ -59,15 +59,15 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | Assert Active Tab Caption | TabContainer | Asserts a certain value for the caption of an active tab page. |
 | Assert BooleanSlider Value | BooleanSlider | Deprecated in favor of **Assert Value**.<br /> Asserts that the BooleanSlider is set to the given value. |
 | Assert BootstrapRTE Value | BootstrapRTE | Deprecated in favor of **Assert Value**.<br /> Asserts that the BootstrapRTE value is equal to the given value. |
-| Assert Checkbox Set Selector Value | Checkbox Set Selector | Finds the check-box-by-entity attribute and asserts that the check box is set to the given value. |
+| Assert Checkbox Set Selector Value | Checkbox Set Selector | Finds a check box by entity attribute value and asserts that the check box is set to a given value. |
 | Assert Checkbox Value | CheckBox | Asserts the value of a check box. |
 | Assert CKEditor Value | CKEditor | Deprecated in favor of **Assert Value**.<br /> Compares the CKEditor value with the given value. |
-| Assert Grid Selector Value | Grid Selector | Asserts the value of check box/radio button. |
+| Assert Grid Selector Value | Grid Selector | Asserts the value of check box/radio button for a given column and row captions in a grid selector. |
 | Assert InputReferenceSelector Value | InputReferenceSelector | Deprecated in favor of **Assert Value**.<br /> Asserts that the input reference selector has the given value. |
 | Assert Simple Checkbox Set Selector Value | Simple Checkbox Set Selector | Asserts that the check box found by the given entity attribute value is checked/cleared. |
 | Assert Validation Message | All widgets | Asserts a validation message with a certain text. |
-| Assert Value | Standard widgets: Text Box, Text Area, DropDown, RadioButton, DatePicker, ReferenceSelector, SearchInput Text, SearchInput DropDown, Label.<br /> App Store widgets: OnChange Inputbox, BooleanSlider, BootstrapWysiwygEditor (Bootstrap RTE), CKEditor For Mendix, InputReferenceSelector, RadiobuttonList. | Asserts the current value of all supported widgets. |
-| Dropdown has Option | DropDown, ReferenceSelector, SearchInput DropDown | Returns true if the value is available in a drop-down menu. |
+| Assert Value | Standard widgets: text box, text area, drop down, radio button, date picker, reference selector, search input text, search input drop down, label, input reference set selector.<br /> App Store widgets: OnChange Inputbox, BooleanSlider, BootstrapWysiwygEditor (Bootstrap RTE), CKEditor For Mendix, InputReferenceSelector, RadiobuttonList. | Asserts the current value of all supported widgets. |
+| Dropdown has Option | DropDown, ReferenceSelector, SearchInput DropDown | Returns true if the value is available in a drop down menu. |
 
 ## 5 Widget – Find
 
@@ -76,13 +76,13 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | Find/Assert DataGrid Row | DataGrid | Finds/asserts a data grid row by a certain column value(s). |
 | Find/Assert Dialog | Window, DialogMessage, ConfirmationDialog | Finds/asserts a dialog by Title or Type. |
 | Find/Assert Menu Item | NavigationTree, MenuBar, SimpleMenuBar | Finds/asserts a visible menu item in a navigation tree, menu bar, and simple menu bar. |
-| Find/Assert Widget | All widgets | Finds/asserts a Mendix widget by its given name. It is possible to use a sequence of names as a path (separated by spaces). |
+| Find/Assert Widget | All widgets | Finds/asserts a Mendix widget by its given name. It is possible to use a sequence of names as a path. In this case, names have to be separated by a white space. |
 | Find Checkbox Set Selector | Checkbox Set Selector | Finds a check box by a given cell value and column caption. Returns the first match. |
 | Find Checkbox Set Selector (all) | Checkbox Set Selector | Returns the **Select all** check box. |
 | Find Grid Selector | Grid Selector | Finds a check box/radio button by the column and row caption. |
 | Find Item/Row | DataGrid, TemplateGrid, ListView | Finds a row/item in a data grid, template grid, or list view by index. |
-| Find Item/Row (by child element) | DataGrid, TemplateGrid, ListView | Finds an item or row of a template grid, data grid, or list view containing a specified element. |
-| Find Selected Item/Row | DataGrid, TemplateGrid, ListView | Returns the first selected item/row object. |
+| Find Item/Row (by child element) | DataGrid, TemplateGrid, ListView | Finds a row/item of a template grid, data grid or list view containing a specified element. |
+| Find Selected Item/Row | DataGrid, TemplateGrid, ListView | Returns the first selected item/row as a web element. |
 | Find Simple Checkbox Set Selector | Simple Checkbox Set Selector | Finds the check box by the given value. |
 | Find Widget Child Node | All widgets | Find a node within a Mendix widget. Also matches the widget node itself. The function is limited to search only within widgets that are visible. |
 
@@ -91,24 +91,25 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | Function         | Supported Widgets | Description                              |
 | ---------------- | ----------------- | ---------------------------------------- |
 | Cancel Dialog | ConfirmationDialog | Clicks **Cancel** on a confirmation dialog. |
-| Click DataGrid Row | DataGrid | Clicks a data grid row by column value. |
+| Click DataGrid Row | DataGrid | Clicks a data grid row by a certain column value. |
 | Click Dropdown Div Converter dropdown button | Dropdown Div Converter | Clicks the drop-down `div` converter drop-down button. |
 | Click Dropdown Div Converter split button | Dropdown Div Converter | Clicks the drop-down `div` converter split button. |
 | Click Menu Item | NavigationTree, MenuBar, SimpleMenuBar | Clicks a menu item in a navigation tree, menu bar, and simple menu bar. |
 | Click Widget | All widgets | Clicks a Mendix widget (for example, button, link, image) by its name. |
-| Click Widget Button | ListView, ReferenceSelector | Refresh Button / Loadmore / ClearSearchField (ListView) Goto, / Adds (ReferenceSelector). |
+| Click Widget Button | ListView, ReferenceSelector | Clicks on one of the following special widget buttons: refresh, load more, clear search field (list view), go to, add (reference selector). |
 | Close Dialog | Window, DialogMessage, ConfirmationDialog | Clicks the **X** button on a Confirmation, Error, Warning, or Info dialog box. |
 | Close GroupBox | GroupBox | Closes a group box. |
 | Confirm Dialog | ConfirmationDialog, DialogMessage | Clicks the **Proceed/OK** button on a Confirmation, Error, Warning, or Info dialog box. |
 | Open GroupBox | GroupBox | Opens a group box. |
-| Sort DataGrid | DataGrid | Sorts a data grid by the given column. |
+| Set ListView Search | ListView | Sets the ListView search text. |
+| Sort DataGrid | DataGrid | Sorts a data grid by a given column. |
 | Toggle BooleanSlider Value | BooleanSlider | Toggles the value of the Booleanslider. |
 | Toggle Checkbox Set Selector | Checkbox Set Selector | Finds a check-box by a given entity attribute and inverses the value. |
 | Toggle Checkbox Set Selector (all) | Checkbox Set Selector | Inverses the **Select all** check box. |
 | Toggle Checkbox Value | Checkbox | Clicks a check box to toggle its value. |
 | Toggle Grid Selector Checkbox Value | Grid Selector | Inverses the check box found by a given column and row caption. |
-| Toggle Simple Checkbox Set Selector Value | Simple Checkbox Set Selector | Inverses the value of the check box found by the given entity attribute value. |
-| Set ListView Search | ListView | Sets the ListView search text. |
+| Toggle Simple Checkbox Set Selector Value | Simple Checkbox Set Selector | Inverses the value of the check box found by a given entity attribute value. |
+
 
 ## 7 Mendix
 
