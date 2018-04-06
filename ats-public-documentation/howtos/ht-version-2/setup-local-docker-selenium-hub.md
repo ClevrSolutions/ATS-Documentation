@@ -70,7 +70,11 @@ docker_hub_1       /opt/bin/entry_point.sh   Up      0.0.0.0:4444->4444/tcp
 
 ![](attachments/setup-local-docker-selenium-hub/docker_grid.png)
 
-## 3. Optional: Scale your nodes ##
+## 3. Start Testing ##
+
+You can start testing by sending your test script to: [http://yourmachinenameorIP:4444/wd/hub](http://localhost:4444/wd/hub).  Make sure it is reachable from the outside!
+
+## 4. Optional: Scale your nodes ##
 
 Each node has one browser if you need more nodes of a certain browser, you can easily scale with docker-compose. For example, if you want 3 chrome browsers, because you want to run tests parallel:
 
@@ -94,7 +98,7 @@ docker_hub_1       /opt/bin/entry_point.sh   Up      0.0.0.0:4444->4444/tcp
 
 **Note:** the hub default only accepts a maximum 5 sessions to run parallel at a time (although you configure more, see the official documentation).
 
-## 4. Optional: Installing a hub with "Live-view" through VNC ##
+## 5. Optional: Installing a hub with "Live-view" through VNC ##
 
 If you want to watch your test case being played live for debugging purpose you can use the following docker-compose.yml:
 
