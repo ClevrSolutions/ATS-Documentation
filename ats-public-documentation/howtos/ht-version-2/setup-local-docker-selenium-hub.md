@@ -58,6 +58,7 @@ The first time it will start pulling the images from the Docker hub.
 
 ```
 sudo docker-compose ps
+
       Name                 Command           State           Ports         
 ---------------------------------------------------------------------------
 docker_chrome_1    /opt/bin/entry_point.sh   Up                            
