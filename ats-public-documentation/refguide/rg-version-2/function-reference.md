@@ -187,32 +187,32 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | ---------------- | ----------------- | ---------------------------------------- |
 | Assert | N/A | Deprecated.<br /> A hamcrest assert. |
 | Assert 1 | N/A | Deprecated in favor of **Assert equalTo**.<br /> Asserts that the value is 1. `([null]=0)`. |
-| Assert all not null | N/A | Fails if one of the objects is null. |
-| Assert at least one not null | N/A | Fails if all the objects are null. |
+| Assert all not null | N/A | Fails if any of the objects is null. |
+| Assert at least one not null | N/A | Fails if all objects are null. |
 | Assert Both not null | N/A | Fails if one or both objects are null. |
-| Assert Condition Fails | N/A | This assert always fails. If an attached condition fails, it is simply not executed (and thus this keyword does not fail). (Use this keyword to assert that another keyword fails). |
-| Assert containsNoString | N/A | Asserts false that the subject contains a string that is equal to matcher parameter (for example, `testcasetool` contains `case`, it fails `case`). |
-| Assert containsString | N/A | Asserts that the subject contains a string that is equal to the matcher parameter (for example, `testcasetool` contains `case`). |
+| Assert Condition Fails | N/A | This assert always fails. However, if an attached condition fails, instead of failing it is not executed. Use this keyword to assert that a conditional keyword fails. |
+| Assert containsString | N/A | Asserts that the examined string "Subject" contains the specified string "Matcher Parameter" anywhere. <br />For example, "testcasetool" contains "case".". |
+| Assert containsNoString | N/A | Asserts that the examined string "Subject" does not contain the specified string "Matcher Parameter" anywhere. This function does the opposite of "Assert containsString". For example in the situation "testcasetool" contains "case", this function would fail. |
 | Assert endsWith | N/A | Asserts that the subject ends with a string that is equal to the matcher parameter (for example, `testcase` ends with `case`). |
 | Assert Equals | N/A | Deprecated in favor of **Assert equalTo**.<br /> Asserts that the two values are equal. |
-| Assert equalTo | N/A | Asserts that the subject is equal to matcher parameter (for example, `100` is equal to `100` or `house` is equal to `house`). |
-| Assert equalToIgnoringCase | N/A | Asserts that the subject is equal to the matcher parameter while ignoring the case (for example, `house` is equal to `House`). |
-| Assert equalToIgnoringWhiteSpace | N/A | Asserts that the subject is equal to the matcher parameter while ignoring whitespaces (for example, `testcase` is equal to `' testcase '`). |
+| Assert equalTo | N/A | Asserts that the examined object "Object 1" is logically equal to the specified operand "Object2". Equality is determined by calling the Object.equals method on the examined object. Examples: `100` is equal to `100` or `house` is equal to `house`. |
+| Assert equalToIgnoringCase | N/A | Asserts that the examined string "Object 1" is equal to the specified string "Object 2", ignoring case. For example, `house` is equal to `House`, ignoring case. |
+| Assert equalToIgnoringWhiteSpace | N/A | Asserts that the examined string "Object 1" is equal to the specified string "Object 2" after the following rules are applied: all leading and trailing whitespaces of both string are removed; any remaining whitespace, appearing within either string, is collapsed to a single space. For example: `   my\tfoo  bar ` is equal to ` my  foo bar`, ignoring whitespace. |
 | Assert false | N/A | Deprecated in favor of **Assert equalTo**.<br /> Asserts the Boolean value to be false. |
-| Assert greaterThan | N/A | Asserts that the subject is greater than the matcher parameter (for example, `1000` is greater than `100`). |
-| Assert greaterThanOrEqualTo | N/A | Asserts that the subject is either greater than or equal to the matcher parameter (for example, `1000` is greater than `100`, `1000` is equal to `1000`). |
-| Assert lessThan | N/A | Asserts that the subject is less than the matcher parameter (for example, `100` is less than `1000`). |
-| Assert lessThanOrEqualTo | N/A | Asserts that the subject is either less than or equal to the matcher parameter (for example, `100` is less than `1000`, `1000` is equal to `1000`). |
+| Assert greaterThan | N/A | Asserts that the subject is greater than the matcher parameter (for example, `2` is greater than `1`). |
+| Assert greaterThanOrEqualTo | N/A | Asserts that the subject is either greater than or equal to the matcher parameter (for example, `2` is greater than `1`, `1` is equal to `1`). |
+| Assert lessThan | N/A | Asserts that the subject is less than the matcher parameter (for example, `1` is less than `2`). |
+| Assert lessThanOrEqualTo | N/A | Asserts that the subject is either less than or equal to the matcher parameter (for example, `1` is less than `2`, `1` is equal to `1`). |
 | Assert not equals | N/A | Asserts that two values are not equal. |
-| Assert not false | N/A | |
+| Assert not false | N/A | Asserts that the examined value is not false. |
 | Assert not true | N/A | Either false or null. |
 | Assert null | N/A | Fails if the object is not null. |
 | Assert null (internal) | N/A | The internal Assert null functions that allows a Boolean parameter to invert the result. |
 | Assert Property Value | N/A | Deprecated in favor of **Assert element attribute equals**.<br /> Gets the property/attribute from the web element and asserts that it equals the given value. |
-| Assert startsWith | N/A | Asserts that the subject starts with a string that is equal to the matcher parameter (for example, `testcase` starts with `test`). |
+| Assert startsWith | N/A | Asserts that the examined string "Object 1" starts with the specified string "Object 2". For example: `testcase` starts with `test`. |
 | Assert true | N/A | Deprecated in favor of **Assert equalTo**. |
 | Assert XML equivalent | N/A | Asserts that two XMLs are equivalent. |
-| Concatenate String | String | Concatenate strings. |
+| Concatenate String | String | Concatenate strings. Any number of the arguments can be null. |
 | If Null Then 0 (Integer) | N/A | Deprecated.<br /> Checks the input value and sets it to 0 if it is null. |
 | Is not Null | N/A | Returns true if object is not null, false otherwise. |
 | Push ATS Scripts | N/A | Deprecated as it only served an internal purpose.<br /> Pushes generic ATS scripts to the client (jQuery, helpers functions). |
@@ -222,14 +222,14 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | Return First Valid String | String | Returns the first string from the parameter list that is not null. |
 | Return First Valid WebElement | WebElement | Returns the first web element from the parameter list that is not null. |
 | Set Implicit Wait | N/A | Deprecated as it only served an internal purpose. |
-| Set Return Value | N/A | |
-| Sleep | N/A | The waits "sleep time" in milliseconds. |
+| Set Return Value | N/A | Use this function in custom actions to set the return value of the custom action. When using the "extract action" feature this function call will be added automatically, where applicable. |
+| Sleep | N/A | Waits "sleep time" milliseconds. |
 
 ## 11 Generators
 
 | Function         | Supported Widgets | Description                              |
 | ---------------- | ----------------- | ---------------------------------------- |
-| Generate GUID | N/A | Generates and returns a GUI. |
+| Generate GUID | N/A | Generates and returns a globally unique identifierGUID. |
 | Get Current DateTime String | N/A | Returns the current date and time in the supplied format (Java date format) (for example, `yyyy-MM-dd HH:mm:ss`. |
 | Random Number | N/A | Creates a random integer using `Math.floor(Math.random() * (max - min)) + min`. You need to define the min (included) and max (excluded). |
 | Random String | N/A | Creates a random alphanumeric string using `Math.random().toString(36).slice(2,8)`. Optionally, it allows you to add a prefix or postfix. |
