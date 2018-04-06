@@ -4,8 +4,8 @@ In this How-to we will describe a few possible local Selenium solutions and a sm
 
 - These solutions are all under heavy development and new versions are released on a regular base. These are just examples and we recommend using the official documentation.
 - ATS 2 is running in the Mendix cloud. When running a local Selenium solution, ATS should be able to communicate with the machine on port 4444. In most cases this means your network department has to arrange something to make this work.
-- **Security warning!!!:** By default, non of the solutions use SSL or any form of authentication. You might, for example, want to use a webserver as a frontend to make SSL and authentication possible. This is not covered in the How-to's.
-- Docker Selenium and Selenoid are two opensource projects based on Selenium, we cover in this How-to. There are many more, but we limit us to these two. 
+- **Security warning!!!:** By default, non of the described solutions use SSL or any form of authentication. You might, for example, want to use a webserver as a frontend to make SSL and authentication possible. This is not covered in the How-to's.
+- Docker Selenium and Selenoid are two opensource projects based on Selenium that we cover in this How-to. There are many more, but we limit us to these two. 
 - Support for open source software could be limited or slower.
 
 ## 1. Setup Local Selenium hub (SeleniumHQ) ##
