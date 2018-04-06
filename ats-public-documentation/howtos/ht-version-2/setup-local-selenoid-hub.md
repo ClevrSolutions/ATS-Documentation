@@ -109,3 +109,24 @@ curl -s http://localhost:4444/status
 
 You can start testing by sending your test script to: [http://yourmachinenameorIP:4444/wd/hub](http://localhost:4444/wd/hub).  Make sure it is reachable from the outside!
 
+## 4. Recording a video of your Test Case ##
+
+In case you want to record your test case as a video
+
+- Add a Custom Capability to your Selenium hub configuration:
+
+**enableVideo** with a boolean set to **true**
+
+![](attachments/setup-local-selenoid-hub/add_capability.png)
+
+- Once the test case is finished you will find your video in:  [http://yourmachinenameorIP:4444/video](http://localhost:4444/video)
+
+It will show as "<sessiom-id>.mp4"
+
+- (Optional:) You can give the video file a custom name by adding another Custom Capability:
+
+**VideoName** and as a string your name, for example **MyTestVideo.mp4** (don't forget the .mp4!)
+
+![](attachments/setup-local-selenoid-hub/video_name.png)
+
+After executing the test case, don't forget to download the video file or give it a different in the next session, otherwise it will be overwritten!
