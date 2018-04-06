@@ -57,7 +57,7 @@ The first time it will start pulling the images from the Docker hub.
 - After it's done starting, you can check the status
 
 ```
-# sudo docker-compose ps
+sudo docker-compose ps
       Name                 Command           State           Ports         
 ---------------------------------------------------------------------------
 docker_chrome_1    /opt/bin/entry_point.sh   Up                            
@@ -72,7 +72,21 @@ docker_hub_1       /opt/bin/entry_point.sh   Up      0.0.0.0:4444->4444/tcp
 Each node has one browser if you need more nodes of a certain browser, you can easily scale with docker-compose. For example, if you want 3 chrome browsers, because you want to run tests parallel:
 
 ```
-docker-compose scale chrome=3
+sudo docker-compose up -d --scale chrome=3
+docker_hub_1 is up-to-date
+Starting docker_chrome_1 ... 
+Starting docker_chrome_1 ... done
+Creating docker_chrome_2 ... done
+Creating docker_chrome_3 ... done
+
+sudo docker-compose ps
+      Name                 Command           State           Ports         
+---------------------------------------------------------------------------
+docker_chrome_1    /opt/bin/entry_point.sh   Up                            
+docker_chrome_2    /opt/bin/entry_point.sh   Up                            
+docker_chrome_3    /opt/bin/entry_point.sh   Up                            
+docker_firefox_1   /opt/bin/entry_point.sh   Up                            
+docker_hub_1       /opt/bin/entry_point.sh   Up      0.0.0.0:4444->4444/tcp
 ```
 
 **Note:** the hub default only accepts a maximum 5 sessions to run parallel at a time (although you configure more, see the official documentation).
@@ -114,6 +128,7 @@ If you want to watch your test case being played live for debugging purpose you 
        - /dev/shm:/dev/shm
      privileged: true
 
+- Notice that you are using debug versions of the browser images.
 - You will need a vnc-client like Tigervnc ,VNC Viewer for Google Chrome or any other favorite client of your choice.
 - For Chrome you use as the address: localhost:5900 (or machinename/ip:5900) with password "secret"
 - For Firefox you use: localhost:5901 (or machinename/ip:5901) with password "secret"
