@@ -49,13 +49,20 @@ docker-compose.yml:
 - Open a console and give the following command from the folder/directory where your docker-compose.yml is placed:
 
 ```
-docker-compose up -d
+sudo docker-compose up -d
 ```
+
+The first time it will start pulling the images from the Docker hub.
 
 - After it's done starting, you can check the status
 
 ```
-docker-compose ps
+# sudo docker-compose ps
+      Name                 Command           State           Ports         
+---------------------------------------------------------------------------
+docker_chrome_1    /opt/bin/entry_point.sh   Up                            
+docker_firefox_1   /opt/bin/entry_point.sh   Up                            
+docker_hub_1       /opt/bin/entry_point.sh   Up      0.0.0.0:4444->4444/tcp
 ```
 
 - You can check if it works: [http://localhost:4444/grid/console](http://localhost:4444/grid/console)
