@@ -62,6 +62,8 @@ You should see logging like this:
 
 3. Check with the following link if it works: [http://localhost:4444/grid/console](http://localhost:4444/grid/console)
 
+![](attachments/setup-local-selenium-hub/grid_hub.png)
+
 Congratulation, your local Selenium hub is running
 
 ## 5. Configure and start your Chrome/Firefox node
@@ -111,7 +113,7 @@ The output should look something like this:
 
 3. Check in the console whether you Selenium hub node is active [http://localhost:4444/grid/console](http://localhost:4444/grid/console):
 
-grid_console.png
+![](attachments/setup-local-selenium-hub/grid_nodes.png)
 
 
 ## 6. Start testing
