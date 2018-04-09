@@ -1,6 +1,13 @@
-# How-to Setup local Docker Selenium hub #
+---
+title: "Setup a local Docker Selenium hub"
+parent: "ht-version-2"
+description: "Describes the options to setup a local selenium solution."
+tags: ["ATS", "testing", "Selenium hub"]
+---
 
-In this How-to, we show you an example of a simple setup of a Docker Selenium hub with a Chrome node and a Firefox node on a Linux machine. This will also work on a Windows machine with docker, but the commands and configuration could be slightly different. The official project can be found here: [https://github.com/SeleniumHQ/docker-selenium](https://github.com/SeleniumHQ/docker-selenium)
+# How to Setup a local Docker Selenium hub #
+
+In this How-to, we show you an example of a simple setup of a Docker Selenium hub with a Chrome and a Firefox node on a Linux machine. The Docker works on a Windows machine as well, but the commands and configuration could be different. For the official project go to: [https://github.com/SeleniumHQ/docker-selenium](https://github.com/SeleniumHQ/docker-selenium)
 
 ## 1. Prerequisites ##
 
@@ -12,8 +19,10 @@ In this How-to, we show you an example of a simple setup of a Docker Selenium hu
 
 ## 2. Install your hub and nodes with Docker-Compose ##
 
-- Create a folder or directory to place your docker-compose file
-- Create a docker-compose.yml in your folder/directory
+The following steps describe how to install your hub and nodes with Docker-Compose:
+
+1. Create a folder or directory to place your docker-compose file
+2. Create a docker-compose.yml in your folder/directory
 
 docker-compose.yml:
 
@@ -46,7 +55,7 @@ docker-compose.yml:
        - /dev/shm:/dev/shm
      privileged: true
 
-- Open a console and give the following command from the folder/directory where your docker-compose.yml is placed:
+3. Open a console and give the following command from the folder/directory where you placed your docker-compose.yml:
 
 ```
 sudo docker-compose up -d
@@ -54,7 +63,7 @@ sudo docker-compose up -d
 
 The first time it will start pulling the images from the Docker hub.
 
-- After it's done starting, you can check the status
+4. After it started, you can check the status with the following commands:
 
 ```
 sudo docker-compose ps
@@ -66,18 +75,20 @@ docker_firefox_1   /opt/bin/entry_point.sh   Up
 docker_hub_1       /opt/bin/entry_point.sh   Up      0.0.0.0:4444->4444/tcp
 ```
 
-- You can check if it works: [http://localhost:4444/grid/console](http://localhost:4444/grid/console)
-- Or replace localhost with the servername or IP-address of the Docker host.
+5. Check with the following link if the hub works: [http://localhost:4444/grid/console](http://localhost:4444/grid/console)
+Note: You can also replace localhost with the server name or IP-address of the Docker host.
 
 ![](attachments/setup-local-docker-selenium-hub/docker_grid.png)
 
+Congratulation, your local Selenium hub is running
+
 ## 3. Start Testing ##
 
-You can start testing by sending your test script to: [http://yourmachinenameorIP:4444/wd/hub](http://localhost:4444/wd/hub).  Make sure it is reachable from the outside!
+You can start testing by sending your test script to: [http://yourmachinenameorIP:4444/wd/hub](http://localhost:4444/wd/hub). Make sure it is reachable from the outside!
 
 ## 4. Optional: Scale your nodes ##
 
-Each node has one browser if you need more nodes of a certain browser, you can easily scale with docker-compose. For example, if you want 3 chrome browsers, because you want to run tests parallel:
+Each node has one browser, so if you need more nodes of a certain browser, you can scale with docker-compose. With multiple nodes you can run tests in parallel. For example, if you want 3 chrome browsers:
 
 ```
 sudo docker-compose up -d --scale chrome=3
@@ -97,11 +108,11 @@ docker_firefox_1   /opt/bin/entry_point.sh   Up
 docker_hub_1       /opt/bin/entry_point.sh   Up      0.0.0.0:4444->4444/tcp
 ```
 
-**Note:** the hub default only accepts a maximum 5 sessions to run parallel at a time (although you configure more, see the official documentation).
+**Note:** by default the hub only accepts a maximum of 5 sessions to run in parallel at a time, even if you configure more, see the official documentation.
 
 ## 5. Optional: Installing a hub with "Live-view" through VNC ##
 
-If you want to watch your test case being played live for debugging purpose you can use the following docker-compose.yml:
+If you want to watch your test case live for debugging purpose you can use the following docker-compose.yml:
 
     hub: 
      image: selenium/hub:3.8.1
@@ -136,9 +147,12 @@ If you want to watch your test case being played live for debugging purpose you 
        - /dev/shm:/dev/shm
      privileged: true
 
+Some side notes in case you follow this step:
 - Notice that you are using debug versions and you are mapping the network ports of the browser images. 
-- You will need a vnc-client like Tigervnc ,VNC Viewer for Google Chrome or any other favorite client of your choice.
-- For Chrome you use as the address: localhost:5900 (or machinename/ip:5900) with password "secret"
-- For Firefox you use: localhost:5901 (or machinename/ip:5901) with password "secret"
+- You need a VNC-client like Tigervnc, VNC Viewer for Google Chrome or any other favorite client of your choice.
+- For Chrome you use as address: localhost:5900 (or machinename/ip:5900) with password "secret"
+- For Firefox you use as address: localhost:5901 (or machinename/ip:5901) with password "secret"
 - You cannot scale using this configuration.
-- Be aware that vnc is not a very secure protocol, you might not want to open this port for the world.
+- Be aware that VNC is not a secure protocol, you might not want to open this port for the world.
+
+Congratulations you have finished setting up a local docker selenium hub. The next how-to is [How to setup a Local Selenoid hub](setup-local-selenoid-hub). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.

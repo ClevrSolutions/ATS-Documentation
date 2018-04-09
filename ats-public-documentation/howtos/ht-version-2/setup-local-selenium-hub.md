@@ -1,34 +1,34 @@
 ---
 title: "Setup a local Selenium hub"
 parent: "ht-version-2"
-description: "Describes how to setup a local selenium hub."
+description: "Describes how to set up a local selenium hub."
 tags: ["ATS", "testing", "Selenium hub"]
 ---
 
 ## Introduction
 
-In this How-to, we show you an example of a simple install of a Selenium hub with a Google Chrome/Mozilla Firefox node on a Windows machine. The official documentation can be found here: [https://www.seleniumhq.org/projects/](https://www.seleniumhq.org/projects/)
+In this How-to, we show you an example of a simple installation of a Selenium hub with a Google Chrome/Mozilla Firefox node on a Windows machine. For the official documentation go to: [https://www.seleniumhq.org/projects/](https://www.seleniumhq.org/projects/)
 
 ## 1. Prerequisites
 
 - Install Java on your machine [https://java.com](https://java.com)
-- Intall Chrome and Firefox on your machine
+- Install Chrome and Firefox on your machine
 - Your machine should allow connections from ATS on port 4444.
-- Since version 2.6, ATS uses the Selenium 3.8.1 API. Therefor we recommend using this version of Selenium as well.
+- Since version 2.6, ATS uses the Selenium 3.8.1 API. Therefore we recommend using this version of Selenium as well.
 
 ## 2. Download Selenium server
  
  The following steps describe how to download the Selenium server:
-1. Create a folder on your disk, for example C:\Selenium
+1. Create a folder on your disk, for example, C:\Selenium
 2. Download [Selenium Server stand-alone version 3.8.1](http://selenium-release.storage.googleapis.com/3.8/selenium-server-standalone-3.8.1.jar) and place it in the folder
 
 ## 3 Download the latest Chrome and Gecko (Firefox) drivers
 
 The following steps describe how to download the latest Chrome and Gecko (Firefox) drivers:
 
-1. The latest Chrome driver can be downloaded with the following link:[https://sites.google.com/a/chromium.org/chromedriver/downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads) (chromedriver_win32.zip)
-2.  The latest Gecko driver can be downloaden with the following link: [https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases) (Make sure it matches the version (win32bits or win64bits) of Firefox you installed on the machine).
-- Place the unzipped items in the same folder as the Selenium jar.
+1. With the following link you can download the latest Chrome driver:[https://sites.google.com/a/chromium.org/chromedriver/downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads) (chromedriver_win32.zip)
+2.  With the following link you can download the latest Gecko driver: [https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases) (Make sure it matches the version (win32bits or win64bits) of Firefox you installed on the machine).
+3. Place the unzipped items in the same folder as the Selenium jar.
 
 ## 4. Start the Selenium Hub
 
@@ -60,11 +60,11 @@ You should see logging like this:
 
 
 
-3. Check with the following link if it works: [http://localhost:4444/grid/console](http://localhost:4444/grid/console)
+3. Check with the following link if the hub works: [http://localhost:4444/grid/console](http://localhost:4444/grid/console)
 
 ![](attachments/setup-local-selenium-hub/grid_hub.png)
 
-Congratulation, your local Selenium hub is running
+Congratulation, your local Selenium hub is running.
 
 ## 5. Configure and start your Chrome/Firefox node
 
@@ -111,20 +111,21 @@ The output should look something like this:
 
 
 
-3. Check in the console whether you Selenium hub node is active [http://localhost:4444/grid/console](http://localhost:4444/grid/console):
+3. Check in the console whether your Selenium hub node is active [http://localhost:4444/grid/console](http://localhost:4444/grid/console):
 
 ![](attachments/setup-local-selenium-hub/grid_nodes.png)
 
 
 ## 6. Start testing
 
-You can start testing by sending your test script to: [http://yourmachinenameorIP:4444/wd/hub](http://localhost:4444/wd/hub).  Make sure it is reachable from the outside!
+You can start testing by sending your test script to [http://yourmachinenameorIP:4444/wd/hub](http://localhost:4444/wd/hub).  Make sure it is reachable from the outside!
 
-## 7. Optional: Start Selenium hub and node with JSON configuration file ##
+## 7. Optional: Start Selenium hub and node with JSON configuration file
 
-This is recommended, because you can easily change options (like for example timeout) in the json files
+This step is recommended because you can easily change options (for example timeout) in the JSON files.
 
-Create json files in the created folder:
+The following steps describe how to start the selenium hub and the node with a JSON configuration file:
+1. Create JSON files in the created folder:
 
 **gridHubConfig.json:**
 
@@ -179,22 +180,22 @@ Create json files in the created folder:
 
 
 
-- Start the hub:
+2. Start the hub:
 
 ```
 java -jar selenium-server-standalone-3.8.1.jar -role hub -hubConfig gridHubConfig.json
 ```
 
-- Start the node:
+3. Start the node:
 
 ```
  java -Dwebdriver.chrome.driver=C:\Selenium\chromedriver.exe -Dwebdriver.firefox.driver=C:\Selenium\geckodriver.exe -jar selenium-server-standalone-3.8.1.jar -role node -nodeConfig node.json
 ```
 
-## 8. Optional: Batch file om alles te starten
+## 8. Optional: Batch file to start up everything at once
 
-
-- create start.bat:
+The following steps describe how to create a batch file to start up everything at once:
+1. Create start.bat:
 
 ```
 start /B java -jar C:\Selenium\selenium-server-standalone-3.8.1.jar -role hub -hubConfig C:\Selenium \gridHubConfig.json
@@ -203,8 +204,9 @@ start /B java -Dwebdriver.chrome.driver=C:\Selenium\chromedriver.exe -Dwebdriver
  exit
 ```
 
-- starten vanuit cmd box
+2. Start from the cmd box:
     
 ```
 start.bat
 ```
+Congratulations you have finished setting up a local selenium hub. The next how-to is [How to setup a Local Docker Selenium hub](setup-local-docker-selenium-hub). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.

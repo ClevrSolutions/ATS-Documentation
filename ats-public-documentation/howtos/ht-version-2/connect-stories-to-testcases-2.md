@@ -177,4 +177,4 @@ You can now link test cases to stories and link stories to test cases.
 
 ## 7 Next Up
 
-You now learned how to link user stories to your test cases. The next how-to is [Use ATS in Combination with CI/CD](ats-and-ci-cd-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.
+You now learned how to link user stories to your test cases. The next how-to is [How to setup a local Selenium solution](setting-up-a-local-selenium-solution). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.
