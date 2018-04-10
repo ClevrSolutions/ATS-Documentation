@@ -94,7 +94,7 @@ sudo docker-compose up -d
 Starting docker_selenoid_1 ... done
 ```
 
-7. After it started, you can check the status
+7. After it started, you can check the status of the container
 
 ```
 sudo docker-compose ps
