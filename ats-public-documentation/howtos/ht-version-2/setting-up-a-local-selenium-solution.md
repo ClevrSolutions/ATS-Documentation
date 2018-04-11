@@ -15,6 +15,10 @@ This How-to describes a few possible local Selenium solutions and contains links
 - Docker Selenium and Selenoid are two opensource projects based on Selenium that we cover in this How-to. There are many more, but we limit us to these two. 
 - Support for open source software could be limited or slower, compared to SaaS Selenium providers.
 
+{{% alert type="info" %}}
+ Note: Mendix does not deliver support for local Selenium solutions. 
+  {{% /alert %}}
+
 ## 1. Setup Local Selenium hub (SeleniumHQ) ##
 
 ### Official website

@@ -9,6 +9,10 @@ tags: ["ATS", "testing", "Selenium hub"]
 
 In this How-to, we show you an example of a simple setup of a Docker Selenium hub with a Chrome and a Firefox node on a Linux machine. The Docker works on a Windows machine as well, but the commands and configuration could be different. For the official project go to: [https://github.com/SeleniumHQ/docker-selenium](https://github.com/SeleniumHQ/docker-selenium)
 
+{{% alert type="info" %}}
+ Note: Mendix does not deliver support for local Selenium solutions. 
+  {{% /alert %}}
+
 ## 1. Prerequisites ##
 
 - Some basic docker and docker-compose knowledge.

@@ -11,6 +11,10 @@ In this How-to, we show you an example of a simple setup of a Selenoid hub with 
 
 It is possible to run Selenoid without Docker, but that is outside of the scope of this How-to. Please check out the official documentation if you would like to achieve this.
 
+{{% alert type="info" %}}
+ Note: Mendix does not deliver support for local Selenium solutions. 
+  {{% /alert %}}
+
 ## 1. Prerequisites ##
 
 - Some basic docker and docker-compose knowledge.

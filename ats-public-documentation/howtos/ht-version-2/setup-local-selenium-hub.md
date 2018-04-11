@@ -9,6 +9,10 @@ tags: ["ATS", "testing", "Selenium hub"]
 
 In this How-to, we show you an example of a simple installation of a Selenium hub with a Google Chrome/Mozilla Firefox node on a Windows machine. For the official documentation go to: [https://www.seleniumhq.org/projects/](https://www.seleniumhq.org/projects/)
 
+{{% alert type="info" %}}
+ Note: Mendix does not deliver support for local Selenium solutions. 
+  {{% /alert %}}
+
 ## 1. Prerequisites
 
 - Install Java on your machine [https://java.com](https://java.com)
