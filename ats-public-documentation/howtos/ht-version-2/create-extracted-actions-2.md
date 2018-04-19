@@ -1,6 +1,6 @@
 ---
 title: "Create maintainable test cases"
-parent: "bp-version-2"
+parent: "ht-version-2"
 description: "Describes how to create maintainable test cases in ATS."
 tags: ["ATS", "testing", "maintainability"]
 ---
