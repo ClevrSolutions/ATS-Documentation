@@ -1,32 +1,79 @@
 ---
-title: "General"
+title: "Mobile"
 parent: "rg-version-2"
 ---
 
 ## Introduction
 
-Mobile testing in ATS is an experimental feature and only available to closed beta testers.
+Mobile testing on **real devices** in ATS is an experimental feature and still in beta.
 
 ### Compatibility
 
 | Aspect | Supported |
 | ------ | --------- |
-| Mobile Operating System | Android 6.0 "Mashmallow" |
-| Selenium Provider | Sauce Labs (via TestObjects) |
-| Test Browser | Chrome |
+| Test Browser | Chrome v63 |
 | Recorder | Chrome (via a custom mobile device profile) |
 | ATS Helper | Chrome (via a custom mobile device profile) |
 | Application type | Web applications with mobile view |
+| Mobile Operating Systems | Android 6.0 "Marshmallow", Android 7.1.1 "Nougat" |
+| Selenium Providers | Browserstack, Sauce Labs (via TestObjects) |
+
+### Supported devices
+
+In order to provide better support and stricter control guarantees we limit the mobile devices that can be used with testing. These devices are preselected for each provider/android version and can not be changed.
+
+| Provider      |  Android 6.0 "Marshmallow" | Android 7.1.1 "Nougat" |
+| ------------- | -------------------------- | ---------------------- |
+| Browserstack  | Google Nexus 6             | Google Pixel           |
+| Saucelabs     | Motorola Moto E (2nd gen)  | Google Pixel           |
+
+Please refer to https://www.gsmarena.com/ for detailed specs.
 
 ## Preparations
 
 Some preparations are required before you can start to test on mobile devices.
 
+### Browserstack
+
+There are no special preparations in order to test on real devices on Browserstack.
+
+### Saucelabs
+
+#### Creating a Saucelabs (TestObjects) Account
+
+Running a test on a mobile device requires an account with TestObjects (part of Sauce Labs). They offer a free account for 1 concurrent test. If you already have an account with Saucelabs you can go directly to step 3.
+Follow these steps:
+
+1. Go to [TestObjects website](https://app.testobject.com/#/signup/)
+2. Sign up and confirm via the email you receive from TestObjects
+3. Go to [TestObjects](https://app.testobject.com/#/) and login with your account
+4. Click **New App**
+5. Click **Mobile Website**
+6. Set some values for **Website URL**, **Website name** and **Version** and save. These values are not used by ATS.
+7. Set the **Device language** to **English (United States)**
+8. Save the device settings by clicking **Save**
+9. Hover the button **AUTOMATED TESTING** and select **APPIUM**
+10. Click on **Get Started**
+11. Write down the API Key, you'll need it later
+
+#### Configuring TestObjects in ATS
+
+You'll need to configure your TestObjects as a Selenium endpoint in ATS. To do so, follow these steps:
+
+1. Open ATS and switch to one of your apps
+2. Navigate to the Settings by selecting **Show Test Settings** in the profile menu
+3. In the section **Selenium hubs** click **New**
+4. Under **Custom Capabilities** click **New**
+5. Set **Key** to **testobject_api_key**, **Type** to **String** and **Value** to the API key that you've written down in step 11 from the previous section.
+6. Save the capability
+7. Save the Selenium hub
+
+
 ### Creating a Mobile Device Profile
 
 In order to enable a proper working of the recorder and ATS Helper we need to create a custom mobile device profile in Chrome.
 
-Follow stese steps:
+Follow these steps:
 
 1. Open Chrome
 2. Press **F12** to open the DevTools
@@ -45,41 +92,31 @@ Follow stese steps:
     ![](/refguide-ats-2/attachments/mobile/chrome-settings-2.png)
 9. Close the settings and the DevTools by clicking the **x** button in the top right corner twice
 
-### Creating a TestObjects Account
+## Running a Test Case on a Mobile Device
 
-Running a test on a mobile device requires an account with TestObjects (part of Sauce Labs). They offer a free account for 1 concurrent test.
-Follow these steps:
+Once you've created a test case for mobile you'll want to run it.
+This is what you have to do:
 
-1. Go to [TestObjects website](https://app.testobject.com/#/signup/)
-2. Sign up and confirm via the email you receive from TestObjects
-3. Go to [TestObjects](https://app.testobject.com/#/) and login with your new account
-4. Click **New App**
-5. Click **Mobile Website**
-6. Set random values for **Website URL**, **Website name** and **Version** and save
-7. Save the device settings by clicking **Save**
-8. Hover the button **AUTOMATED TESTING** and select **APPIUM**
-9. Click on **Get Started**
-10. Write down the API Key, you'll need it later
+1. Open your test case 
+2. Click **Run** and then **Edit Run Configuration**.
+3. Select a **Selenium provider** that supports mobile testing
+4. Select the mobile platform you wish to test: Android 6 or Android 7
+5. Click **Run**
+![](/refguide-ats-2/attachments/mobile/run-configuration.png)
 
-### Configuring TestObjects in ATS
+## Native Dialogs
 
-You'll need to configure your TestObjects as a Selenium endpoint in ATS. To do so, follow these steps:
+Usually when a web application is used on a mobile device, the devices adds native dialogs in some places to improve usability.
+These places are:
 
-1. Open ATS and switch to one of your apps
-2. Navigate to the Settings by selecting **Show Test Settings** in the profile menu
-3. In the section **Selenium hubs** click **New**
-4. Set **Name** to *TestObjects* and **URL** to *https://eu1.appium.testobject.com/wd/hub*
-5. Under **Custom Capabilities** click **New**
-6. Set **Key** to *testobject_api_key*, **Type** to *String* and **Value** to the API key that you've written down
-7. Save the capability
-8. Save the Selenium hub
+1. In dropdowns
+2. In date fields
+3. In time fields
+4. In date time fields
 
-## Creating Mobile Test Cases
+All standard functions also work on a mobile device, including places where native dialogs are used. Our functions are context aware and will automate native mobile dialogs when run on a mobile device, row will work around them.
 
-After preparations are finished we can start to create our mobile tests.
-Creating a mobile test is very straightforward. There are only a few differences that you should understand. They are described in the next sections.
-
-### Activating the Mobile Device View
+## Using the ATS recorder and helper on mobile device view
 
 In order to see the mobile screens of your app in Chrome, you need to enable the mobile device view. In this mode you'll also be able to use the ATS Helper and Recorder.
 
@@ -94,59 +131,11 @@ Follow these steps:
 
     ![](/refguide-ats-2/attachments/mobile/chrome-settings-3.png)
 
-### Using the ATS Helper and Recorder
-
-Enable and use the ATS Helper and Recorder as usual as long as the mobile device profile is enabled.
-
-### Native Dialogs
-
-Usually a web application is used on a mobile device, the devices adds native dialogs in some places to improve usability.
-These places are:
-
-1. In dropdowns
-2. In date fields
-3. In time fields
-4. In date time fields
-
-All standard actions should also work on a mobile device. Also in places where native dialogs are used. The actions simply work around these dialogs and set the values directly.
-In order to make the testing more realistic you can even automate the native dialogs. In order to do this, make use of the following mobile specific actions:
-
-| Scenario | Standard Action | Mobile Action |
-| -------- | --------------- | --------------|
-| Setting a time field | Set Value | Set TimePicker |
-| Setting a date field | Set Value | Set DatePicker |
-| Setting a date time field | Set Value | Set DateTime Picker |
-| Setting a drop-down field | Set Value | Set DropDown Value |
-
-### Recording
-
-The recorder does not know the new mobile actions. It will always return a mapping to the non-mobile actions. You can later exchange recorded steps and use a new mobile action.
-
-## Running a Test Case on a Mobile Device
-
-Once you've created a test case for mobile you'll want to run it.
-This is what you have to do:
-
-1. Open your test case 
-2. Click **Run** and then **Edit Run Configuration**.
-3. Select *TestObjects* as **Selenium hub**
-4. Enable the new checkbox **Mobile testing**
-5. Click **Run**
-![](/refguide-ats-2/attachments/mobile/run-configuration.png)
+You can enable and use the ATS Helper and Recorder as usual as long as the mobile device profile is enabled.
 
 ## Known Limitations
 
-* Using touch ations in the mobile device profile is not possible. The ATS Helper and Recorder are not compatible with touch actions.
-* Only devices with english language setting are supported
-* It's not possible for the user to select the mobile device type. It defaults to Motorola Moto E (2nd gen).
-
-| Type | Description |
-| --- | --- |
-| Device | Motorola Moto E (2nd gen) |
-| Platform | Android |
-| Version | 6.0 |
-| API level | 23 |
-| Resolution | 540x960 px / 4.5" |
-| CPU | ARM quad-core 1200 MHz |
-| RAM | 1024 MB |
-| Browser | Google Chrome |
+* Using touch actions in the mobile device profile is not possible. The ATS Helper and Recorder are not compatible with touch actions.
+* The only supported locale is "en_US", i.e. language is English and country is United States. You can change the locale for Saucelabs from their portal.
+* Emulators are not supported.
+* Seconds cannot be set in (date) time fields. Clearing a date/time value is not supported.
