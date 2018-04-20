@@ -31,16 +31,23 @@ The **7-day history** infographic will only be included in the PDF report when y
 
 ### 1.3 Recent Tests
 
-Under **Recent Tests**, you can find detailed information about the status of all your test cases and test suites. You can see the duration since the latest run, its result, and the success rate (for test suites). The success rate is calculated using the results of all the containing test cases. For data-driven tests, the data set is displayed in the **test data** column.
+Under **Recent Tests**, you can find detailed information about the status of all your test cases and test suites. You can see the duration since the latest completed run, a counter of passed / total test cases, and the success rate. The success rate is calculated using the results of all the containing test cases. 
+For data-driven tests, the data set is displayed in the **test data** column. The counter of a data-driven test cases shows passed / total test runs of the related data set records at the time of execution.
 
-The results of your tests are displayed as icons. The following table explaines the meanings of those icons:
+The results of your test cases are displayed as labels. The following table explaines the meanings of those lables:
 
-| Icon | Meaning |
+| Label| Meaning |
 | ---- | ------- |
-|![](attachments/project/passed-icon.png)| Passed – the test was executed successfully. |
-|![](attachments/project/failed-icon.png)| Failed – the test has failed. |
-|![](attachments/project/canceled-icon.png)| Canceled – the test was canceled by a user before finishing. |
-|![](attachments/project/skipped-icon.png)| Skipped – the execution of this test was skipped or it hasen't been run yet. |
+| Passed | The test was executed successfully. |
+| Failed | The test has failed. |
+| Not Executed| The execution of this test was skipped or it hasen't been run yet. |
+
+In addition to the results, the following flags are used for special cases:
+
+| Flag | Meaning |
+| ---- | ------- |
+|![](attachments/project/warning-flag.png)| Warning – the test is passed but may require your attention. |
+|![](attachments/project/canceled-flag.png)| Canceled – the test was canceled before it could be completed. |
 
 The following three icons exist for test cases, test suites, and data-driven test cases:
 
@@ -48,7 +55,7 @@ The following three icons exist for test cases, test suites, and data-driven tes
 | ---------------------------------------- | ---------- |
 |![](attachments/project/test-case-icon.png) | Test case  |
 |![](attachments/project/test-suite-icon.png) | Test suite |
-|![](attachments/project/ddt-icon.png)| Data-driven Test case|
+|![](attachments/project/ddt-icon.png)| Data-driven Test case |
 
 To open the latest execution log, click **Show Log**. When you click the **name of a test case/test suite**, the edit page opens.
 
