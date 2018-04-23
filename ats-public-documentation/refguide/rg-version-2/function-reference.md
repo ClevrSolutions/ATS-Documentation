@@ -23,8 +23,10 @@ The tables below list all the built-in functions of ATS. There is one table per 
 | Set InputReferenceSelector Value | InputReferenceSelector            | Deprecated in favor of **Set Value**.<br /> Sets the input reference selector to the given value. |
 | Set Row Cell Value               | DataGrid                         | Set the cell value for a particular column in a data grid row. |
 | Set Simple Checkbox Set Selector Value | Simple Checkbox Set Selector | Checks/clears the check box found by a given entity attribute value. |
-| Set Value | Standard widgets: TextBox, TextArea, DropDown, RadioButton, DatePicker, ReferenceSelector, SearchInput Text, SearchInput DropDown.<br /> App Store widgets: OnChange Inputbox, BooleanSlider, Bootstrap Wysiwyg Editor (Bootstrap RTE), CK Editor For Mendix, Input Reference Selector, Radiobutton List. | Sets the value of all supported widgets. |
+| Set Value | Standard widgets: TextBox, TextArea, DropDown, RadioButton, DatePicker¹, ReferenceSelector, SearchInput Text, SearchInput DropDown.<br /> App Store widgets: OnChange Inputbox, BooleanSlider, Bootstrap Wysiwyg Editor (Bootstrap RTE), CK Editor For Mendix, Input Reference Selector, Radiobutton List. | Sets the value of all supported widgets. |
 | Set Value (by index) | Drop Down, Reference Selector, Search Input Drop Down | Sets the value of all supported drop-down widgets by index. |
+
+¹ The date/time format depends on the device type. For **mobile** devices the date/time should be formatted in the ISO 8601 standard i.e. 'yyyy-MM-ddTHH:mm' for date and time or 'yyyy-MM-dd' for date or 'HH:mm' for just the time. Seconds should be omitted. For **desktop** devices the date/time format should match the format as displayed in the date/time picker, which is locale dependent, for example for the US locale the time format is 'M/dd/yyyy, hh:mm a'.
 
 ## 3 Widget – Get
 

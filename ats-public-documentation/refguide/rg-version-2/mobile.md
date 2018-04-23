@@ -99,7 +99,7 @@ This is what you have to do:
 
 1. Open your test case 
 2. Click **Run** and then **Edit Run Configuration**.
-3. Select a **Selenium provider** that supports mobile testing
+3. Select a **Selenium provider** that supports mobile testing and select **Chrome** as browser
 4. Under **Platform Settings* select the mobile platform you wish to test: Android 6 or Android 7
 5. Click **Run**
 ![](/refguide-ats-2/attachments/mobile/run-configuration.png)
