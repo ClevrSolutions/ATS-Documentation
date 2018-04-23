@@ -80,6 +80,7 @@ On the top-right of the screen, you will find the **Edit** and **Run** buttons:
 
 * **Edit** – opens the corresponding test case/test suite
 * **Run** – opens the **Job Configuration** page, where you can edit the run configuration and re-run the test
+* **Rerun not passed** – opens the **Job Configuration** page, where you can edit the run configuration and re-run the test. This is only available for not passed test suites and is going to add all not passed test cases to the new job.
 
 ### 2.3 Run Configuration
 
