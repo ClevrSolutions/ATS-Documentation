@@ -17,6 +17,7 @@ In the company expenses app I want to click on the following expense to view the
 
 **This how-to will teach you how to do the following:**
 * How to use precondition in test cases
+* Analyzing the results of a test case with preconditions
 
 ## 2 Prerequisites
 
@@ -62,11 +63,50 @@ Now you want to doubleclick on the expense, but only if the expense is found on 
 10. Add the **Click/Doubleclick** action and enter a description. 
 11. Refer the **Element** input parameter to the output of the previous step. Also set **Doubleclick** to true. 
 11. Add as precontition the **Assert not equalTo** action.
-12. Refer the **Object 1** input parameter of the precondition to the output of the previous step:
+12. Refer the **Object 1** input parameter of the precondition to the output of the previous step. Leave **Object 2** empty:
 
 ![](attachments/use-precondition-in-test-cases-2/click-doubleclick-action.png)
 
-By adding the **Assert not equalTo** action as precondition the action is only executed if the expense is found on the previous step. If step 3 is not executed the output of step 3 is empty. The **Assert not equalTo** action then asserts empty with empty, which are equal to each other. So 
+By adding the **Assert not equalTo** action as precondition the action is only executed if the expense is found on the previous step. If step 3 is not executed the output of step 3 is empty. The **Assert not equalTo** action then asserts empty with empty, which are equal to each other. So the precondition fails and the actual test step is not executed. 
+
+These two steps are sufficient to only click on the expense in case the expense is present on the page. But if the expense is not present on the page, nothing is clicked. With the following steps you search the next chunk in the datagrid for that expense.
+
+13. Add the step to go to the next page of the datagrid by recording clicking **Paging-next**:
+
+![](attachments/use-precondition-in-test-cases-2/next-chink.png)
+
+14. Add as precondition the **Assert equalTo** action.
+15. Refer the **Object 1** input parameter of the precondition to the output of step 3. Leave **Object 2** empty: 
+
+![](attachments/use-precondition-in-test-cases-2/click-widget-action.png)
+
+By adding the **Assert equalTo** action as precondition the action is only executed if the expense is not found in step 3. If step 3 is not executed the output of step 3 is empty. The **Assert equalTo** action then asserts empty with empty, which are equal to each other. So the precondition is succesfull and the test step is executed.
+
+16. Add the action **Find/Assert DataGrid Row** to be able to find the expense on this page. Fill in the fields as in the previous **Find/Assert DataGrid Row** action.
+17. Add the precondition **Assert equalTo**. Refer **Object 1** again to step 3:
+
+![](attachments/use-precondition-in-test-cases-2/find-expense-on-new-page.png)
+
+18. Add the action **Click/Doubleclick**. Give the action a description.
+19. Add the precondition **Assert equalTo**. Refer **Object 1** again to step 6:
+
+![](attachments/use-precondition-in-test-cases-2/click-on-found-expense.png)
+
+20. The last step that you should add is the **Close Dialog** step, as doubleclicking on an expense opens the **New Expense** dialog:
+
+![](attachments/use-precondition-in-test-cases-2/new-expense-dialog.png)
+
+Before you run the test case you should define setup and teardown steps. The final test case looks like the image:
+
+![](attachments/use-precondition-in-test-cases-2/setup-and-teardown.png)
+
+## 4. Analyzing the results of a test case using preconditions
+
+Congratulations you have successfully created a test case using preconditions. This is just an example of what you can do with preconditions, there are many more options like a negative test case. 
+
+![](attachments/use-precondition-in-test-cases-2/expense-on-first-page.png)
+
+![](attachments/use-precondition-in-test-cases-2/expense-on-second-page.png)
 
 
 How the test run looks if it is on the first page and how the test run looks on the seocnd page
