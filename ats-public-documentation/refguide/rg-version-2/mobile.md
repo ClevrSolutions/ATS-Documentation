@@ -80,7 +80,7 @@ Follow these steps:
 3. Press **F1** to open the settings dialog
 4. Select the **Devices** tab
 
-    ![](/refguide-ats-2/attachments/mobile/chrome-settings-1.png)
+    ![](attachments/mobile/chrome-settings-1.png)
 6. Select **Add custom device**
 7. Set the following properties
     * **Device name** to *ATS mobile*
@@ -89,7 +89,7 @@ Follow these steps:
     * **Device type** to *Mobile (no touch)*
 8. Select **Add**
 
-    ![](/refguide-ats-2/attachments/mobile/chrome-settings-2.png)
+    ![](attachments/mobile/chrome-settings-2.png)
 9. Close the settings and the DevTools by clicking the **x** button in the top right corner twice
 
 ## Running a Test Case on a Mobile Device
@@ -102,7 +102,8 @@ This is what you have to do:
 3. Select a **Selenium provider** that supports mobile testing and select **Chrome** as browser
 4. Under **Platform Settings* select the mobile platform you wish to test: Android 6 or Android 7
 5. Click **Run**
-![](/refguide-ats-2/attachments/mobile/run-configuration.png)
+
+![](attachments/mobile/run-configuration.PNG)
 
 ## Native Dialogs
 
@@ -129,7 +130,7 @@ Follow these steps:
 5. Press **CTRL+SHIFT+M** to enable the mobile device toolbar
 6. In the mobile device toolbar select the new device profile **ATS Mobile**
 
-    ![](/refguide-ats-2/attachments/mobile/chrome-settings-3.png)
+    ![](attachments/mobile/chrome-settings-3.png)
 
 You can enable and use the ATS Helper and Recorder as usual as long as the mobile device profile is enabled.
 
