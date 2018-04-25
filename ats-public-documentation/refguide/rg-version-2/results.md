@@ -9,7 +9,7 @@ Under **Results**, you find all the running and executed tests from your app. Th
 
 ![](attachments/results/test-runs.png)
 
-The first column shows the status or the result of a test. The following list explains all the different icons:
+The first column shows the status of a test. If the test is done, a warning and/or a canceled flag can be shown. The following list explains all the different icons:
 
 *  Queued – the test is waiting for a free running slot on the Selenium hub:
 
@@ -18,7 +18,15 @@ The first column shows the status or the result of a test. The following list ex
 *  Running – the test is currently running:
 
     ![](attachments/icons/running.gif)
+    
+*  Warning – the test is passed but may require your attention.
 
+    ![](attachments/project/warning-flag.png)
+    
+*  Canceled – the test was canceled before it could be completed.
+
+    ![](attachments/project/canceled-flag.png)
+    
 The second column shows the type of the test. The following list explains all the different icons:
 
 *  Test case:
@@ -81,11 +89,11 @@ Drill down deeper into the log by clicking the name of the test step. You can al
 
 The following results can be assigned to a test step:
 
-![](attachments/icons/passed-icon.png)  Passed – the test has passed
+![](attachments/results/passed-icon.png)  Passed – the test has passed
 
-![](attachments/icons/failed-icon.png)  Failed – the test has failed
+![](attachments/results/failed-icon.png)  Failed – the test has failed
 
-![](attachments/icons/skipped-icon.png)  Not Executed – the test was not executed; this happens if a test step has not met the set precondition
+![](attachments/results/skipped-icon.png)  Not Executed – the test was not executed; this happens if a test step has not met the set precondition
 
 ### 2.3 Actions
 
