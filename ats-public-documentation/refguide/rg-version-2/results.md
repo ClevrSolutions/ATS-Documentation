@@ -37,7 +37,7 @@ The second column shows the type of the test. The following list explains all th
 
     ![Test Suite](attachments/project/test-suite-icon.png) 
 
-*  Data-driven test case:
+*  Data-driven instance:
 
     ![Datadriven Test Case](attachments/project/ddt-icon.png)
 
