@@ -1,6 +1,6 @@
 ---
 title: "Setup a local Docker Selenium hub"
-parent: "ht-version-2"
+parent: "setup-local-selenium-index-2"
 description: "Describes the options to setup a local selenium solution."
 tags: ["ATS", "testing", "Selenium hub"]
 ---
@@ -82,7 +82,7 @@ docker_hub_1       /opt/bin/entry_point.sh   Up      0.0.0.0:4444->4444/tcp
 5. Check with the following link if the hub works: [http://localhost:4444/grid/console](http://localhost:4444/grid/console)
 Note: You can also replace localhost with the server name or IP-address of the Docker host.
 
-![](attachments/setup-local-docker-selenium-hub/docker_grid.png)
+![](attachments/setup-local-selenium-index-2/setup-local-docker-selenium-hub-2/docker_grid.png)
 
 Congratulation, your local Selenium hub is running
 
@@ -159,4 +159,4 @@ Some side notes in case you follow this step:
 - You cannot scale using this configuration.
 - Be aware that VNC is not a secure protocol, you might not want to open this port for the world.
 
-Congratulations you have finished setting up a local docker selenium hub. The next how-to is [How to setup a Local Selenoid hub](setup-local-selenoid-hub). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.
+Congratulations you have finished setting up a local docker selenium hub. The next how-to is [How to setup a Local Selenoid hub](setup-local-selenoid-hub-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.

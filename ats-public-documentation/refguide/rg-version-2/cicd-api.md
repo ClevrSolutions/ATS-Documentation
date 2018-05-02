@@ -156,8 +156,8 @@ The following table shows the data contained in the response of the **Get Job St
 | Name | Description |
 | --- | --- |
 | ExecutionStatus| Status of the execution: **Running** or **Queued**. |
-| ExecutionResult| Contains the error message if the test failed to start. Empty if the test started succesfully. |
-| JobID | The unique ID of the job. This ID is used to retrieve the result of the test with the Get Job Status service. |
+| ErrorMessage | Contains the error message if the test failed to start. Empty if the test started succesfully. |
+| ExecutionResult | Result of the execution: **Passed** or **Failed**. |
 
 ##### 3.2.3.1 Example
 

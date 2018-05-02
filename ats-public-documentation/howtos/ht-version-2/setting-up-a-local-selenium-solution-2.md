@@ -1,6 +1,6 @@
 ---
 title: "Setup a local Selenium solution"
-parent: "ht-version-2"
+parent: "setup-local-selenium-index-2"
 description: "Describes the options to setup a local selenium solution."
 tags: ["ATS", "testing", "Selenium hub"]
 ---
@@ -25,7 +25,7 @@ This How-to describes a few possible local Selenium solutions and contains links
 The official website of the Selenium hub (SeleniumHQ) is [https://www.seleniumhq.org/](https://www.seleniumhq.org/)
 
 ### How to set up the selenium solution
-The following document describes an example of how to setup this selenium solution: [How to setup a Local Selenium hub](setup-local-selenium-hub)
+The following document describes an example of how to setup this selenium solution: [How to setup a Local Selenium hub](setup-local-selenium-hub-2)
 
 ### Characteristics of the selenium solution
 - Live-view only on the machine where Selenium is installed
@@ -37,7 +37,7 @@ The following document describes an example of how to setup this selenium soluti
 The official GitHub page of the Docker Selenium hub (Docker Selenium) is [https://github.com/SeleniumHQ/docker-selenium](https://github.com/SeleniumHQ/docker-selenium)
 
 ### How to set up the selenium solution
-The following document describes an example of how to setup this selenium solution: [How to setup a Local Docker Selenium hub](setup-local-docker-selenium-hub)
+The following document describes an example of how to setup this selenium solution: [How to setup a Local Docker Selenium hub](setup-local-docker-selenium-hub-2)
 
 ### Characteristics of the selenium solution
 - Browsers run in Linux containers
@@ -50,7 +50,7 @@ The following document describes an example of how to setup this selenium soluti
 The official website of the Selenoid hub (Aerokude) is [http://aerokube.com/](http://aerokube.com/)
 
 ### How to set up the selenium solution
-The following document describes an example of how to setup this selenium solution: [How to setup Local Selenoid hub](setup-local-selenoid-hub)
+The following document describes an example of how to setup this selenium solution: [How to setup Local Selenoid hub](setup-local-selenoid-hub-2)
 
 ### Characteristics of the selenium solution
 - Selenoid is a powerful Go implementation of original Selenium hub code. It is using Docker to launch browsers.

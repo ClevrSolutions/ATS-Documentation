@@ -42,13 +42,6 @@ The results of your test cases are displayed as labels. The following table expl
 | Failed | The test has failed. |
 | Not Executed| The execution of this test was skipped or it hasen't been run yet. |
 
-In addition to the results, the following flags are used for special cases:
-
-| Flag | Meaning |
-| ---- | ------- |
-|![](attachments/project/warning-flag.png)| Warning – the test is passed but may require your attention. |
-|![](attachments/project/canceled-flag.png)| Canceled – the test was canceled before it could be completed. |
-
 The following three icons exist for test cases, test suites, and data-driven test cases:
 
 | Icon                                     | Meaning    |

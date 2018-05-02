@@ -1,6 +1,6 @@
 ---
 title: "Setup a local Selenoid hub"
-parent: "ht-version-2"
+parent: "setup-local-selenium-index-2"
 description: "Describes how to set up a local selenoid hub."
 tags: ["ATS", "testing", "Selenium hub"]
 ---
@@ -127,7 +127,7 @@ In case you want to record your test case as a video follow these steps:
 
 **enableVideo** with a boolean set to **true**
 
-![](attachments/setup-local-selenoid-hub/add_capability.png)
+![](attachments/setup-local-selenium-index-2/setup-local-selenoid-hub-2/add_capability.png)
 
 2. Once the test case finishes you can find your video in:  [http://yourmachinenameorIP:4444/video](http://localhost:4444/video)
 
@@ -137,7 +137,7 @@ The video shows as "session-id.mp4"
 
 **VideoName** with a string, for example **MyTestVideo.mp4** (don't forget the .mp4!)
 
-![](attachments/setup-local-selenoid-hub/video_name.png)
+![](attachments/setup-local-selenium-index-2/setup-local-selenoid-hub-2/video_name.png)
 
 After executing the test case, don't forget to download the video file or give it a different name in the next session, otherwise it is overwritten!
 
@@ -233,14 +233,14 @@ docker_selenoid_1      /usr/bin/selenoid -conf /e ...   Up      0.0.0.0:4444->44
 
 **enableVNC** with boolean set to **true**
 
-![](attachments/setup-local-selenoid-hub/enable_vnc.png)
+![](attachments/setup-local-selenium-index-2/setup-local-selenoid-hub-2/enable_vnc.png)
 
 7. After starting your test case you can view your session in the portal:
 
-![](attachments/setup-local-selenoid-hub/selenoidui1.png)
+![](attachments/setup-local-selenium-index-2/setup-local-selenoid-hub-2/selenoidui1.png)
 
 8. By clicking on your session, you will be able to see your live view:
 
-![](attachments/setup-local-selenoid-hub/selenoidui2.png)
+![](attachments/setup-local-selenium-index-2/setup-local-selenoid-hub-2/selenoidui2.png)
 
 Congratulations you have finished setting up a local selenoid hub. The next how-to is  [Use ATS in Combination with CI/CD](ats-and-ci-cd-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.
