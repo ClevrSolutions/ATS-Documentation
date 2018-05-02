@@ -1,6 +1,6 @@
 ---
 title: "Setup a local Selenium hub"
-parent: "ht-version-2"
+parent: "setup-local-selenium-index-2"
 description: "Describes how to set up a local selenium hub."
 tags: ["ATS", "testing", "Selenium hub"]
 ---
@@ -66,7 +66,7 @@ You should see logging like this:
 
 3. Check with the following link if the hub works: [http://localhost:4444/grid/console](http://localhost:4444/grid/console)
 
-![](attachments/setup-local-selenium-hub/grid_hub.png)
+![](attachments/setup-local-selenium-index-2/setup-local-selenium-hub-2/grid_hub.png)
 
 Congratulation, your local Selenium hub is running.
 
@@ -117,7 +117,7 @@ The output should look something like this:
 
 3. Check in the console whether your Selenium hub node is active [http://localhost:4444/grid/console](http://localhost:4444/grid/console):
 
-![](attachments/setup-local-selenium-hub/grid_nodes.png)
+![](attachments/setup-local-selenium-index-2/setup-local-selenium-hub-2/grid_nodes.png)
 
 
 ## 6. Start testing
@@ -213,4 +213,4 @@ start /B java -Dwebdriver.chrome.driver=C:\Selenium\chromedriver.exe -Dwebdriver
 ```
 start.bat
 ```
-Congratulations you have finished setting up a local selenium hub. The next how-to is [How to setup a Local Docker Selenium hub](setup-local-docker-selenium-hub). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.
+Congratulations you have finished setting up a local selenium hub. The next how-to is [How to setup a Local Docker Selenium hub](setup-local-docker-selenium-hub-2). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-version-2) page. We advise you to follow the predefined structure.
