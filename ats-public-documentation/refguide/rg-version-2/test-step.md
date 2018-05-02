@@ -23,7 +23,7 @@ If you record your test steps, ATS enters a description automatically. For more 
 
 ## 3 Call Types
 
-Call types define the order of the test step and how they affect the final result of a test case.
+Call types define the order of the test step and how they affect the final result.
 
 In ATS, there are three different call types, which are described below.
 
@@ -31,19 +31,19 @@ In ATS, there are three different call types, which are described below.
 
 ATS moves the test steps with the Setup call type to the start of the test case automatically. ATS uses the Setup steps to get to the actual test scenario. For example: **Open application > Login as user**.
 
-Only set a test step to setup if it is not part of your actual test scenario.
+Only set a test step to Setup if it is not part of your actual test scenario.
 
-If a setup test step fails, the test stops and the result is set to **not executed**.
+If a Setup test step fails, the test stops and the result is set to **not executed**.
 
 ### 3.2 Regular
 
-Regular test steps are the flesh and bone of your test case. They cover the main functionality of the test scenario. If a regular test step fails, the test stops immediately and the result is set to **failed**.
+Regular test steps are the flesh and bone of your test case. They cover the main functionality of the test scenario. If a Regular test step fails, the test stops immediately and the result is set to **failed**.
 
 ### 3.3 Teardown
 
-Teardown test steps are automatically moved to the end of a test. They must be used to undo the changes your test case made in the application. Teardown steps are always executed even if a preceding setup or regular step has failed. Failing teardown test steps do not affect the result of a test case. However, a warning flag is set to indicate that a teardown step is not working properly.
+Teardown test steps are automatically moved to the end of a test. They must be used to undo the changes your test case made in the application. Failing Teardown test steps do not affect the result of a test case.
 
-## 4 Action Parameter
+## 4 Action Parameter<a name="4action-parameter"></a>
 
 Action parameters are the input parameters of the selected test step action. ATS marks the required input parameter with an asterisk and writes them in bold.
 
