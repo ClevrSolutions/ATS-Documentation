@@ -21,11 +21,11 @@ The first column shows the status of a test. If the test is done, a warning and/
     
 *  Warning – the test is passed but may require your attention.
 
-    ![](attachments/project/warning-flag.png)
+    ![](attachments/test-run/warning-flag.png)
     
 *  Canceled – the test was canceled before it could be completed.
 
-    ![](attachments/project/canceled-flag.png)
+    ![](attachments/test-run/canceled-flag.PNG)
     
 The second column shows the type of the test. The following list explains all the different icons:
 
@@ -45,7 +45,6 @@ The duration column is formatted as followed: `HH:MM:SS`.
 
 You can search the most recent tests via the following:
 
-* Result
 * Name
 * Browser
 * After date
@@ -85,7 +84,7 @@ Under **Test steps**, you will find the result, start time, and the duration of 
 
 Drill down deeper into the log by clicking the name of the test step. You can always go back to a parent step by clicking its name in the breadcrumbs:
 
-![](attachments/results/result-log-breadcrumbs.png)
+![](attachments/results/result-log.png)
 
 The following results can be assigned to a test step:
 
@@ -93,7 +92,7 @@ The following results can be assigned to a test step:
 
 ![](attachments/results/failed-icon.png)  Failed – the test has failed
 
-![](attachments/results/skipped-icon.png)  Not Executed – the test was not executed; this happens if a test step has not met the set precondition
+![](attachments/results/failed-icon.png)  Not Executed – the test was not executed; this happens if a test step has not met the set precondition
 
 ### 2.3 Actions
 
