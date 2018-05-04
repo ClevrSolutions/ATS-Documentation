@@ -92,7 +92,9 @@ The following results can be assigned to a test step:
 
 ![](attachments/results/failed-icon.png)  Failed – the test has failed
 
-![](attachments/results/failed-icon.png)  Not Executed – the test was not executed; this happens if a test step has not met the set precondition
+![](attachments/results/not-executed-icon.png)  Not Executed – the test was not executed; this happens if a test step has not met the set precondition
+
+![](attachments/results/mixed-icon.png)  Different Results - some of the containing tests passed, some failed and some where not executed
 
 ### 2.3 Actions
 
