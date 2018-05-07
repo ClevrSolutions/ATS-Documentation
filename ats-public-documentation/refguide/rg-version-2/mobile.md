@@ -44,16 +44,17 @@ Follow these steps:
 4. Select the **Devices** tab
 
     ![](attachments/mobile/chrome-settings-1.png)
-6. Select **Add custom device**
-7. Set the following properties
+5. Select **Add custom device**
+6. Set the following properties
     * **Device name** to *ATS mobile*
     * **Width** to *540*
     * **Height** to *960*
     * **Device type** to *Mobile (no touch)*
-8. Select **Add**
+    * **User agent string** to *Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML,  like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36*
+7. Select **Add**
 
     ![](attachments/mobile/chrome-settings-2.png)
-9. Close the settings and the DevTools by clicking the **x** button in the top right corner twice
+8. Close the settings and the DevTools by clicking the **x** button in the top right corner twice
 
 ## Running a Test Case on a Mobile Device
 
