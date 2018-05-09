@@ -11,4 +11,4 @@ The users are informed with a notification in ATS about the planned maintenance.
 
 There is a notification after maintenance, showing the made changes.
 
-Maintenance for fixing major issues can also occur anytime outside the maintenance window. We will announce a downtime as early as possible.
+Maintenance for fixing major issues can occur anytime outside the maintenance window. We will announce a downtime as early as possible.
