@@ -11,7 +11,9 @@ category: "General"
 | 1.6 | 5.14.1 - 6.7.1 | 5.17.0, 5.21.1, 6.4.1, 6.6.0, 6.7.1 |
 | 1.7 | 5.14.1 - 6.9.0 | 5.17.0, 5.21.1, 6.4.1, 6.6.0, 6.7.1, 6.9.0 |
 | 1.8 | 5.14.1 - 7.5.0 | 5.17.0, 5.21.1, 6.4.1, 6.6.0, 6.7.1, 6.9.0, 6.10.0, 7.0.1, 7.2.0 |
-| 2.x | 5.14.1 - 7.13.1 | 5.17.0, 5.21.1, 6.4.1, 6.7.1, 6.9.0, 6.10.0, 7.0.1, 7.2.0, 7.6.0, 7.8.0, 7.10.0, 7.12.0, 7.13.1 |
+| 2.x | 5.14.1 - 7.13.1 | 5.17.0, 5.21.1, 6.4.1, 6.7.1, 6.9.0, 6.10.0, 7.0.1, 7.2.0, 7.6.0, 7.8.0, 7.10.0, 7.12.0, 7.13.1&sup1;, 7.14.1&sup1; |
+
+&sup1; On Mendix 7.13 and above, in some circumstances tests will not wait for microflows which are executed asynchronously to finish executing before proceeding. This can cause tests to fail. A temporary workaround is to add a "Sleep" with a sufficient duration after clicking a button which calls an asynchronous microflow.
 
 ## Browser Support
 
@@ -46,7 +48,7 @@ Internet Explorer gets the same development attention as other browsers. However
 
 #### Known Limitations
 
-+ IE one in a while produces typos when keys are sent to the browser. This can result in wrong values being set to input fields.
++ IE sometimes generates typos when keys are sent to the browser. This can result in wrong values being set to input fields.
 
 ### Other Browsers
 
