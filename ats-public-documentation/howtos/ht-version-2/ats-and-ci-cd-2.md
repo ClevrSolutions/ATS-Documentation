@@ -64,7 +64,7 @@ To generate a CI/CD API key follow these steps:
 
 1. Login to ATS 2.0.
 2. Open up the app you want to access for CI/CD.
-3. Inside your app open the profile menu and click **Show Test Settings**.
+3. Inside your app open the profile menu and click **Show App Settings**.
 
 ![](attachments/ats-and-ci-cd-2/show-test-settings.png)
 

@@ -54,7 +54,7 @@ To open the latest execution log, click **Show Log**. When you click the **name 
 
 ## 2 Permissions
 
-There are two roles in ATS, which are assigned to the user by the system itself. These are described below.
+There are two roles in ATS, which are at first assigned to the user by the system itself but can be changed manually later. These are described below.
 
 ### 2.1 Tester
 
@@ -62,7 +62,7 @@ The **Tester** role is assigned to a user when they have at least one Team Serve
 
 ### 2.2 App Admin
 
-The **App Admin** role is assigned to a user when they have the app settings permission of the Team Server project in the Developer Portal. The app settings permission is by default part of the SCRUM Master role in the Developer Portal. An App Admin also has access to the test settings page described in the next section.
+The **App Admin** role is assigned to a user when they have the app settings permission of the Team Server project in the Developer Portal. The app settings permission is by default part of the SCRUM Master role in the Developer Portal. An App Admin also has access to the app settings page described in the next section.
 
 ## 3 Settings
 
@@ -111,11 +111,17 @@ ATS automatically retrieves the parallel test session limit from the Selenium hu
 Starting with ATS verson 2.0, ATS capabilites override custom capabilities.
 {{% /alert %}}
 
-### 3.3 Execution Log Cleanup
+### 3.3 Administration rights control from ATS
+
+Under **Administrators** you can specify which app members have administrative rights for the app. By default app members with the "SCRUM Master" project role in Sprintr will have administrative rights. Please keep in mind that users still need to be a member of a project in Sprintr for them to be eligible to be app administrators for the corresponding app in ATS.
+
+In order to make sure that administration rights which have been granted to users are not overwritten, we do not automatically revoke administration rights when the project role for a user in Sprintr changes from administrator to non-administrator. Instead, revoking administration rights can be done manually from the "Settings" page. Finally, note that a user who has an administrative project role in Sprintr will always have administrative rights in ATS.
+
+### 3.4 Execution Log Cleanup
 
 ATS automatically deletes execution logs that are older than 90 days. Here you can change for how many days ATS keeps the execution logs. ATS keeps the execution logs at least for one day.
 
-### 3.4 Mendix API Key
+### 3.5 Mendix API Key
 
 The Mendix API Key is used to synchronize stories between the Developer Portal and ATS.
 
@@ -123,7 +129,7 @@ You must set this key, otherwise you cannot use your user stories in ATS. Be awa
 
 For information on where to find the API keys of your Mendix app, see [Authentication](/apidocs-mxsdk/apidocs/authentication).
 
-### 3.5 CI/CD API Key
+### 3.6 CI/CD API Key
 
 The CI/CD API key is used to allow other systems or applications access to the ATS CI/CD API. Generating a new API key revokes access for any systems using the old API key. These systems are not able to access the ATS CI/CD API until they are updated with the new API key. Make sure to save the displayed API key in a secure place, as you cannot view it again in ATS.
 

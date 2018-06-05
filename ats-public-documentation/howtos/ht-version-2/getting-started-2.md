@@ -31,24 +31,24 @@ You add users to ATS by inviting them to your Mendix app project. For more infor
 
 ## 3 Configuring Your App
 
-When you log in to ATS, you see the **My Apps** page. An app is a folder in which all the data related to a specific application is saved and managed. You must click your app to gain access to the **test settings**.
+When you log in to ATS, you see the **My Apps** page. An app is a folder in which all the data related to a specific application is saved and managed. You must click your app to gain access to the **app settings**.
 
 ![](attachments/getting-started-2/my-apps-page.png)
 1. Open your app inside ATS. This opens the **Dashboard** page.
 
 ![](attachments/getting-started-2/dashboard-page.png)
 
-2. Open the profile menu and click **Show Test Settings**.
+2. Open the profile menu and click **Show App Settings**.
 
 ![](attachments/getting-started-2/show-test-settings.png)
 
-You are now on the **Settings** page. Here you add environments and selenium hubs.
+You are now on the **Settings** page. Here you add environments and selenium hubs and manage administrative rights.
 
 ![](attachments/getting-started-2/settings-page.png)
 
 {{% alert type="info" %}}
 
-Only the App admin and SCRUM master have the rights to edit the settings. You set the roles in the Developer Portal.
+Only the App admin and SCRUM master have the rights to edit the settings. You set the roles in the Developer Portal or via the **Settings** page.
 
 {{% /alert %}}
 

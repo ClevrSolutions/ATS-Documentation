@@ -19,16 +19,16 @@ This how-to explains how to configure a selenium hub in ATS. There are four sele
 
 Before starting with this how-to, make sure you have the following prerequisites in place:
 
-* Have the appropriate role to gain access to the test settings in ATS.
+* Have the appropriate role to gain access to the app settings in ATS.
 * Have access to a selenium provider account or internal selenium server.
 
-## 3 The Test Settings
+## 3 The App Settings
 
-To get to the test settings follow these steps:
+To get to the app settings follow these steps:
 
 1. Go to ATS and login.
 2. Open the app where you want to add the selenium hubs.
-3. Once inside your app click the profile menu and click **Show Test Settings**.
+3. Once inside your app click the profile menu and click **Show App Settings**.
 
 ![](attachments/configure-a-selenium-hub-2/show-test-settings.png)
 

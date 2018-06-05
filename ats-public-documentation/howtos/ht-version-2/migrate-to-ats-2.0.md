@@ -13,7 +13,7 @@ This how-to describes the steps for moving your data from ATS 1.8 to ATS 2.0.
 
 * Add your app to ATS 2.0
 * Import and export your data
-* Configure the test settings
+* Configure the app settings
 
 Before starting with the update, please take notice of the following:
 
@@ -106,13 +106,13 @@ Repeat this process for all remaining data sets.
 
 ![](version-2/attachments/migrate-to-ats-2.0/import-file.png)
 
-## 4 Test Settings
+## 4 App Settings
 
 ### 4.1 Environment Setting
 
 1. Open your app in ATS 2.0.
 2. Click the profile menu.
-3. Click **Show Test Settings**.
+3. Click **Show App Settings**.
 
 ![](version-2/attachments/migrate-to-ats-2.0/click-test-settings.png)
 
@@ -125,7 +125,7 @@ Repeat this process for all remaining data sets.
 
 1. Open your app in ATS 2.0.
 2. Click the profile menu.
-3. Click **Show Test Settings**.
+3. Click **Show App Settings**.
 
 ![](version-2/attachments/migrate-to-ats-2.0/click-test-settings.png)
 

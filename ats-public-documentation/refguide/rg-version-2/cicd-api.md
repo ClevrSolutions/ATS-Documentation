@@ -55,7 +55,7 @@ You must include the following information in the request:
 | --- | --- |
 | username | ATSAPIUser |
 | password | ATSAPIUser |
-| AppAPIToken | The key for the CI/CD API. Generated on the **Test Settings** page. |
+| AppAPIToken | The key for the CI/CD API. Generated on the **App Settings** page. |
 | AppID | The ID of your Mendix app. |
 | JobTemplateID | The unique ID of the CI/CD Template. |
 
@@ -123,7 +123,7 @@ You must include the following information in the request:
 | --- | --- |
 | username | The user name of the web service user. |
 | password | The password of the web service user. |
-| AppAPIToken | The key for the CI/CD API. Generated on the **Test Settings** page. |
+| AppAPIToken | The key for the CI/CD API. Generated on the **App Settings** page. |
 | JobID | The unique ID of the job returned by the Run Job service. |
 | AppID | The ID of your Mendix app. |
 
