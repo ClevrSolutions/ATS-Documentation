@@ -43,7 +43,7 @@ The following steps explain how to schedule test cases:
 
     ![](attachments/schedule-testcase-testsuite-2/new-schedule-dialog.png)
 
-5.	Set the desired **Schedule App Settings**: 
+5.	Set the desired **Schedule Test Settings**: 
 
     * **Active** - Activate/Deactivate the event
     * **After** - Set time when event is first executed
