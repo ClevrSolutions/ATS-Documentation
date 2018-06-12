@@ -110,6 +110,7 @@ The **Run Configuration** tab shows the configuration with which the test was ex
 
 ![](attachments/results/result-log-run-config.png)
 
+
 ### 2.5 Error Log
 
 The **Error Log** shows detailed information about a failed test step.
@@ -121,3 +122,8 @@ The **Error Log** shows detailed information about a failed test step.
 All the screenshots ATS takes during the test run are available under **Screenshots**. Screenshots are only taken if a test step fails.
 
 ![](attachments/results/result-log-screenshots.png)
+
+
+### 2.6 Recording
+
+The **Recording** tab plays a video recording of the test case execution. It is only available if the test has been executed on Browserstack. Please note that we do not store these recording, but we only link to the recorded videos from Browserstack.
