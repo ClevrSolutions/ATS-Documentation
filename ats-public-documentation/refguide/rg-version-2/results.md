@@ -126,4 +126,4 @@ All the screenshots ATS takes during the test run are available under **Screensh
 
 ### 2.6 Recording
 
-The **Recording** tab plays a video recording of the test case execution. It is only available if the test has been executed on Browserstack or SauceLabs. Please note that we do not store these recording, but we only link to the recorded videos from the respective selenium provider. Important note: To be able to playback recording from Saucelabs please set the following capability in your selenium hub configuration ```recordMp4:  true```.
+The **Recording** tab plays a video recording of the test case execution. It is only available if the test has been executed on Browserstack. Please note that we do not store these recording, but we only link to the recorded videos from the respective selenium provider.
