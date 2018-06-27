@@ -5,7 +5,7 @@ parent: "test-run"
 
 ## 1 Introduction
 
-The following tables document provider, operating system, and browser compatability. 
+The following tables document provider, operating system, and browser compatibility 
 
 ## 2 Browserstack
 

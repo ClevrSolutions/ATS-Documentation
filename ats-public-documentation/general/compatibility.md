@@ -48,7 +48,8 @@ Internet Explorer gets the same development attention as other browsers. However
 
 #### Known Limitations
 
-+ IE sometimes generates typos when keys are sent to the browser. This can result in wrong values being set to input fields.
+* IE can produce typos when keys are sent to the browser, which can result in wrong values being set to input fields
+* Running tests on Windows XP with Internet Explorer is not possible
 
 ### Other Browsers
 

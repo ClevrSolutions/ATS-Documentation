@@ -87,16 +87,17 @@ Test Automation               | ![][green] Yes | ![][green] Yes                |
 Test Recording                | ![][green] Yes | ![][green] Yes                | ![][green] Yes                | ![][green] Yes
 OS Selection                  | ![][green] Yes | ![][green] Yes                | ![][green] Yes                | ![][red] No
 Responsive Testing            | ![][green] Yes | ![][green] Yes                | ![][green] Yes                | ![][red] No
-Multiple Browsers<sup>1</sup> | ![][green] All | ![][green] All                | ![][green] All                | ![][grey] Limited<sup>3</sup>
-Mobile Testing<sup>2</sup>    | ![][green] Yes | ![][green] Yes                | ![][green] Yes                | ![][red] No
-Mendix Platform Integration   | ![][green] All | ![][grey] Limited<sup>4</sup> | ![][grey] Limited<sup>4</sup> | ![][grey] Limited<sup>4</sup>
-Live View & Video<sup>2</sup> | ![][green] Yes | ![][green] Yes                | ![][green] Yes                | ![][red] No
+Multiple Browsers<sup>1</sup> | ![][green] All | ![][green] All                | ![][green] All                | ![][green] Yes<sup>2</sup>
+Mobile Testing   | ![][green] Yes | ![][green] Yes                | ![][green] Yes                | ![][red] No
+Mendix Platform Integration   | ![][green] All | ![][grey] Limited<sup>3</sup> | ![][grey] Limited<sup>3</sup> | ![][grey] Limited<sup>3</sup>
+Recording<sup>4</sup> | ![][green] Yes | ![][green] Yes                | ![][green] Yes                | ![][red] No
 Future Proof<sup>5</sup>      | ![][green] Yes | ![][green] Yes                | ![][green] Yes                | ![][red] No
 
-<sup>1</sup> Only if supported by ATS.<br />
-<sup>2</sup> Feature not available yet.<br />
-<sup>3</sup> Additional setup for every browser required.<br />
-<sup>4</sup> ATS will integrate with several APIs from the Mendix Cloud to improve the testing experience. Since some of these APIs are only available for apps that run in the Mendix Cloud, certain features cannot be offered for on-premises apps.<br />
+<sup>1</sup> For a list of supported browsers see 
+[Browser Compatibility](../refguide/rg-version-2/provider_platform_browser_compatiblitiy_table.md).<br />
+<sup>2</sup> Additional setup for every browser required.<br />
+<sup>3</sup> ATS will integrate with several APIs from the Mendix Cloud to improve the testing experience. Since some of these APIs are only available for apps that run in the Mendix Cloud, certain features cannot be offered for on-premises apps.<br />
+<sup>4</sup> Only available for some providers.<br />
 <sup>5</sup> Future features may depend on the functionality offered by the Mendix Cloud or the Selenium service providers. They may not be available if you run your app on-premises or host your own Selenium server.
 
 ### 4.2 Setup and Maintenance
@@ -129,7 +130,7 @@ ATS does not support the uploading of files in every situation. This table prese
 <sup>1</sup> This is only possible when you prepare your own files on that server.<br />
 <sup>2</sup> This depends on where the agent is installed.
 
-For more information, see [How to Upload a File in Your App Using ATS](../howtos/ht-version-2/upload-file-using-ats-2].
+For more information, see [How to Upload a File in Your App Using ATS](../howtos/ht-version-2/upload-file-using-ats-2.md).
 
 ## 5 Setup Instructions
 

@@ -111,11 +111,26 @@ ATS automatically retrieves the parallel test session limit from the Selenium hu
 Starting with ATS verson 2.0, ATS capabilites override custom capabilities.
 {{% /alert %}}
 
-### 3.3 Administration rights control from ATS
+### 3.3 Access rights control from ATS
 
-Under **Administrators** you can specify which app members have administrative rights for the app. By default app members with the "SCRUM Master" project role in Sprintr will have administrative rights. Please keep in mind that users still need to be a member of a project in Sprintr for them to be eligible to be app administrators for the corresponding app in ATS.
+Under **App Team** you can specify which app members have what type of access rights for the app.
 
-In order to make sure that administration rights which have been granted to users are not overwritten, we do not automatically revoke administration rights when the project role for a user in Sprintr changes from administrator to non-administrator. Instead, revoking administration rights can be done manually from the "Settings" page. Finally, note that a user who has an administrative project role in Sprintr will always have administrative rights in ATS.
+![Manage app permissions](attachments/project/app_permissions.png)
+
+By default app members with the "SCRUM Master" project role in Sprintr will have administrative rights. All other members of the app will get the _Default role_ configured for that app. Please keep in mind that users still need to be a member of a project in Sprintr for them to be eligible to be app administrators for the corresponding app in ATS.
+
+App member that the have _No access_ role, will not see the app in their _My apps_ page and will not be able to open or edit or run any test cases for this app.
+
+{{% alert type="info" %}}
+For On-Premises instances of ATS all accounts which are created manually by the tenant administrator will be members of each project.
+{{% /alert %}}
+
+In order to make sure that administration rights which have been granted to users are not overwritten, we do not automatically revoke administration rights when the project role for a user in Sprintr changes from administrator to non-administrator. Instead, revoking administration rights can be done manually from the _App Settings_ page. Finally, note that a user who has an administrative project role in Sprintr will always have administrative rights in ATS.
+
+
+{{% alert type="info" %}}
+If the project lacks a Mendix app ID the app roles will not be synced with Sprintr.
+{{% /alert %}}
 
 ### 3.4 Execution Log Cleanup
 
@@ -134,3 +149,7 @@ For information on where to find the API keys of your Mendix app, see [Authentic
 The CI/CD API key is used to allow other systems or applications access to the ATS CI/CD API. Generating a new API key revokes access for any systems using the old API key. These systems are not able to access the ATS CI/CD API until they are updated with the new API key. Make sure to save the displayed API key in a secure place, as you cannot view it again in ATS.
 
 For more information about the CI/CD API, see [CI/CD API](cicd-api).
+
+### 3.7 Default Role
+
+The default role for an app determine which role will be granted to new members of the app. 
