@@ -125,8 +125,8 @@ App member that the have _No access_ role, will not see the app in their _My app
 For On-Premises instances of ATS all accounts which are created manually by the tenant administrator will be members of each project.
 {{% /alert %}}
 
-In order to make sure that administration rights which have been granted to users are not overwritten, we do not automatically revoke administration rights when the project role for a user in Sprintr changes from administrator to non-administrator. Instead, revoking administration rights can be done manually from the _App Settings_ page. Finally, note that a user who has an administrative project role in Sprintr will always have administrative rights in ATS.
-
+In order to make sure that administration rights which have been granted to users are not overwritten, we do not automatically revoke administration rights when the project role for a user in Sprintr changes from administrator to non-administrator. Instead, revoking administration rights can be done manually from the _App Settings_ page. Other existing users access will be updated when they log in to ATS or when an administrator refreshes the App access rights by clicking on the corresponding button. New members of a project in Sprintr have to login to ATS and accept the Terms and Conditions before they can become members of an app in ATS.
+Finally, note that a user who has an administrative project role in Sprintr will always have administrative rights in ATS.
 
 {{% alert type="info" %}}
 If the project lacks a Mendix app ID the app roles will not be synced with Sprintr.
