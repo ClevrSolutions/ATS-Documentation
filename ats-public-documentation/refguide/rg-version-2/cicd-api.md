@@ -61,7 +61,7 @@ You must include the following information in the request:
 
 ##### 3.1.2.1 Example
 
-```
+```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
   <soap:Header>
     <tns:authentication>
@@ -93,7 +93,7 @@ The following table shows the data contained in the response of the Run Job serv
 
 ##### 3.1.3.1 Example
 
-```
+```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
   <soap:Body>
     <tns:RunJobResponse>
@@ -126,10 +126,17 @@ You must include the following information in the request:
 | AppAPIToken | The key for the CI/CD API. Generated on the **App Settings** page. |
 | JobID | The unique ID of the job returned by the Run Job service. |
 | AppID | The ID of your Mendix app. |
+| IncludeExecutionFlags¹| Whether to include execution flags (canceled, warning) in the response. |
+| IncludeExecutionResultBreakdown¹ | Whether to include the number of passed/failed/not executed test cases in the response. |
+| IncludeExecutionDetailsPerTestCase¹ | Whether to include details (e.g. name, result, duration) for each test case that was executed in the response. |
+
+¹ Optional, if left out defaults to `false`
 
 ##### 3.2.2.1 Example
 
-```
+Basic example, only returns the status and result (and error message if there is one):
+
+```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
   <soap:Header>
     <tns:authentication>
@@ -149,6 +156,57 @@ You must include the following information in the request:
 </soapenv:Envelope>
 ```
 
+##### 3.2.2.2 Example
+
+Example which also returns the number of passed/failed/not executed test cases:
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+  <soap:Header>
+    <tns:authentication>
+      <username>exampleUser</username>
+      <password>examplePassword</password>
+    </tns:authentication>
+  </soap:Header>
+  <soap:Body>
+    <tns:GetTestRun>
+      <TestRun>
+        <AppAPIToken>exampleString</AppAPIToken>
+        <JobID>exampleString</JobID>
+        <AppID>exampleString</AppID>
+        <IncludeExecutionResultBreakdown>true</IncludeExecutionResultBreakdown>
+      </TestRun>
+    </tns:GetTestRun>
+  </soap:Body>
+</soapenv:Envelope>
+```
+
+##### 3.2.2.3 Example
+
+Example which returns the status of the execution flags and details for each test case.
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+  <soap:Header>
+    <tns:authentication>
+      <username>exampleUser</username>
+      <password>examplePassword</password>
+    </tns:authentication>
+  </soap:Header>
+  <soap:Body>
+    <tns:GetTestRun>
+      <TestRun>
+        <AppAPIToken>exampleString</AppAPIToken>
+        <JobID>exampleString</JobID>
+        <AppID>exampleString</AppID>
+        <IncludeExecutionFlags>true</IncludeExecutionFlags>
+        <IncludeExecutionDetailsPerTestCase>true</IncludeExecutionDetailsPerTestCase>
+      </TestRun>
+    </tns:GetTestRun>
+  </soap:Body>
+</soapenv:Envelope>
+```
+
 #### 3.2.3 Response
 
 The following table shows the data contained in the response of the **Get Job Status** service:
@@ -158,10 +216,17 @@ The following table shows the data contained in the response of the **Get Job St
 | ExecutionStatus| Status of the execution: **Running** or **Queued**. |
 | ErrorMessage | Contains the error message if the test failed to start. Empty if the test started succesfully. |
 | ExecutionResult | Result of the execution: **Passed** or **Failed**. |
+| ExecutionFlags¹ | Status of the canceled and warning flags for the job. |
+| ExecutionResultBreakdown¹ | Number of test cases in this job that passed/failed/were not executed. |
+| ExecutionDetailsPerTestCase¹ | Name, result (**Passed**,**Failed**,**Not_Executed**), duration and link for each executed test case. |
+
+¹ Optional, only returned if the corresponding **Include** statement was set to true in the request.
 
 ##### 3.2.3.1 Example
 
-```
+Basic example, only returns the status and result (and error message if there is one):
+
+```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
   <soap:Body>
     <tns:GetTestRunResponse>
@@ -169,6 +234,69 @@ The following table shows the data contained in the response of the **Get Job St
         <ExecutionStatus>[key]</ExecutionStatus>
         <ExecutionResult>[key]</ExecutionResult>
         <ErrorMessage>exampleString</ErrorMessage>
+      </TestRun>
+    </tns:GetTestRunResponse>
+  </soap:Body>
+</soapenv:Envelope>
+```
+
+##### 3.2.3.2 Example
+
+Example which also returns the number of passed/failed/not executed test cases:
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+  <soap:Body>
+    <tns:GetTestRunResponse>
+      <TestRun>
+        <ExecutionStatus>[key]</ExecutionStatus>
+        <ExecutionResult>[key]</ExecutionResult>
+        <ErrorMessage>exampleString</ErrorMessage>
+        <ExecutionResultBreakdown>
+            <ResultBreakdown>
+                <CountPassed>5</CountPassed>
+                <CountNotExecuted>1</CountNotExecuted>
+                <CountFailed>1</CountFailed>
+            </ResultBreakdown>
+        </ExecutionResultBreakdown>
+      </TestRun>
+    </tns:GetTestRunResponse>
+  </soap:Body>
+</soapenv:Envelope>
+```
+
+##### 3.2.3.3 Example
+
+Example which returns the status of the execution flags and details for each test case.
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+  <soap:Body>
+    <tns:GetTestRunResponse>
+      <TestRun>
+        <ExecutionStatus>[key]</ExecutionStatus>
+        <ExecutionResult>[key]</ExecutionResult>
+        <ErrorMessage>exampleString</ErrorMessage>
+        <ExecutionFlags>
+            <Flags>
+                <Canceled>true</Canceled>
+                <Warning>false</Warning>
+            </Flags>
+        </ExecutionFlags>
+        <ExecutionDetailsPerTestCase>
+          <ExecutionDetailsTestCase>
+            <Name>exampleString</Name>
+            <Result>[key]</Result>
+            <Duration>00:00:04</Duration>
+            <Link>https://https://ats100.mendixcloud.com/log/111111</Link>
+          </ExecutionDetailsTestCase>
+          <ExecutionDetailsTestCase>
+            <Name>exampleString</Name>
+            <Result>[key]</Result>
+            <Duration>00:01:37</Duration>
+            <Link>https://https://ats100.mendixcloud.com/log/222222</Link>
+          </ExecutionDetailsTestCase>
+        </ExecutionDetailsPerTestCase>
       </TestRun>
     </tns:GetTestRunResponse>
   </soap:Body>
