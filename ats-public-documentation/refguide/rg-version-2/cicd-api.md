@@ -218,9 +218,10 @@ The following table shows the data contained in the response of the **Get Job St
 | ExecutionResult | Result of the execution: **Passed** or **Failed**. |
 | ExecutionFlags¹ | Status of the canceled and warning flags for the job. |
 | ExecutionResultBreakdown¹ | Number of test cases in this job that passed/failed/were not executed. |
-| ExecutionDetailsPerTestCase¹ | Name, result (**Passed**,**Failed**,**Not_Executed**), duration and link for each executed test case. |
+| ExecutionDetailsPerTestCase¹ | Name, result (**Passed**,**Failed**,**Not_Executed**), duration, link and error message² for each executed test case. |
 
-¹ Optional, only returned if the corresponding **Include** statement was set to true in the request.
+¹ Optional, only returned if the corresponding **Include** statement was set to true in the request.  
+² Error messages are only included for not passed testcases where a simple and short error message can be generated.
 
 ##### 3.2.3.1 Example
 
@@ -295,6 +296,7 @@ Example which returns the status of the execution flags and details for each tes
             <Result>[key]</Result>
             <Duration>00:01:37</Duration>
             <Link>https://https://ats100.mendixcloud.com/log/222222</Link>
+            <ErrorMessage>exampleString</ErrorMessage>
           </ExecutionDetailsTestCase>
         </ExecutionDetailsPerTestCase>
       </TestRun>
