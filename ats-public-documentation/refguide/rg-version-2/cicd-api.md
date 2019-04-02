@@ -5,7 +5,7 @@ parent: "rg-version-2"
 
 ## 1 CI/CD API
 
-With the CI/CD API you easily integrate ATS into your automated deployment workflow. You run a test according to predefined templates or you could retrieve the status of already finished tests. To use the CI/CD API you need a special webservice user, which ATS uses for authentication. For more information on how to integrate ATS into your CI/CD workflow read the [How-To ATS CI/CD](/ats/howtos/ht-version-2/ats-and-ci-cd-2).
+With the CI/CD API you easily integrate ATS into your automated deployment workflow. You can run a test according to predefined templates and then query its status and result. Additionally, you can rerun the not passed test cases for a failed test suite. To use the CI/CD API you need a special webservice user, which ATS uses for authentication. For more information on how to integrate ATS into your CI/CD workflow read the [How-To ATS CI/CD](/ats/howtos/ht-version-2/ats-and-ci-cd-2).
 
 ## 2 CI/CD Templates
 
@@ -37,9 +37,11 @@ For supported Selenium hubs, like Browserstack, further options are available. F
 
 ## 3 API
 
-The ATS CI/CD API is based on the SOAP webservice protocol. Currently there are two services available, **Run Job** and **Get Job Status**. The following sections show the structures of the request-and-response messages of these services.
+The ATS CI/CD API is based on the SOAP webservice protocol. Currently there are three services available, **Run Job**, **Get Job Status** and **RerunNotPassed**. The following sections show the structures of the request-and-response messages of these services.
 
 ### 3.1 Run Job
+
+Starts a new job based on a CI/CD template and returns the UUID of the job which can be used to query the result.
 
 #### 3.1.1 URL
 
@@ -218,10 +220,11 @@ The following table shows the data contained in the response of the **Get Job St
 | ExecutionResult | Result of the execution: **Passed** or **Failed**. |
 | ExecutionFlags¹ | Status of the canceled and warning flags for the job. |
 | ExecutionResultBreakdown¹ | Number of test cases in this job that passed/failed/were not executed. |
-| ExecutionDetailsPerTestCase¹ | Name, result (**Passed**,**Failed**,**Not_Executed**), duration, link and error message² for each executed test case. |
+| ExecutionDetailsPerTestCase¹ | Name, result (**Passed**,**Failed**,**Not_Executed**), duration, error message² and test case id³ for each executed test case. |
 
 ¹ Optional, only returned if the corresponding **Include** statement was set to true in the request.  
 ² Error messages are only included for not passed testcases where a simple and short error message can be generated.
+³ Stays the same between runs.
 
 ##### 3.2.3.1 Example
 
@@ -304,3 +307,51 @@ Example which returns the status of the execution flags and details for each tes
   </soap:Body>
 </soapenv:Envelope>
 ```
+
+### 3.3 Rerun not passed
+
+Reruns all failed or not executed test cases for a finished job. Returns the UUID of the new job which can be used to query the result.
+
+#### 3.3.1 URL
+
+```
+https://ats100.mendixcloud.com/ws/RerunNotPassed
+```
+
+#### 3.3.2 Request
+
+You must include the following information in the request:
+
+| Name | Description |
+| --- | --- |
+| username | ATSAPIUser |
+| password | ATSAPIUser |
+| AppAPIToken | The key for the CI/CD API. Generated on the **App Settings** page. |
+| AppID | The ID of your Mendix app. |
+| FinishedJobID | The unique UUID of a finished job that was started with **Run Job**. |
+
+##### 3.1.2.1 Example
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+  <soap:Header>
+    <tns:authentication>
+      <username>ATSAPIUser</username>
+      <password>ATSAPIUser</password>
+    </tns:authentication>
+  </soap:Header>
+  <soap:Body>
+    <tns:RunJob>
+      <TestRun>
+        <AppAPIToken>exampleString</AppAPIToken>
+        <AppID>exampleString</AppID>
+        <FinishedJobID>exampleString</FinishedJobID>
+      </TestRun>
+    </tns:RunJob>
+  </soap:Body>
+</soapenv:Envelope>
+```
+
+#### 3.3.3 Response
+
+The response for **Rerun Not Passed** is identical with the response for **Run Job** in section [3.1.3](#3.1.3-Response)
