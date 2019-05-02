@@ -223,7 +223,7 @@ The following table shows the data contained in the response of the **Get Job St
 | ExecutionDetailsPerTestCase¹ | Name, result (**Passed**,**Failed**,**Not_Executed**), duration, error message² and test case id³ for each executed test case. |
 
 ¹ Optional, only returned if the corresponding **Include** statement was set to true in the request.  
-² Error messages are only included for not passed testcases where a simple and short error message can be generated.
+² Error messages are only included for not passed testcases where a simple and short error message can be generated.  
 ³ Stays the same between runs.
 
 ##### 3.2.3.1 Example
@@ -292,14 +292,14 @@ Example which returns the status of the execution flags and details for each tes
             <Name>exampleString</Name>
             <Result>[key]</Result>
             <Duration>00:00:04</Duration>
-            <Link>https://https://ats100.mendixcloud.com/log/111111</Link>
+            <TestCaseID>https://https://ats100.mendixcloud.com/log/111111</TestCaseID>
           </ExecutionDetailsTestCase>
           <ExecutionDetailsTestCase>
             <Name>exampleString</Name>
             <Result>[key]</Result>
             <Duration>00:01:37</Duration>
-            <Link>https://https://ats100.mendixcloud.com/log/222222</Link>
             <ErrorMessage>exampleString</ErrorMessage>
+            <TestCaseID>https://https://ats100.mendixcloud.com/log/222222</TestCaseID>
           </ExecutionDetailsTestCase>
         </ExecutionDetailsPerTestCase>
       </TestRun>
@@ -341,13 +341,13 @@ You must include the following information in the request:
     </tns:authentication>
   </soap:Header>
   <soap:Body>
-    <tns:RunJob>
-      <TestRun>
+    <tns:RerunNotPassed>
+      <RerunNotPassed>
         <AppAPIToken>exampleString</AppAPIToken>
         <AppID>exampleString</AppID>
         <FinishedJobID>exampleString</FinishedJobID>
-      </TestRun>
-    </tns:RunJob>
+      </RerunNotPassed>
+    </tns:RerunNotPassed>
   </soap:Body>
 </soapenv:Envelope>
 ```
