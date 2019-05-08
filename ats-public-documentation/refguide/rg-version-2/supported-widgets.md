@@ -45,14 +45,18 @@ Besides the default widgets, ATS supports the most commonly used widgets from th
 
 | Name | Supported in Execution | Supported in Recording |
 | ---- | :--------------------: | :--------------------: |
+| AutoComplete |  ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes|
 | BooleanSlider |  ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes|
 | BootStrapRTE | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/red.png) No |
 | CheckboxSetSelector | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | CKEditor | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/red.png) No |
+| CustomString | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | DropdownDivConverter | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes|
+| FormtString | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | GridSelector | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | InputReferenceSelector | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/red.png) No |
 | OnChangeInputbox | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | Radiobutton List | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | SimpleCheckboxSetSelector | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
 | SimpleMenuBar | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
+| Switch | ![](attachments/supported-widgets/green.png) Yes | ![](attachments/supported-widgets/green.png) Yes |
