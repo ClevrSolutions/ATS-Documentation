@@ -68,7 +68,7 @@ You must include the following information in the request:
 ##### 3.1.2.1 Example
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.mendix.com/">
   <soap:Header>
     <tns:authentication>
       <username>ATSAPIUser</username>
@@ -84,7 +84,7 @@ You must include the following information in the request:
       </TestRun>
     </tns:RunJob>
   </soap:Body>
-</soapenv:Envelope>
+</soap:Envelope>
 ```
 
 #### 3.1.3 Response
@@ -94,13 +94,13 @@ The following table shows the data contained in the response of the Run Job serv
 | Name | Description |
 | --- | --- |
 | Started | True if the test has already started. Otherwise, false.  |
-| ErrorMessage | Contains the error message if the test failed to start. Empty if the test started succesfully. |
+| ErrorMessage | Contains the error message if the test failed to start. Empty if the test started successfully. |
 | JobID | The unique ID of the job. This ID is used to retrieve the result of the test with the **Get Job Status** service. |
 
 ##### 3.1.3.1 Example
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.mendix.com/">
   <soap:Body>
     <tns:RunJobResponse>
       <RunJob>
@@ -110,7 +110,7 @@ The following table shows the data contained in the response of the Run Job serv
       </RunJob>
     </tns:RunJobResponse>
   </soap:Body>
-</soapenv:Envelope>
+</soap:Envelope>
 ```
 
 ### 3.2 Get Job Status
@@ -118,7 +118,7 @@ The following table shows the data contained in the response of the Run Job serv
 #### 3.2.1 URL
 
 ```
-https://ats100-test.mendixcloud.com/ws/GetJobStatus
+https://ats100.mendixcloud.com/ws/GetJobStatus
 ```
 
 #### 3.2.2 Request
@@ -143,7 +143,7 @@ You must include the following information in the request:
 Basic example, only returns the status and result (and error message if there is one):
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.mendix.com/">
   <soap:Header>
     <tns:authentication>
       <username>exampleUser</username>
@@ -159,7 +159,7 @@ Basic example, only returns the status and result (and error message if there is
       </TestRun>
     </tns:GetTestRun>
   </soap:Body>
-</soapenv:Envelope>
+</soap:Envelope>
 ```
 
 ##### 3.2.2.2 Example
@@ -167,7 +167,7 @@ Basic example, only returns the status and result (and error message if there is
 Example which also returns the number of passed/failed/not executed test cases:
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.mendix.com/">
   <soap:Header>
     <tns:authentication>
       <username>exampleUser</username>
@@ -184,7 +184,7 @@ Example which also returns the number of passed/failed/not executed test cases:
       </TestRun>
     </tns:GetTestRun>
   </soap:Body>
-</soapenv:Envelope>
+</soap:Envelope>
 ```
 
 ##### 3.2.2.3 Example
@@ -192,7 +192,7 @@ Example which also returns the number of passed/failed/not executed test cases:
 Example which returns the status of the execution flags and details for each test case.
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.mendix.com/">
   <soap:Header>
     <tns:authentication>
       <username>exampleUser</username>
@@ -210,7 +210,7 @@ Example which returns the status of the execution flags and details for each tes
       </TestRun>
     </tns:GetTestRun>
   </soap:Body>
-</soapenv:Envelope>
+</soap:Envelope>
 ```
 
 #### 3.2.3 Response
@@ -234,7 +234,7 @@ The following table shows the data contained in the response of the **Get Job St
 Basic example, only returns the status and result (and error message if there is one):
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.mendix.com/">
   <soap:Body>
     <tns:GetTestRunResponse>
       <TestRun>
@@ -244,7 +244,7 @@ Basic example, only returns the status and result (and error message if there is
       </TestRun>
     </tns:GetTestRunResponse>
   </soap:Body>
-</soapenv:Envelope>
+</soap:Envelope>
 ```
 
 ##### 3.2.3.2 Example
@@ -252,7 +252,7 @@ Basic example, only returns the status and result (and error message if there is
 Example which also returns the number of passed/failed/not executed test cases:
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.mendix.com/">
   <soap:Body>
     <tns:GetTestRunResponse>
       <TestRun>
@@ -269,7 +269,7 @@ Example which also returns the number of passed/failed/not executed test cases:
       </TestRun>
     </tns:GetTestRunResponse>
   </soap:Body>
-</soapenv:Envelope>
+</soap:Envelope>
 ```
 
 ##### 3.2.3.3 Example
@@ -277,7 +277,7 @@ Example which also returns the number of passed/failed/not executed test cases:
 Example which returns the status of the execution flags and details for each test case.
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.mendix.com/">
   <soap:Body>
     <tns:GetTestRunResponse>
       <TestRun>
@@ -306,7 +306,7 @@ Example which returns the status of the execution flags and details for each tes
       </TestRun>
     </tns:GetTestRunResponse>
   </soap:Body>
-</soapenv:Envelope>
+</soap:Envelope>
 ```
 
 ### 3.3 Rerun not passed
@@ -334,7 +334,7 @@ You must include the following information in the request:
 ##### 3.1.2.1 Example
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:men="http://www.mendix.com/">
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.mendix.com/">
   <soap:Header>
     <tns:authentication>
       <username>ATSAPIUser</username>
@@ -350,7 +350,7 @@ You must include the following information in the request:
       </RerunNotPassed>
     </tns:RerunNotPassed>
   </soap:Body>
-</soapenv:Envelope>
+</soap:Envelope>
 ```
 
 #### 3.3.3 Response
