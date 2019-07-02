@@ -51,18 +51,20 @@ With this option, you can specify the screen resolution for your test run. A lis
 
 ## 5 Alerts
 
-To subscribe to alerts you click the *Subscribe* link under the **Schedules** tab. Then you will receive an email with a one time subscription link. After clicking the link you will be subscribed to receive alerts for the current app. 
+To subscribe to alerts click the *Subscribe* link under the **Schedules** tab. Then you will receive an email with a one time subscription link. After clicking the link you will be subscribed to receive alerts for the current app. 
 
 
 {{% alert type="info" %}}
 
-Make sure to check your spam folder.
+Make sure to check your spam folder for the confirmation email which contains a subscription link.
 
 {{% /alert %}}
 
+By default existing schedules do not send alerts. Click *Edit* (pencil icon) next to a schedule to change this.
 
-To unsubscribe you click the *Unsubscribe* link under the **Schedules** tab. Alternatively, each alert email has an embedded unsubscribe link which you can also use.
 
+
+To unsubscribe you click the *Unsubscribe* link under the **Schedules** tab. Alternatively, each alert email has an unsubscribe link.
 
 
 Important information:  
