@@ -51,10 +51,7 @@ With this option, you can specify the screen resolution for your test run. A lis
 
 ## 5 Alerts
 
-Alerts are sent only to users who have subscribed to receive them using the email from your Mendix account. Subscription is per app.
-By default alerts are disabled. If you enable alerts for a schedule then by default an alert will only be sent if the scheduled run is not passed. You can change this behavior per schedule so that an alert is sent always regardless of the result.
-
-To subscribe to alerts you click the *Subscribe* link under the **Schedules** tab. Then you will receive an email with a one time subscription link. After clicking the link you will be subscribed to receive alerts for the current app. 
+To subscribe to alerts click the *Subscribe* link under the **Schedules** tab. Then you will receive an email with a one time subscription link. After clicking the link you will be subscribed to receive alerts for the current app. 
 
 
 {{% alert type="info" %}}
@@ -63,7 +60,13 @@ Make sure to check your spam folder.
 
 {{% /alert %}}
 
+By default existing schedules do not send alerts. Click *Edit* (pencil icon) next to a schedule to change this. Similarly for newly created schedules.
 
-To unsubscribe you click the *Unsubscribe* link under the **Schedules** tab. Alternatively, each alert email has an embedded unsubscribe link which you can also use.
+If you want to stop receiving alerts, click the *Unsubscribe* link under the **Schedules** tab. Alternatively, click the unsubscribe link which is included in every alert email.
 
-In order to avoid spam the maximum number of emails that can be sent per app per day is limited to **40**.
+Important information:  
+* By default alerts are disabled
+* In order to avoid spam the maximum number of emails that can be sent per app per day is limited to **40**.
+* Alerts are sent only to users who have subscribed to receive them using the email from your Mendix account.
+* Subscription is per app, so that you can decide to subscribe only to certain apps that you are interested in.
+* If you enable alerts for a schedule then by default an alert will only be sent if the scheduled run is not passed. You can change this behavior per schedule so that an alert is sent always regardless of the result.
