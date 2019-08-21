@@ -91,3 +91,14 @@ CustomKeywords.'ats.Widget_Set.SetValue'('textBox1', 'Lorem ipsum', null)
 // ATS function called as groovy function
 ats.Widget_Set.SetValue("textBox1", "Lorem ipsum", null);
 ```
+
+## Limitations
+
+The Function API is a beta feature. If you are interested in trying it out please contact support. Keep in mind there might be further changes to the functionality.
+
+A limit of 20 active requests at a given time applies per project. Additionally, excessive usage is discouraged and may lead to revoking of the API key (e.g. hundred thousands calls per day). 
+
+All HTTP requests are synchronous meaning that they will time out after roughly 1 minute. This is due to the nature of HTTP communication.
+
+In order for ATS to automate the selenium session the selenium driver must be on a URL that is publicly accessible. Only selenium version 3.141.59 is supported. Other automation technologies such as e.g. cypress are not supported.
+
