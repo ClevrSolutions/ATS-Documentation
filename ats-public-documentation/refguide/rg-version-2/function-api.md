@@ -53,6 +53,18 @@ Uses the [Basic auth](https://tools.ietf.org/html/rfc7617) with the project id a
 
 Web elements are passed by their internal Selenium ID which is in essence a string. To indicate that a parameter or a return value is a web element and not a string the flag `isWebElement` needs to be set to true.
 
+### Dialects
+
+Modern selenium uses a dialect known as _W3C_ by default to talk to browser drivers. However if for any reason you need to use the old _OSS_ dialect, that needs to be passed explicitly in the call:
+
+```json
+    "remoteSeleniumDriver": {
+        "url"      : "https://selenium.com/wd/hub",
+        "sessionId": "00bef045-e9c9-4677-8cc1-e084bab7476b",
+        "dialect"  : "OSS"
+    },
+```
+
 ## Clients
 
 Clients are available for the function API for the following tools:
@@ -60,14 +72,13 @@ Clients are available for the function API for the following tools:
 * java
 * Katalon
 
-The clients allow one to use the function API via a simplified interface without having to deal with parsing and formatting json and building http requests.
+The clients allow one to use the function API via a simplified interface without having to deal with parsing and formatting json and building http requests. In addition the clients automatically detect the remote session url and id as well as the dialect used so that this does not have to be specified manually.
 
 #### Java
 
 Add `ats.jar` to the project's buildpath. Optionally, configure source and javadoc. Here is a simple example:
 
 ```java
-
 ATSSettings atsSettings = new ATSSettings(projectId, apiKey);
 ATSRunner ats = new ATSRunner(atsSettings , driver);
 
@@ -96,9 +107,13 @@ ats.Widget_Set.SetValue("textBox1", "Lorem ipsum", null);
 
 The Function API is a beta feature. If you are interested in trying it out please contact support. Keep in mind there might be further changes to the functionality.
 
-A limit of 20 active requests at a given time applies per project. Additionally, excessive usage is discouraged and may lead to revoking of the API key (e.g. hundred thousands calls per day). 
+A limit of 20 active requests at a given time applies per project. Additionally, excessive usage is discouraged and may lead to revoking of the API key (e.g. one hundred thousands calls per day). 
 
-All HTTP requests are synchronous meaning that they will time out after roughly 1 minute. This is due to the nature of HTTP communication.
+All HTTP requests are synchronous meaning that they will time out after roughly 1 minute. This is due to the nature of HTTP communication. There is no way to extend this timeout.
 
-In order for ATS to automate the selenium session the selenium driver must be on a URL that is publicly accessible. Only selenium version 3.141.59 is supported. Other automation technologies such as e.g. cypress are not supported.
+In order for ATS to automate the selenium session the selenium driver must be on a URL that is publicly accessible.
+
+Only selenium version 3.141.59 is supported. Other automation technologies such as e.g. cypress are not supported. 
+
+Mobile testing is not supported.
 
