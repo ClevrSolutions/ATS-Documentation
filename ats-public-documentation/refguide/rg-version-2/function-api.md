@@ -28,7 +28,7 @@ where
 **_remoteSeleniumDriver_** - is a reference to a remote selenium session that consists of a selenium driver URL (which needs to be publicly accessible) and a session id.
 ATS will use this session to execute the function specified under
 
-**_functionToExecute_** - defines which ATS function to execute. The function and values are identified by their key (guaranteed to be unique) that can be found [here](functions_api_reference.md).
+**_functionToExecute_** - defines which ATS function to execute. The function and values are identified by their key (guaranteed to be unique) that can be found [here](function_api_reference.md).
 The order of the values is not relevant and optional parameter (default to null) unless a values is specified.
 
 If the function execution was successful ATS will respond with
